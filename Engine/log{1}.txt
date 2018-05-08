@@ -1,0 +1,51 @@
+﻿round: 1
+step: 0
+Movement. id robot:0 point:(67, 47) , energy:998
+Movement. id robot:1 point:(83, 81) , energy:998
+Did not movement. id robot:2 point:(78, 88) , energy:981
+Did not movement. id robot:3 point:(81, 58) , energy:983
+step: 1
+Movement. id robot:0 point:(68, 47) , energy:996
+Movement. id robot:1 point:(84, 81) , energy:996
+Movement. id robot:2 point:(79, 88) , energy:979
+Movement. id robot:3 point:(82, 58) , energy:981
+step: 2
+Did not movement. id robot:0 point:(68, 47) , energy:995
+Movement. id robot:1 point:(84, 82) , energy:994
+Did not movement. id robot:2 point:(79, 88) , energy:978
+Did not movement. id robot:3 point:(82, 58) , energy:980
+step: 3
+Movement. id robot:0 point:(69, 48) , energy:993
+Did not movement. id robot:1 point:(84, 82) , energy:993
+Did not movement. id robot:2 point:(79, 88) , energy:977
+Movement. id robot:3 point:(83, 58) , energy:978
+step: 4
+Movement. id robot:0 point:(69, 49) , energy:991
+Movement. id robot:1 point:(84, 83) , energy:991
+Movement. id robot:2 point:(80, 88) , energy:975
+Movement. id robot:3 point:(84, 58) , energy:976
+step: 5
+Movement. id robot:0 point:(69, 50) , energy:989
+Movement. id robot:1 point:(85, 84) , energy:989
+Movement. id robot:2 point:(80, 89) , energy:973
+Movement. id robot:3 point:(84, 59) , energy:974
+step: 6
+Movement. id robot:0 point:(70, 51) , energy:987
+Movement. id robot:1 point:(86, 85) , energy:987
+Movement. id robot:2 point:(81, 89) , energy:971
+Movement. id robot:3 point:(84, 60) , energy:972
+step: 7
+Did not movement. id robot:0 point:(70, 51) , energy:986
+Did not movement. id robot:1 point:(86, 85) , energy:986
+Movement. id robot:2 point:(81, 90) , energy:969
+Movement. id robot:3 point:(84, 61) , energy:970
+step: 8
+Movement. id robot:0 point:(71, 52) , energy:984
+Movement. id robot:1 point:(87, 86) , energy:984
+Movement. id robot:2 point:(82, 90) , energy:967
+Movement. id robot:3 point:(85, 62) , energy:968
+step: 9
+Did not movement. id robot:0 point:(71, 52) , energy:983
+Did not movement. id robot:1 point:(87, 86) , energy:983
+Did not movement. id robot:2 point:(82, 90) , energy:966
+Movement. id robot:3 point:(86, 63) , energy:966
