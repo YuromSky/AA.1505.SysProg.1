@@ -1,31 +1,5 @@
 ﻿round: 0
 step: 0
-Movement. id robot:0 point:(73, 82) , energy:998
-Did not movement. id robot:1 point:(76, 55) , energy:999
+oh no
+Ссылка на объект не указывает на экземпляр объекта.
 step: 1
-Movement. id robot:0 point:(74, 82) , energy:996
-Movement. id robot:1 point:(76, 56) , energy:997
-step: 2
-Did not movement. id robot:0 point:(74, 82) , energy:995
-Did not movement. id robot:1 point:(76, 56) , energy:996
-step: 3
-Movement. id robot:0 point:(75, 83) , energy:993
-Movement. id robot:1 point:(77, 57) , energy:994
-step: 4
-Movement. id robot:0 point:(76, 84) , energy:991
-Movement. id robot:1 point:(78, 58) , energy:992
-step: 5
-Movement. id robot:0 point:(77, 85) , energy:989
-Movement. id robot:1 point:(79, 58) , energy:990
-step: 6
-Movement. id robot:0 point:(77, 86) , energy:987
-Movement. id robot:1 point:(80, 58) , energy:988
-step: 7
-Movement. id robot:0 point:(77, 87) , energy:985
-Movement. id robot:1 point:(81, 58) , energy:986
-step: 8
-Did not movement. id robot:0 point:(77, 87) , energy:984
-Did not movement. id robot:1 point:(81, 58) , energy:985
-step: 9
-Movement. id robot:0 point:(78, 88) , energy:982
-Did not movement. id robot:1 point:(81, 58) , energy:984
