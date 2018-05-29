@@ -46,7 +46,7 @@ namespace Interface
                     switch (point.type)
                     {
                         case PointType.Energy:
-                            robot.energy += round_config.dE;
+                            robot.energy = (robot.energy + round_config.dE <= round_config.max_energy) ? (robot.energy + round_config.dE) : round_config.max_energy;
                             File.AppendAllText(logpath, "Added robot energy on point. id robot:" + robot.id + " point:(" + point.X + ", " + point.Y + "), energy:" + robot.energy + Environment.NewLine, Encoding.UTF8);
                             break;
                         case PointType.Health:
@@ -92,7 +92,7 @@ namespace Interface
                             robot.speed += robot.speed / health * round_config.dHealth;
                             donor.speed -= donor.speed / donor_health * round_config.dHealth;
                         }
-                        File.AppendAllText(logpath, "drain health from dead robots. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id dead robot: " + donor.id + ", health:" + GetHealth() + Environment.NewLine, Encoding.UTF8);
+                        File.AppendAllText(logpath, "Drain health from dead robots. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id dead robot: " + donor.id + ", health:" + GetHealth() + Environment.NewLine, Encoding.UTF8);
                     }
                 }
             }
@@ -171,7 +171,7 @@ namespace Interface
             }
 
             // +
-            if ((Math.Abs(action.dA) + Math.Abs(action.dD) + Math.Abs(action.dV) != 0) && (Math.Abs(action.dA) + Math.Abs(action.dD) + Math.Abs(action.dV) <= round_config.dHealth) && (robot.speed + action.dV <= round_config.max_speed) && (GetHealth() + action.dA + action.dD + action.dV == GetHealth()))
+            if ((Math.Abs(action.dA) + Math.Abs(action.dD) + Math.Abs(action.dV) != 0) && (Math.Abs(action.dA) + Math.Abs(action.dD) + Math.Abs(action.dV) <= round_config.dHealth) && (robot.speed + action.dV <= round_config.max_speed) && (Math.Abs(action.dA + action.dD + action.dV) <= 0.0000001))
             {
                 robot.speed += action.dV;
                 robot.attack += action.dA;
@@ -197,9 +197,9 @@ namespace Interface
                     X = SingleRandom.Instance.Next(0, round_config.width),
                     Y = SingleRandom.Instance.Next(0, round_config.height),
                     energy = round_config.max_energy,
-                    attack = 40,
+                    attack = 45,
                     speed = 10,
-                    defence = 50,
+                    defence = 45,
                     isAlive = true,
                     kill = 0,
                     name = robots[j].Name // попросили добавить чтобы кооперироваться
@@ -307,20 +307,20 @@ namespace Interface
                     {
                         future_robots[i].energy = 0;
                     }
-                    if (future_robots[i].energy > 1000)
-                    {
-                        future_robots[i].energy = 1000;
-                    }
+                    //if (future_robots[i].energy > 1000)
+                    //{
+                    //    future_robots[i].energy = 1000;
+                    //}
                     if (future_robots[i].defence + future_robots[i].attack + future_robots[i].speed < 0)
                     {
                         future_robots[i].defence = 0;
                         future_robots[i].attack = 0;
                         future_robots[i].speed = 0;
                     }
-                    if (future_robots[i].energy > 1000)
-                    {
-                        future_robots[i].energy = 1000;
-                    }
+                    //if (future_robots[i].energy > 1000)
+                    //{
+                    //    future_robots[i].energy = 1000;
+                    //}
                     if (i % 2 == 0)
                     {
                         int energyValue = future_robots[i].energy / 10;

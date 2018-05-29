@@ -1,971 +1,1366 @@
 ﻿round: 4
 step: 0
-Did not movement. id robot:0 point:(68, 61) , energy:999
-Movement. id robot:1 point:(66, 86) , energy:998
-Movement. id robot:2 point:(7, 22) , energy:998
-Movement. id robot:3 point:(18, 92) , energy:998
-Movement. id robot:4 point:(15, 22) , energy:998
-Movement. id robot:5 point:(62, 30) , energy:998
-Movement. id robot:6 point:(33, 75) , energy:998
-Movement. id robot:7 point:(20, 78) , energy:998
-Movement. id robot:8 point:(45, 3) , energy:998
-Movement. id robot:9 point:(16, 3) , energy:998
-Movement. id robot:10 point:(3, 2) , energy:998
-Movement. id robot:11 point:(62, 85) , energy:998
-Movement. id robot:12 point:(59, 44) , energy:998
-Movement. id robot:13 point:(98, 13) , energy:998
-Movement. id robot:14 point:(52, 7) , energy:998
-Movement. id robot:15 point:(85, 42) , energy:998
-Movement. id robot:16 point:(10, 2) , energy:998
-Did not movement. id robot:17 point:(6, 73) , energy:999
-Movement. id robot:18 point:(57, 53) , energy:998
-Did not movement. id robot:19 point:(39, 93) , energy:880
-Did not movement. id robot:20 point:(86, 62) , energy:926
-Movement. id robot:21 point:(40, 69) , energy:925
-Movement. id robot:22 point:(50, 99) , energy:926
-Movement. id robot:23 point:(26, 61) , energy:926
-Movement. id robot:24 point:(92, 99) , energy:927
-Movement. id robot:25 point:(99, 99) , energy:927
-Movement. id robot:26 point:(49, 65) , energy:927
-Movement. id robot:27 point:(99, 49) , energy:927
-Movement. id robot:28 point:(99, 74) , energy:928
-Did not movement. id robot:29 point:(99, 25) , energy:929
-Did not movement. id robot:30 point:(99, 67) , energy:929
-Movement. id robot:31 point:(87, 99) , energy:928
-Movement. id robot:32 point:(88, 52) , energy:928
-Did not movement. id robot:33 point:(86, 76) , energy:929
-Did not movement. id robot:34 point:(99, 25) , energy:930
-Movement. id robot:35 point:(99, 88) , energy:929
-Movement. id robot:36 point:(99, 99) , energy:929
-Movement. id robot:37 point:(39, 76) , energy:930
-Movement. id robot:38 point:(73, 28) , energy:931
-Did not movement. id robot:39 point:(38, 94) , energy:941
-Movement. id robot:40 point:(93, 91) , energy:943
-Movement. id robot:41 point:(18, 46) , energy:943
-Movement. id robot:42 point:(67, 35) , energy:944
-Did not movement. id robot:43 point:(21, 99) , energy:945
-Movement. id robot:44 point:(66, 56) , energy:944
-Movement. id robot:45 point:(99, 95) , energy:944
-Movement. id robot:46 point:(99, 82) , energy:945
-Movement. id robot:47 point:(84, 50) , energy:945
-Movement. id robot:48 point:(78, 21) , energy:945
-Movement. id robot:49 point:(57, 42) , energy:945
-Movement. id robot:50 point:(20, 49) , energy:945
-Movement. id robot:51 point:(99, 91) , energy:945
-Movement. id robot:52 point:(81, 97) , energy:946
-Movement. id robot:53 point:(52, 63) , energy:948
-Movement. id robot:54 point:(63, 59) , energy:948
-Movement. id robot:55 point:(94, 99) , energy:948
-Movement. id robot:56 point:(33, 14) , energy:949
-Movement. id robot:57 point:(70, 58) , energy:949
-Attack robot. id robot:57 point:(70, 58), id target robot: 0, attack:487
-Movement. id robot:58 point:(83, 52) , energy:949
-Movement. id robot:59 point:(42, 23) , energy:960
-Movement. id robot:60 point:(81, 55) , energy:961
-Did not movement. id robot:61 point:(48, 91) , energy:962
-Did not movement. id robot:62 point:(61, 71) , energy:962
-Did not movement. id robot:63 point:(90, 19) , energy:963
-Movement. id robot:64 point:(42, 24) , energy:962
-Movement. id robot:65 point:(91, 42) , energy:963
-Did not movement. id robot:66 point:(31, 41) , energy:964
-Movement. id robot:67 point:(12, 48) , energy:963
-Movement. id robot:68 point:(45, 66) , energy:965
-Movement. id robot:69 point:(27, 60) , energy:965
-Movement. id robot:70 point:(10, 56) , energy:965
-Movement. id robot:71 point:(39, 17) , energy:965
-Movement. id robot:72 point:(14, 95) , energy:966
-Movement. id robot:73 point:(51, 59) , energy:967
-Movement. id robot:74 point:(56, 78) , energy:967
-Did not movement. id robot:75 point:(95, 57) , energy:968
-Did not movement. id robot:76 point:(95, 99) , energy:969
-Did not movement. id robot:77 point:(51, 47) , energy:979
-Did not movement. id robot:78 point:(12, 89) , energy:980
-Did not movement. id robot:79 point:(91, 23) , energy:980
-Did not movement. id robot:80 point:(30, 66) , energy:981
-Movement. id robot:81 point:(6, 41) , energy:980
-Movement. id robot:82 point:(58, 10) , energy:980
-Movement. id robot:83 point:(40, 60) , energy:981
-Movement. id robot:84 point:(25, 75) , energy:981
-Movement. id robot:85 point:(40, 92) , energy:981
-Movement. id robot:86 point:(17, 80) , energy:981
-Movement. id robot:87 point:(53, 24) , energy:981
-Movement. id robot:88 point:(92, 24) , energy:981
-Movement. id robot:89 point:(25, 99) , energy:981
-Did not movement. id robot:90 point:(53, 85) , energy:983
-Did not movement. id robot:91 point:(64, 3) , energy:983
-Did not movement. id robot:92 point:(93, 56) , energy:983
-Did not movement. id robot:93 point:(21, 78) , energy:983
-Movement. id robot:94 point:(99, 7) , energy:987
+Did not movement. id robot:0 point:(45, 32) , energy:999
+Movement. id robot:1 point:(70, 9) , energy:998
+Did not movement. id robot:2 point:(61, 49) , energy:999
+Movement. id robot:3 point:(23, 80) , energy:998
+Movement. id robot:4 point:(24, 81) , energy:998
+Movement. id robot:5 point:(67, 80) , energy:998
+Movement. id robot:6 point:(29, 51) , energy:998
+Movement. id robot:7 point:(27, 92) , energy:998
+Did not movement. id robot:8 point:(88, 57) , energy:999
+Movement. id robot:9 point:(64, 9) , energy:998
+Movement. id robot:10 point:(13, 92) , energy:998
+Movement. id robot:11 point:(22, 22) , energy:998
+Movement. id robot:12 point:(92, 1) , energy:998
+Movement. id robot:13 point:(41, 31) , energy:998
+Attack robot. id robot:13 point:(41, 31), id target robot: 0, attack:533
+Movement. id robot:14 point:(71, 49) , energy:998
+Movement. id robot:15 point:(29, 99) , energy:998
+Movement. id robot:16 point:(0, 45) , energy:998
+Movement. id robot:17 point:(27, 12) , energy:998
+Did not movement. id robot:18 point:(98, 52) , energy:999
+Movement. id robot:19 point:(22, 45) , energy:998
+Did not movement. id robot:20 point:(99, 39) , energy:999
+Did not movement. id robot:21 point:(36, 21) , energy:999
+Movement. id robot:22 point:(30, 68) , energy:998
+Movement. id robot:23 point:(51, 43) , energy:998
+Movement. id robot:24 point:(71, 60) , energy:998
+Movement. id robot:25 point:(41, 19) , energy:998
+Movement. id robot:26 point:(30, 48) , energy:998
+Did not movement. id robot:27 point:(54, 69) , energy:827
+Did not movement. id robot:28 point:(81, 88) , energy:844
+Movement. id robot:29 point:(99, 67) , energy:924
+Movement. id robot:30 point:(99, 95) , energy:924
+Movement. id robot:31 point:(36, 46) , energy:924
+Movement. id robot:32 point:(88, 54) , energy:925
+Movement. id robot:33 point:(53, 99) , energy:925
+Movement. id robot:34 point:(90, 63) , energy:925
+Movement. id robot:35 point:(99, 99) , energy:925
+Movement. id robot:36 point:(92, 99) , energy:925
+Movement. id robot:37 point:(66, 96) , energy:926
+Did not movement. id robot:38 point:(52, 99) , energy:928
+Movement. id robot:39 point:(40, 67) , energy:927
+Movement. id robot:40 point:(85, 97) , energy:927
+Did not movement. id robot:41 point:(35, 42) , energy:928
+Movement. id robot:42 point:(99, 28) , energy:927
+Movement. id robot:43 point:(99, 19) , energy:928
+Movement. id robot:44 point:(24, 57) , energy:929
+Movement. id robot:45 point:(99, 98) , energy:929
+Movement. id robot:46 point:(99, 99) , energy:929
+Movement. id robot:47 point:(98, 73) , energy:929
+Movement. id robot:48 point:(74, 72) , energy:930
+Did not movement. id robot:49 point:(71, 24) , energy:931
+Did not movement. id robot:50 point:(52, 63) , energy:931
+Did not movement. id robot:51 point:(87, 70) , energy:932
+Movement. id robot:52 point:(66, 90) , energy:931
+Movement. id robot:53 point:(99, 49) , energy:932
+Movement. id robot:54 point:(34, 74) , energy:934
+Movement. id robot:55 point:(26, 23) , energy:942
+Movement. id robot:56 point:(38, 45) , energy:942
+Did not movement. id robot:57 point:(85, 89) , energy:944
+Did not movement. id robot:58 point:(99, 99) , energy:944
+Did not movement. id robot:59 point:(89, 74) , energy:945
+Movement. id robot:60 point:(22, 16) , energy:944
+Movement. id robot:61 point:(98, 57) , energy:944
+Movement. id robot:62 point:(18, 48) , energy:944
+Did not movement. id robot:63 point:(39, 27) , energy:945
+Did not movement. id robot:64 point:(68, 99) , energy:946
+Movement. id robot:65 point:(79, 22) , energy:945
+Did not movement. id robot:66 point:(63, 87) , energy:946
+Movement. id robot:67 point:(99, 28) , energy:945
+Movement. id robot:68 point:(61, 61) , energy:945
+Movement. id robot:69 point:(23, 87) , energy:946
+Movement. id robot:70 point:(99, 41) , energy:946
+Movement. id robot:71 point:(41, 41) , energy:946
+Movement. id robot:72 point:(94, 99) , energy:947
+Did not movement. id robot:73 point:(43, 99) , energy:948
+Movement. id robot:74 point:(27, 74) , energy:947
+Movement. id robot:75 point:(63, 39) , energy:947
+Movement. id robot:76 point:(51, 14) , energy:948
+Movement. id robot:77 point:(99, 52) , energy:948
+Did not movement. id robot:78 point:(53, 36) , energy:950
+Did not movement. id robot:79 point:(69, 18) , energy:950
+Movement. id robot:80 point:(99, 34) , energy:951
+Movement. id robot:81 point:(36, 84) , energy:959
+Movement. id robot:82 point:(49, 98) , energy:959
+Movement. id robot:83 point:(31, 36) , energy:960
+Movement. id robot:84 point:(99, 97) , energy:961
+Movement. id robot:85 point:(14, 17) , energy:961
+Did not movement. id robot:86 point:(60, 93) , energy:962
+Movement. id robot:87 point:(25, 25) , energy:962
+Did not movement. id robot:88 point:(92, 33) , energy:963
+Movement. id robot:89 point:(63, 91) , energy:962
+Movement. id robot:90 point:(33, 47) , energy:962
+Movement. id robot:91 point:(76, 85) , energy:962
+Movement. id robot:92 point:(35, 75) , energy:963
+Did not movement. id robot:93 point:(52, 68) , energy:964
+Did not movement. id robot:94 point:(28, 82) , energy:964
+Movement. id robot:95 point:(99, 32) , energy:963
+Movement. id robot:96 point:(29, 50) , energy:964
+Movement. id robot:97 point:(48, 86) , energy:964
+Movement. id robot:98 point:(13, 63) , energy:964
+Movement. id robot:99 point:(27, 81) , energy:964
+Movement. id robot:100 point:(30, 37) , energy:964
+Did not movement. id robot:101 point:(52, 99) , energy:965
+Movement. id robot:102 point:(24, 18) , energy:964
+Movement. id robot:103 point:(47, 42) , energy:965
+Movement. id robot:104 point:(34, 46) , energy:965
+Movement. id robot:105 point:(74, 96) , energy:966
+Movement. id robot:106 point:(70, 78) , energy:967
+Did not movement. id robot:107 point:(15, 16) , energy:969
+Movement. id robot:108 point:(85, 51) , energy:978
+Movement. id robot:109 point:(92, 54) , energy:978
+Movement. id robot:110 point:(58, 50) , energy:978
+Movement. id robot:111 point:(35, 78) , energy:979
+Movement. id robot:112 point:(66, 53) , energy:979
+Did not movement. id robot:113 point:(5, 74) , energy:980
+Movement. id robot:114 point:(88, 44) , energy:979
+Movement. id robot:115 point:(99, 46) , energy:979
+Did not movement. id robot:116 point:(62, 29) , energy:981
+Movement. id robot:117 point:(73, 57) , energy:980
+Did not movement. id robot:118 point:(26, 69) , energy:981
+Did not movement. id robot:119 point:(74, 51) , energy:981
+Movement. id robot:120 point:(50, 99) , energy:980
+Movement. id robot:121 point:(65, 76) , energy:980
+Did not movement. id robot:122 point:(33, 49) , energy:981
+Did not movement. id robot:123 point:(90, 91) , energy:981
+Movement. id robot:124 point:(54, 65) , energy:981
+Did not movement. id robot:125 point:(91, 87) , energy:982
+Movement. id robot:126 point:(55, 56) , energy:981
+Movement. id robot:127 point:(56, 14) , energy:981
+Movement. id robot:128 point:(58, 28) , energy:981
+Movement. id robot:129 point:(81, 92) , energy:981
+Movement. id robot:130 point:(21, 86) , energy:982
+Movement. id robot:131 point:(70, 39) , energy:982
+Movement. id robot:132 point:(99, 53) , energy:982
+Movement. id robot:133 point:(97, 31) , energy:983
+Movement. id robot:134 point:(84, 99) , energy:985
 step: 1
-Movement. id robot:0 point:(69, 61) , energy:997
-Movement. id robot:1 point:(67, 87) , energy:996
-Movement. id robot:2 point:(8, 23) , energy:996
-Movement. id robot:3 point:(19, 92) , energy:996
-Movement. id robot:4 point:(16, 22) , energy:996
-Movement. id robot:5 point:(62, 31) , energy:996
-Movement. id robot:6 point:(33, 76) , energy:996
-Movement. id robot:7 point:(20, 79) , energy:996
-Did not movement. id robot:8 point:(45, 3) , energy:997
-Did not movement. id robot:9 point:(16, 3) , energy:997
-Movement. id robot:10 point:(4, 3) , energy:996
-Movement. id robot:11 point:(63, 86) , energy:996
-Movement. id robot:12 point:(60, 45) , energy:996
-Did not movement. id robot:13 point:(98, 13) , energy:997
-Did not movement. id robot:14 point:(52, 7) , energy:997
-Movement. id robot:15 point:(86, 43) , energy:996
-Movement. id robot:16 point:(11, 3) , energy:996
-Did not movement. id robot:17 point:(6, 73) , energy:998
-Did not movement. id robot:18 point:(57, 53) , energy:997
-Movement. id robot:19 point:(39, 94) , energy:878
-Movement. id robot:20 point:(86, 63) , energy:924
-Movement. id robot:21 point:(40, 70) , energy:923
-Movement. id robot:22 point:(51, 99) , energy:924
-Movement. id robot:23 point:(27, 61) , energy:924
-Movement. id robot:24 point:(93, 99) , energy:925
-Movement. id robot:25 point:(99, 99) , energy:925
-Movement. id robot:26 point:(50, 65) , energy:925
-Movement. id robot:27 point:(99, 49) , energy:925
-Did not movement. id robot:28 point:(99, 74) , energy:927
-Did not movement. id robot:29 point:(99, 25) , energy:928
-Did not movement. id robot:30 point:(99, 67) , energy:928
-Did not movement. id robot:31 point:(87, 99) , energy:927
-Movement. id robot:32 point:(89, 52) , energy:926
-Movement. id robot:33 point:(87, 76) , energy:927
-Movement. id robot:34 point:(99, 26) , energy:928
-Movement. id robot:35 point:(99, 89) , energy:927
-Movement. id robot:36 point:(99, 99) , energy:927
-Movement. id robot:37 point:(40, 76) , energy:928
-Movement. id robot:38 point:(73, 29) , energy:929
-Did not movement. id robot:39 point:(38, 94) , energy:940
-Movement. id robot:40 point:(93, 92) , energy:941
-Movement. id robot:41 point:(19, 46) , energy:941
-Movement. id robot:42 point:(68, 35) , energy:942
-Did not movement. id robot:43 point:(21, 99) , energy:944
-Did not movement. id robot:44 point:(66, 56) , energy:943
-Movement. id robot:45 point:(99, 96) , energy:942
-Movement. id robot:46 point:(99, 83) , energy:943
-Movement. id robot:47 point:(85, 51) , energy:943
-Did not movement. id robot:48 point:(78, 21) , energy:944
-Did not movement. id robot:49 point:(57, 42) , energy:944
-Movement. id robot:50 point:(21, 50) , energy:943
-Movement. id robot:51 point:(99, 92) , energy:943
-Movement. id robot:52 point:(82, 97) , energy:944
-Movement. id robot:53 point:(52, 64) , energy:946
-Movement. id robot:54 point:(63, 60) , energy:946
-Movement. id robot:55 point:(94, 99) , energy:946
-Did not movement. id robot:56 point:(33, 14) , energy:948
-Movement. id robot:57 point:(71, 59) , energy:937
-Attack robot. id robot:57 point:(71, 59), id target robot: 0, attack:511
-Movement. id robot:58 point:(84, 52) , energy:947
-Movement. id robot:59 point:(43, 23) , energy:958
-Movement. id robot:60 point:(82, 56) , energy:959
-Movement. id robot:61 point:(49, 92) , energy:960
-Movement. id robot:62 point:(61, 72) , energy:960
-Movement. id robot:63 point:(90, 20) , energy:961
-Movement. id robot:64 point:(43, 25) , energy:960
-Movement. id robot:65 point:(92, 43) , energy:961
-Movement. id robot:66 point:(31, 42) , energy:962
-Movement. id robot:67 point:(12, 49) , energy:961
-Movement. id robot:68 point:(46, 66) , energy:963
-Movement. id robot:69 point:(28, 60) , energy:963
-Movement. id robot:70 point:(11, 57) , energy:963
-Movement. id robot:71 point:(40, 18) , energy:963
-Movement. id robot:72 point:(15, 95) , energy:964
-Movement. id robot:73 point:(52, 59) , energy:965
-Did not movement. id robot:74 point:(56, 78) , energy:966
-Did not movement. id robot:75 point:(95, 57) , energy:967
-Movement. id robot:76 point:(95, 99) , energy:967
-Did not movement. id robot:77 point:(51, 47) , energy:978
-Did not movement. id robot:78 point:(12, 89) , energy:979
-Did not movement. id robot:79 point:(91, 23) , energy:979
-Movement. id robot:80 point:(30, 67) , energy:979
-Movement. id robot:81 point:(7, 41) , energy:978
-Movement. id robot:82 point:(59, 10) , energy:978
-Movement. id robot:83 point:(41, 61) , energy:979
-Movement. id robot:84 point:(26, 76) , energy:979
-Movement. id robot:85 point:(41, 93) , energy:979
-Movement. id robot:86 point:(18, 80) , energy:979
-Movement. id robot:87 point:(54, 24) , energy:979
-Did not movement. id robot:88 point:(92, 24) , energy:980
-Did not movement. id robot:89 point:(25, 99) , energy:980
-Did not movement. id robot:90 point:(53, 85) , energy:982
-Movement. id robot:91 point:(65, 4) , energy:981
-Movement. id robot:92 point:(94, 57) , energy:981
-Did not movement. id robot:93 point:(21, 78) , energy:982
-Did not movement. id robot:94 point:(99, 7) , energy:986
+Movement. id robot:0 point:(46, 33) , energy:997
+Did not movement. id robot:1 point:(70, 9) , energy:997
+Movement. id robot:2 point:(61, 50) , energy:997
+Movement. id robot:3 point:(23, 81) , energy:996
+Did not movement. id robot:4 point:(24, 81) , energy:997
+Movement. id robot:5 point:(67, 81) , energy:996
+Movement. id robot:6 point:(30, 51) , energy:996
+Movement. id robot:7 point:(28, 92) , energy:996
+Movement. id robot:8 point:(89, 57) , energy:997
+Movement. id robot:9 point:(65, 10) , energy:996
+Did not movement. id robot:10 point:(13, 92) , energy:997
+Movement. id robot:11 point:(23, 23) , energy:996
+Movement. id robot:12 point:(93, 2) , energy:996
+Did not movement. id robot:13 point:(41, 31) , energy:987
+Attack robot. id robot:13 point:(41, 31), id target robot: 0, attack:506
+Movement. id robot:14 point:(72, 49) , energy:996
+Movement. id robot:15 point:(30, 99) , energy:996
+Movement. id robot:16 point:(1, 45) , energy:996
+Movement. id robot:17 point:(27, 13) , energy:996
+Movement. id robot:18 point:(98, 53) , energy:997
+Did not movement. id robot:19 point:(22, 45) , energy:997
+Movement. id robot:20 point:(99, 40) , energy:997
+Movement. id robot:21 point:(37, 22) , energy:997
+Movement. id robot:22 point:(31, 69) , energy:996
+Movement. id robot:23 point:(52, 43) , energy:996
+Movement. id robot:24 point:(71, 61) , energy:996
+Movement. id robot:25 point:(42, 19) , energy:996
+Movement. id robot:26 point:(30, 49) , energy:996
+Movement. id robot:27 point:(55, 69) , energy:825
+Movement. id robot:28 point:(82, 88) , energy:842
+Movement. id robot:29 point:(99, 68) , energy:922
+Movement. id robot:30 point:(99, 96) , energy:922
+Movement. id robot:31 point:(37, 47) , energy:922
+Did not movement. id robot:32 point:(88, 54) , energy:924
+Movement. id robot:33 point:(54, 99) , energy:923
+Did not movement. id robot:34 point:(90, 63) , energy:924
+Did not movement. id robot:35 point:(99, 99) , energy:924
+Movement. id robot:36 point:(93, 99) , energy:923
+Movement. id robot:37 point:(67, 96) , energy:924
+Movement. id robot:38 point:(53, 99) , energy:926
+Movement. id robot:39 point:(41, 68) , energy:925
+Did not movement. id robot:40 point:(85, 97) , energy:926
+Movement. id robot:41 point:(35, 43) , energy:926
+Did not movement. id robot:42 point:(99, 28) , energy:926
+Movement. id robot:43 point:(99, 19) , energy:926
+Did not movement. id robot:44 point:(24, 57) , energy:928
+Did not movement. id robot:45 point:(99, 98) , energy:928
+Movement. id robot:46 point:(99, 99) , energy:927
+Movement. id robot:47 point:(98, 74) , energy:927
+Did not movement. id robot:48 point:(74, 72) , energy:929
+Movement. id robot:49 point:(71, 25) , energy:929
+Movement. id robot:50 point:(52, 64) , energy:929
+Movement. id robot:51 point:(88, 71) , energy:930
+Movement. id robot:52 point:(67, 90) , energy:929
+Movement. id robot:53 point:(99, 50) , energy:930
+Movement. id robot:54 point:(35, 75) , energy:932
+Movement. id robot:55 point:(27, 23) , energy:940
+Movement. id robot:56 point:(38, 46) , energy:940
+Movement. id robot:57 point:(85, 90) , energy:942
+Movement. id robot:58 point:(99, 99) , energy:942
+Movement. id robot:59 point:(89, 75) , energy:943
+Movement. id robot:60 point:(23, 17) , energy:942
+Did not movement. id robot:61 point:(98, 57) , energy:943
+Movement. id robot:62 point:(19, 49) , energy:942
+Movement. id robot:63 point:(40, 28) , energy:943
+Did not movement. id robot:64 point:(68, 99) , energy:945
+Movement. id robot:65 point:(79, 23) , energy:943
+Movement. id robot:66 point:(63, 88) , energy:944
+Movement. id robot:67 point:(99, 28) , energy:943
+Movement. id robot:68 point:(62, 61) , energy:943
+Movement. id robot:69 point:(24, 88) , energy:944
+Movement. id robot:70 point:(99, 41) , energy:944
+Movement. id robot:71 point:(41, 42) , energy:944
+Movement. id robot:72 point:(94, 99) , energy:945
+Did not movement. id robot:73 point:(43, 99) , energy:947
+Movement. id robot:74 point:(28, 74) , energy:945
+Did not movement. id robot:75 point:(63, 39) , energy:946
+Movement. id robot:76 point:(52, 14) , energy:946
+Movement. id robot:77 point:(99, 53) , energy:946
+Movement. id robot:78 point:(54, 36) , energy:948
+Movement. id robot:79 point:(69, 19) , energy:948
+Movement. id robot:80 point:(99, 35) , energy:949
+Did not movement. id robot:81 point:(36, 84) , energy:958
+Movement. id robot:82 point:(50, 99) , energy:957
+Movement. id robot:83 point:(32, 36) , energy:958
+Movement. id robot:84 point:(99, 98) , energy:959
+Movement. id robot:85 point:(14, 18) , energy:959
+Movement. id robot:86 point:(60, 94) , energy:960
+Movement. id robot:87 point:(25, 26) , energy:960
+Movement. id robot:88 point:(93, 34) , energy:961
+Movement. id robot:89 point:(64, 91) , energy:960
+Movement. id robot:90 point:(34, 47) , energy:960
+Did not movement. id robot:91 point:(76, 85) , energy:961
+Movement. id robot:92 point:(36, 76) , energy:961
+Movement. id robot:93 point:(52, 69) , energy:962
+Movement. id robot:94 point:(29, 82) , energy:962
+Movement. id robot:95 point:(99, 33) , energy:961
+Movement. id robot:96 point:(30, 50) , energy:962
+Movement. id robot:97 point:(49, 86) , energy:962
+Did not movement. id robot:98 point:(13, 63) , energy:963
+Did not movement. id robot:99 point:(27, 81) , energy:963
+Did not movement. id robot:100 point:(30, 37) , energy:963
+Movement. id robot:101 point:(52, 99) , energy:963
+Movement. id robot:102 point:(25, 18) , energy:962
+Movement. id robot:103 point:(47, 43) , energy:963
+Movement. id robot:104 point:(34, 47) , energy:963
+Movement. id robot:105 point:(75, 96) , energy:964
+Did not movement. id robot:106 point:(70, 78) , energy:966
+Movement. id robot:107 point:(16, 17) , energy:967
+Did not movement. id robot:108 point:(85, 51) , energy:977
+Movement. id robot:109 point:(93, 55) , energy:976
+Movement. id robot:110 point:(59, 50) , energy:976
+Movement. id robot:111 point:(36, 78) , energy:977
+Movement. id robot:112 point:(67, 54) , energy:977
+Movement. id robot:113 point:(5, 75) , energy:978
+Movement. id robot:114 point:(88, 45) , energy:977
+Movement. id robot:115 point:(99, 47) , energy:977
+Movement. id robot:116 point:(63, 30) , energy:979
+Movement. id robot:117 point:(74, 57) , energy:978
+Movement. id robot:118 point:(27, 69) , energy:979
+Movement. id robot:119 point:(75, 52) , energy:979
+Did not movement. id robot:120 point:(50, 99) , energy:979
+Movement. id robot:121 point:(66, 77) , energy:978
+Movement. id robot:122 point:(34, 50) , energy:979
+Movement. id robot:123 point:(90, 92) , energy:979
+Movement. id robot:124 point:(55, 65) , energy:979
+Movement. id robot:125 point:(91, 88) , energy:980
+Movement. id robot:126 point:(56, 56) , energy:979
+Movement. id robot:127 point:(57, 14) , energy:979
+Did not movement. id robot:128 point:(58, 28) , energy:980
+Did not movement. id robot:129 point:(81, 92) , energy:980
+Did not movement. id robot:130 point:(21, 86) , energy:981
+Movement. id robot:131 point:(70, 40) , energy:980
+Movement. id robot:132 point:(99, 53) , energy:980
+Movement. id robot:133 point:(98, 32) , energy:981
+Movement. id robot:134 point:(85, 99) , energy:983
 step: 2
-Movement. id robot:0 point:(70, 62) , energy:995
-Movement. id robot:1 point:(68, 87) , energy:994
-Movement. id robot:2 point:(9, 23) , energy:994
-Movement. id robot:3 point:(20, 93) , energy:994
-Movement. id robot:4 point:(17, 23) , energy:994
-Movement. id robot:5 point:(62, 32) , energy:994
-Movement. id robot:6 point:(33, 77) , energy:994
-Did not movement. id robot:7 point:(20, 79) , energy:995
-Did not movement. id robot:8 point:(45, 3) , energy:996
-Movement. id robot:9 point:(16, 4) , energy:995
-Movement. id robot:10 point:(4, 4) , energy:994
-Movement. id robot:11 point:(64, 86) , energy:994
-Movement. id robot:12 point:(61, 45) , energy:994
-Movement. id robot:13 point:(99, 14) , energy:995
-Movement. id robot:14 point:(53, 8) , energy:995
-Movement. id robot:15 point:(87, 44) , energy:994
-Movement. id robot:16 point:(11, 4) , energy:994
-Movement. id robot:17 point:(6, 74) , energy:996
-Movement. id robot:18 point:(58, 54) , energy:995
-Movement. id robot:19 point:(40, 95) , energy:876
-Movement. id robot:20 point:(86, 64) , energy:922
-Movement. id robot:21 point:(40, 71) , energy:921
-Movement. id robot:22 point:(52, 99) , energy:922
-Movement. id robot:23 point:(28, 61) , energy:922
-Movement. id robot:24 point:(93, 99) , energy:923
-Movement. id robot:25 point:(99, 99) , energy:923
-Movement. id robot:26 point:(51, 65) , energy:923
-Movement. id robot:27 point:(99, 49) , energy:923
-Movement. id robot:28 point:(99, 74) , energy:925
-Did not movement. id robot:29 point:(99, 25) , energy:927
-Did not movement. id robot:30 point:(99, 67) , energy:927
-Movement. id robot:31 point:(88, 99) , energy:925
-Movement. id robot:32 point:(90, 53) , energy:924
-Did not movement. id robot:33 point:(87, 76) , energy:926
-Movement. id robot:34 point:(99, 27) , energy:926
-Movement. id robot:35 point:(99, 90) , energy:925
-Movement. id robot:36 point:(99, 99) , energy:925
-Movement. id robot:37 point:(41, 76) , energy:926
-Movement. id robot:38 point:(74, 29) , energy:927
-Did not movement. id robot:39 point:(38, 94) , energy:939
-Movement. id robot:40 point:(94, 92) , energy:939
-Did not movement. id robot:41 point:(19, 46) , energy:940
-Did not movement. id robot:42 point:(68, 35) , energy:941
-Movement. id robot:43 point:(21, 99) , energy:942
-Movement. id robot:44 point:(66, 57) , energy:941
-Did not movement. id robot:45 point:(99, 96) , energy:941
-Did not movement. id robot:46 point:(99, 83) , energy:942
-Movement. id robot:47 point:(86, 52) , energy:941
-Movement. id robot:48 point:(79, 22) , energy:942
-Did not movement. id robot:49 point:(57, 42) , energy:943
-Did not movement. id robot:50 point:(21, 50) , energy:942
-Movement. id robot:51 point:(99, 92) , energy:941
-Movement. id robot:52 point:(83, 97) , energy:942
-Movement. id robot:53 point:(52, 65) , energy:944
-Movement. id robot:54 point:(63, 61) , energy:944
-Did not movement. id robot:55 point:(94, 99) , energy:945
-Did not movement. id robot:56 point:(33, 14) , energy:947
-Movement. id robot:57 point:(71, 60) , energy:925
-Attack robot. id robot:57 point:(71, 60), id target robot: 0, attack:483
-Movement. id robot:58 point:(85, 52) , energy:945
-Movement. id robot:59 point:(44, 24) , energy:956
-Movement. id robot:60 point:(83, 57) , energy:957
-Movement. id robot:61 point:(50, 93) , energy:958
-Movement. id robot:62 point:(62, 73) , energy:958
-Movement. id robot:63 point:(91, 21) , energy:959
-Movement. id robot:64 point:(43, 26) , energy:958
-Movement. id robot:65 point:(92, 44) , energy:959
-Movement. id robot:66 point:(32, 42) , energy:960
-Movement. id robot:67 point:(13, 49) , energy:959
-Movement. id robot:68 point:(46, 67) , energy:961
-Movement. id robot:69 point:(28, 61) , energy:961
-Movement. id robot:70 point:(11, 58) , energy:961
-Movement. id robot:71 point:(41, 18) , energy:961
-Movement. id robot:72 point:(16, 95) , energy:962
-Did not movement. id robot:73 point:(52, 59) , energy:964
-Did not movement. id robot:74 point:(56, 78) , energy:965
-Movement. id robot:75 point:(96, 58) , energy:965
-Movement. id robot:76 point:(96, 99) , energy:965
-Movement. id robot:77 point:(52, 48) , energy:976
-Did not movement. id robot:78 point:(12, 89) , energy:978
-Did not movement. id robot:79 point:(91, 23) , energy:978
-Movement. id robot:80 point:(30, 68) , energy:977
-Movement. id robot:81 point:(7, 42) , energy:976
-Movement. id robot:82 point:(60, 10) , energy:976
-Movement. id robot:83 point:(42, 61) , energy:977
-Did not movement. id robot:84 point:(26, 76) , energy:978
-Did not movement. id robot:85 point:(41, 93) , energy:978
-Movement. id robot:86 point:(18, 81) , energy:977
-Movement. id robot:87 point:(54, 25) , energy:977
-Movement. id robot:88 point:(92, 25) , energy:978
-Did not movement. id robot:89 point:(25, 99) , energy:979
-Did not movement. id robot:90 point:(53, 85) , energy:981
-Movement. id robot:91 point:(66, 5) , energy:979
-Movement. id robot:92 point:(95, 58) , energy:979
-Did not movement. id robot:93 point:(21, 78) , energy:981
-Did not movement. id robot:94 point:(99, 7) , energy:985
+Movement. id robot:0 point:(46, 34) , energy:995
+Movement. id robot:1 point:(70, 10) , energy:995
+Did not movement. id robot:2 point:(61, 50) , energy:996
+Movement. id robot:3 point:(24, 82) , energy:994
+Movement. id robot:4 point:(25, 81) , energy:995
+Movement. id robot:5 point:(68, 82) , energy:994
+Movement. id robot:6 point:(30, 52) , energy:994
+Movement. id robot:7 point:(28, 93) , energy:994
+Did not movement. id robot:8 point:(89, 57) , energy:996
+Movement. id robot:9 point:(65, 11) , energy:994
+Movement. id robot:10 point:(14, 92) , energy:995
+Movement. id robot:11 point:(24, 24) , energy:994
+Movement. id robot:12 point:(94, 3) , energy:994
+Movement. id robot:13 point:(42, 32) , energy:975
+Attack robot. id robot:13 point:(42, 32), id target robot: 0, attack:600
+Movement. id robot:14 point:(72, 50) , energy:994
+Movement. id robot:15 point:(30, 99) , energy:994
+Movement. id robot:16 point:(2, 45) , energy:994
+Movement. id robot:17 point:(27, 14) , energy:994
+Movement. id robot:18 point:(98, 54) , energy:995
+Movement. id robot:19 point:(23, 45) , energy:995
+Did not movement. id robot:20 point:(99, 40) , energy:996
+Movement. id robot:21 point:(38, 22) , energy:995
+Did not movement. id robot:22 point:(31, 69) , energy:995
+Movement. id robot:23 point:(52, 44) , energy:994
+Movement. id robot:24 point:(71, 62) , energy:994
+Did not movement. id robot:25 point:(42, 19) , energy:995
+Movement. id robot:26 point:(31, 50) , energy:994
+Movement. id robot:27 point:(56, 69) , energy:823
+Movement. id robot:28 point:(83, 88) , energy:840
+Did not movement. id robot:29 point:(99, 68) , energy:921
+Movement. id robot:30 point:(99, 97) , energy:920
+Movement. id robot:31 point:(37, 48) , energy:920
+Did not movement. id robot:32 point:(88, 54) , energy:923
+Movement. id robot:33 point:(55, 99) , energy:921
+Did not movement. id robot:34 point:(90, 63) , energy:923
+Did not movement. id robot:35 point:(99, 99) , energy:923
+Movement. id robot:36 point:(94, 99) , energy:921
+Movement. id robot:37 point:(67, 97) , energy:922
+Movement. id robot:38 point:(54, 99) , energy:924
+Movement. id robot:39 point:(42, 68) , energy:923
+Movement. id robot:40 point:(86, 97) , energy:924
+Movement. id robot:41 point:(36, 43) , energy:924
+Movement. id robot:42 point:(99, 29) , energy:924
+Movement. id robot:43 point:(99, 20) , energy:924
+Movement. id robot:44 point:(25, 58) , energy:926
+Movement. id robot:45 point:(99, 99) , energy:926
+Movement. id robot:46 point:(99, 99) , energy:925
+Did not movement. id robot:47 point:(98, 74) , energy:926
+Did not movement. id robot:48 point:(74, 72) , energy:928
+Movement. id robot:49 point:(71, 26) , energy:927
+Movement. id robot:50 point:(53, 64) , energy:927
+Movement. id robot:51 point:(89, 71) , energy:928
+Movement. id robot:52 point:(68, 90) , energy:927
+Movement. id robot:53 point:(99, 51) , energy:928
+Did not movement. id robot:54 point:(35, 75) , energy:931
+Movement. id robot:55 point:(27, 24) , energy:938
+Did not movement. id robot:56 point:(38, 46) , energy:939
+Movement. id robot:57 point:(86, 90) , energy:940
+Movement. id robot:58 point:(99, 99) , energy:940
+Movement. id robot:59 point:(90, 75) , energy:941
+Movement. id robot:60 point:(23, 18) , energy:940
+Movement. id robot:61 point:(98, 58) , energy:941
+Did not movement. id robot:62 point:(19, 49) , energy:941
+Movement. id robot:63 point:(40, 29) , energy:941
+Did not movement. id robot:64 point:(68, 99) , energy:944
+Did not movement. id robot:65 point:(79, 23) , energy:942
+Movement. id robot:66 point:(64, 89) , energy:942
+Movement. id robot:67 point:(99, 29) , energy:941
+Movement. id robot:68 point:(62, 62) , energy:941
+Movement. id robot:69 point:(25, 88) , energy:942
+Movement. id robot:70 point:(99, 42) , energy:942
+Movement. id robot:71 point:(41, 43) , energy:942
+Movement. id robot:72 point:(95, 99) , energy:943
+Movement. id robot:73 point:(43, 99) , energy:945
+Movement. id robot:74 point:(29, 75) , energy:943
+Movement. id robot:75 point:(64, 40) , energy:944
+Movement. id robot:76 point:(53, 15) , energy:944
+Did not movement. id robot:77 point:(99, 53) , energy:945
+Movement. id robot:78 point:(54, 37) , energy:946
+Movement. id robot:79 point:(69, 20) , energy:946
+Movement. id robot:80 point:(99, 35) , energy:947
+Movement. id robot:81 point:(37, 84) , energy:956
+Movement. id robot:82 point:(51, 99) , energy:955
+Movement. id robot:83 point:(33, 37) , energy:956
+Did not movement. id robot:84 point:(99, 98) , energy:958
+Movement. id robot:85 point:(15, 19) , energy:957
+Movement. id robot:86 point:(61, 95) , energy:958
+Did not movement. id robot:87 point:(25, 26) , energy:959
+Movement. id robot:88 point:(94, 34) , energy:959
+Did not movement. id robot:89 point:(64, 91) , energy:959
+Movement. id robot:90 point:(35, 47) , energy:958
+Movement. id robot:91 point:(76, 86) , energy:959
+Did not movement. id robot:92 point:(36, 76) , energy:960
+Movement. id robot:93 point:(52, 70) , energy:960
+Did not movement. id robot:94 point:(29, 82) , energy:961
+Did not movement. id robot:95 point:(99, 33) , energy:960
+Movement. id robot:96 point:(31, 50) , energy:960
+Movement. id robot:97 point:(50, 86) , energy:960
+Movement. id robot:98 point:(13, 64) , energy:961
+Movement. id robot:99 point:(28, 82) , energy:961
+Movement. id robot:100 point:(31, 38) , energy:961
+Movement. id robot:101 point:(52, 99) , energy:961
+Movement. id robot:102 point:(26, 19) , energy:960
+Movement. id robot:103 point:(48, 44) , energy:961
+Movement. id robot:104 point:(35, 47) , energy:961
+Movement. id robot:105 point:(76, 97) , energy:962
+Did not movement. id robot:106 point:(70, 78) , energy:965
+Movement. id robot:107 point:(16, 18) , energy:965
+Did not movement. id robot:108 point:(85, 51) , energy:976
+Did not movement. id robot:109 point:(93, 55) , energy:975
+Movement. id robot:110 point:(60, 50) , energy:974
+Movement. id robot:111 point:(37, 79) , energy:975
+Did not movement. id robot:112 point:(67, 54) , energy:976
+Movement. id robot:113 point:(6, 76) , energy:976
+Movement. id robot:114 point:(89, 46) , energy:975
+Did not movement. id robot:115 point:(99, 47) , energy:976
+Movement. id robot:116 point:(64, 30) , energy:977
+Did not movement. id robot:117 point:(74, 57) , energy:977
+Movement. id robot:118 point:(28, 69) , energy:977
+Movement. id robot:119 point:(76, 52) , energy:977
+Movement. id robot:120 point:(51, 99) , energy:977
+Movement. id robot:121 point:(66, 78) , energy:976
+Movement. id robot:122 point:(34, 51) , energy:977
+Did not movement. id robot:123 point:(90, 92) , energy:978
+Movement. id robot:124 point:(56, 66) , energy:977
+Movement. id robot:125 point:(92, 88) , energy:978
+Movement. id robot:126 point:(56, 57) , energy:977
+Movement. id robot:127 point:(57, 15) , energy:977
+Movement. id robot:128 point:(58, 29) , energy:978
+Movement. id robot:129 point:(81, 93) , energy:978
+Movement. id robot:130 point:(22, 87) , energy:979
+Did not movement. id robot:131 point:(70, 40) , energy:979
+Did not movement. id robot:132 point:(99, 53) , energy:979
+Movement. id robot:133 point:(99, 33) , energy:979
+Did not movement. id robot:134 point:(85, 99) , energy:982
 step: 3
-Movement. id robot:0 point:(71, 62) , energy:993
-Movement. id robot:1 point:(68, 88) , energy:992
-Movement. id robot:2 point:(9, 24) , energy:992
-Movement. id robot:3 point:(21, 93) , energy:992
-Movement. id robot:4 point:(18, 23) , energy:992
-Movement. id robot:5 point:(62, 33) , energy:992
-Movement. id robot:6 point:(33, 78) , energy:992
-Movement. id robot:7 point:(21, 80) , energy:993
-Movement. id robot:8 point:(46, 4) , energy:994
-Movement. id robot:9 point:(17, 5) , energy:993
-Movement. id robot:10 point:(5, 5) , energy:992
-Movement. id robot:11 point:(65, 87) , energy:992
-Movement. id robot:12 point:(62, 46) , energy:992
-Movement. id robot:13 point:(99, 14) , energy:993
-Movement. id robot:14 point:(54, 8) , energy:993
-Movement. id robot:15 point:(87, 45) , energy:992
-Did not movement. id robot:16 point:(11, 4) , energy:993
-Did not movement. id robot:17 point:(6, 74) , energy:995
-Movement. id robot:18 point:(58, 55) , energy:993
-Movement. id robot:19 point:(40, 96) , energy:874
-Movement. id robot:20 point:(87, 65) , energy:920
-Movement. id robot:21 point:(41, 72) , energy:919
-Movement. id robot:22 point:(53, 99) , energy:920
-Movement. id robot:23 point:(29, 61) , energy:920
-Movement. id robot:24 point:(94, 99) , energy:921
-Movement. id robot:25 point:(99, 99) , energy:921
-Movement. id robot:26 point:(52, 66) , energy:921
-Did not movement. id robot:27 point:(99, 49) , energy:922
-Did not movement. id robot:28 point:(99, 74) , energy:924
-Movement. id robot:29 point:(99, 26) , energy:925
-Movement. id robot:30 point:(99, 68) , energy:925
-Did not movement. id robot:31 point:(88, 99) , energy:924
-Did not movement. id robot:32 point:(90, 53) , energy:923
-Did not movement. id robot:33 point:(87, 76) , energy:925
-Movement. id robot:34 point:(99, 27) , energy:924
-Movement. id robot:35 point:(99, 90) , energy:923
-Movement. id robot:36 point:(99, 99) , energy:923
-Movement. id robot:37 point:(42, 76) , energy:924
-Movement. id robot:38 point:(75, 29) , energy:925
-Did not movement. id robot:39 point:(38, 94) , energy:938
-Movement. id robot:40 point:(95, 92) , energy:937
-Movement. id robot:41 point:(19, 47) , energy:938
-Movement. id robot:42 point:(68, 36) , energy:939
-Did not movement. id robot:43 point:(21, 99) , energy:941
-Did not movement. id robot:44 point:(66, 57) , energy:940
-Movement. id robot:45 point:(99, 97) , energy:939
-Did not movement. id robot:46 point:(99, 83) , energy:941
-Did not movement. id robot:47 point:(86, 52) , energy:940
-Movement. id robot:48 point:(80, 22) , energy:940
-Movement. id robot:49 point:(58, 42) , energy:941
-Movement. id robot:50 point:(21, 51) , energy:940
-Movement. id robot:51 point:(99, 92) , energy:939
-Movement. id robot:52 point:(84, 97) , energy:940
-Movement. id robot:53 point:(53, 65) , energy:942
-Movement. id robot:54 point:(63, 62) , energy:942
-Movement. id robot:55 point:(94, 99) , energy:943
-Movement. id robot:56 point:(34, 15) , energy:945
-Movement. id robot:57 point:(72, 61) , energy:913
-Attack robot. id robot:57 point:(72, 61), id target robot: 0, attack:468
-Movement. id robot:58 point:(85, 53) , energy:943
-Movement. id robot:59 point:(45, 25) , energy:954
-Movement. id robot:60 point:(84, 58) , energy:955
-Movement. id robot:61 point:(51, 93) , energy:956
-Movement. id robot:62 point:(63, 73) , energy:956
-Movement. id robot:63 point:(92, 22) , energy:957
-Movement. id robot:64 point:(44, 27) , energy:956
-Did not movement. id robot:65 point:(92, 44) , energy:958
-Did not movement. id robot:66 point:(32, 42) , energy:959
-Movement. id robot:67 point:(13, 50) , energy:957
-Movement. id robot:68 point:(46, 68) , energy:959
-Movement. id robot:69 point:(29, 62) , energy:959
-Movement. id robot:70 point:(12, 58) , energy:959
-Movement. id robot:71 point:(42, 18) , energy:959
-Movement. id robot:72 point:(17, 96) , energy:960
-Movement. id robot:73 point:(53, 60) , energy:962
-Did not movement. id robot:74 point:(56, 78) , energy:964
-Movement. id robot:75 point:(97, 59) , energy:963
-Movement. id robot:76 point:(97, 99) , energy:963
-Did not movement. id robot:77 point:(52, 48) , energy:975
-Did not movement. id robot:78 point:(12, 89) , energy:977
-Movement. id robot:79 point:(92, 23) , energy:976
-Movement. id robot:80 point:(31, 68) , energy:975
-Movement. id robot:81 point:(7, 43) , energy:974
-Movement. id robot:82 point:(60, 11) , energy:974
-Movement. id robot:83 point:(43, 61) , energy:975
-Movement. id robot:84 point:(27, 76) , energy:976
-Movement. id robot:85 point:(41, 94) , energy:976
-Movement. id robot:86 point:(18, 82) , energy:975
-Did not movement. id robot:87 point:(54, 25) , energy:976
-Did not movement. id robot:88 point:(92, 25) , energy:977
-Did not movement. id robot:89 point:(25, 99) , energy:978
-Did not movement. id robot:90 point:(53, 85) , energy:980
-Did not movement. id robot:91 point:(66, 5) , energy:978
-Movement. id robot:92 point:(96, 58) , energy:977
-Movement. id robot:93 point:(22, 78) , energy:979
-Movement. id robot:94 point:(99, 8) , energy:983
+Movement. id robot:0 point:(46, 35) , energy:993
+Movement. id robot:1 point:(71, 10) , energy:993
+Movement. id robot:2 point:(62, 51) , energy:994
+Movement. id robot:3 point:(25, 82) , energy:992
+Movement. id robot:4 point:(26, 82) , energy:993
+Did not movement. id robot:5 point:(68, 82) , energy:993
+Did not movement. id robot:6 point:(30, 52) , energy:993
+Did not movement. id robot:7 point:(28, 93) , energy:993
+Movement. id robot:8 point:(89, 58) , energy:994
+Movement. id robot:9 point:(66, 11) , energy:992
+Movement. id robot:10 point:(14, 93) , energy:993
+Movement. id robot:11 point:(24, 25) , energy:992
+Movement. id robot:12 point:(95, 3) , energy:992
+Movement. id robot:13 point:(42, 33) , energy:963
+Attack robot. id robot:13 point:(42, 33), id target robot: 0, attack:544
+Did not movement. id robot:14 point:(72, 50) , energy:993
+Movement. id robot:15 point:(31, 99) , energy:992
+Movement. id robot:16 point:(3, 45) , energy:992
+Movement. id robot:17 point:(28, 14) , energy:992
+Movement. id robot:18 point:(99, 55) , energy:993
+Movement. id robot:19 point:(23, 46) , energy:993
+Movement. id robot:20 point:(99, 41) , energy:994
+Movement. id robot:21 point:(38, 23) , energy:993
+Movement. id robot:22 point:(32, 70) , energy:993
+Did not movement. id robot:23 point:(52, 44) , energy:993
+Did not movement. id robot:24 point:(71, 62) , energy:993
+Movement. id robot:25 point:(43, 20) , energy:993
+Movement. id robot:26 point:(32, 51) , energy:992
+Movement. id robot:27 point:(56, 70) , energy:821
+Movement. id robot:28 point:(83, 89) , energy:838
+Movement. id robot:29 point:(99, 68) , energy:919
+Movement. id robot:30 point:(99, 98) , energy:918
+Movement. id robot:31 point:(38, 48) , energy:918
+Movement. id robot:32 point:(89, 55) , energy:921
+Did not movement. id robot:33 point:(55, 99) , energy:920
+Movement. id robot:34 point:(90, 64) , energy:921
+Movement. id robot:35 point:(99, 99) , energy:921
+Movement. id robot:36 point:(95, 99) , energy:919
+Did not movement. id robot:37 point:(67, 97) , energy:921
+Movement. id robot:38 point:(55, 99) , energy:922
+Did not movement. id robot:39 point:(42, 68) , energy:922
+Did not movement. id robot:40 point:(86, 97) , energy:923
+Movement. id robot:41 point:(37, 44) , energy:922
+Movement. id robot:42 point:(99, 29) , energy:922
+Movement. id robot:43 point:(99, 21) , energy:922
+Movement. id robot:44 point:(25, 59) , energy:924
+Did not movement. id robot:45 point:(99, 99) , energy:925
+Movement. id robot:46 point:(99, 99) , energy:923
+Did not movement. id robot:47 point:(98, 74) , energy:925
+Movement. id robot:48 point:(75, 73) , energy:926
+Movement. id robot:49 point:(72, 26) , energy:925
+Movement. id robot:50 point:(54, 65) , energy:925
+Movement. id robot:51 point:(89, 72) , energy:926
+Movement. id robot:52 point:(69, 90) , energy:925
+Movement. id robot:53 point:(99, 52) , energy:926
+Movement. id robot:54 point:(36, 75) , energy:929
+Movement. id robot:55 point:(28, 24) , energy:936
+Movement. id robot:56 point:(39, 47) , energy:937
+Movement. id robot:57 point:(87, 90) , energy:938
+Did not movement. id robot:58 point:(99, 99) , energy:939
+Movement. id robot:59 point:(90, 76) , energy:939
+Did not movement. id robot:60 point:(23, 18) , energy:939
+Movement. id robot:61 point:(99, 59) , energy:939
+Movement. id robot:62 point:(20, 49) , energy:939
+Did not movement. id robot:63 point:(40, 29) , energy:940
+Did not movement. id robot:64 point:(68, 99) , energy:943
+Movement. id robot:65 point:(80, 23) , energy:940
+Did not movement. id robot:66 point:(64, 89) , energy:941
+Movement. id robot:67 point:(99, 30) , energy:939
+Did not movement. id robot:68 point:(62, 62) , energy:940
+Did not movement. id robot:69 point:(25, 88) , energy:941
+Movement. id robot:70 point:(99, 43) , energy:940
+Movement. id robot:71 point:(41, 44) , energy:940
+Movement. id robot:72 point:(96, 99) , energy:941
+Movement. id robot:73 point:(44, 99) , energy:943
+Did not movement. id robot:74 point:(29, 75) , energy:942
+Did not movement. id robot:75 point:(64, 40) , energy:943
+Movement. id robot:76 point:(54, 16) , energy:942
+Movement. id robot:77 point:(99, 54) , energy:943
+Movement. id robot:78 point:(55, 38) , energy:944
+Movement. id robot:79 point:(69, 21) , energy:944
+Movement. id robot:80 point:(99, 36) , energy:945
+Did not movement. id robot:81 point:(37, 84) , energy:955
+Movement. id robot:82 point:(51, 99) , energy:953
+Movement. id robot:83 point:(34, 37) , energy:954
+Movement. id robot:84 point:(99, 98) , energy:956
+Movement. id robot:85 point:(15, 20) , energy:955
+Movement. id robot:86 point:(62, 96) , energy:956
+Movement. id robot:87 point:(26, 27) , energy:957
+Did not movement. id robot:88 point:(94, 34) , energy:958
+Movement. id robot:89 point:(64, 92) , energy:957
+Did not movement. id robot:90 point:(35, 47) , energy:957
+Movement. id robot:91 point:(77, 87) , energy:957
+Movement. id robot:92 point:(37, 76) , energy:958
+Movement. id robot:93 point:(53, 70) , energy:958
+Movement. id robot:94 point:(30, 82) , energy:959
+Movement. id robot:95 point:(99, 33) , energy:958
+Did not movement. id robot:96 point:(31, 50) , energy:959
+Did not movement. id robot:97 point:(50, 86) , energy:959
+Movement. id robot:98 point:(13, 65) , energy:959
+Did not movement. id robot:99 point:(28, 82) , energy:960
+Movement. id robot:100 point:(32, 39) , energy:959
+Movement. id robot:101 point:(52, 99) , energy:959
+Movement. id robot:102 point:(26, 20) , energy:958
+Movement. id robot:103 point:(49, 44) , energy:959
+Movement. id robot:104 point:(35, 48) , energy:959
+Did not movement. id robot:105 point:(76, 97) , energy:961
+Movement. id robot:106 point:(70, 79) , energy:963
+Movement. id robot:107 point:(17, 19) , energy:963
+Movement. id robot:108 point:(86, 52) , energy:974
+Movement. id robot:109 point:(94, 56) , energy:973
+Movement. id robot:110 point:(61, 51) , energy:972
+Did not movement. id robot:111 point:(37, 79) , energy:974
+Movement. id robot:112 point:(67, 55) , energy:974
+Movement. id robot:113 point:(6, 77) , energy:974
+Movement. id robot:114 point:(90, 46) , energy:973
+Movement. id robot:115 point:(99, 48) , energy:974
+Movement. id robot:116 point:(64, 31) , energy:975
+Movement. id robot:117 point:(75, 58) , energy:975
+Did not movement. id robot:118 point:(28, 69) , energy:976
+Did not movement. id robot:119 point:(76, 52) , energy:976
+Movement. id robot:120 point:(52, 99) , energy:975
+Did not movement. id robot:121 point:(66, 78) , energy:975
+Did not movement. id robot:122 point:(34, 51) , energy:976
+Movement. id robot:123 point:(91, 92) , energy:976
+Did not movement. id robot:124 point:(56, 66) , energy:976
+Movement. id robot:125 point:(93, 88) , energy:976
+Movement. id robot:126 point:(57, 58) , energy:975
+Did not movement. id robot:127 point:(57, 15) , energy:976
+Did not movement. id robot:128 point:(58, 29) , energy:977
+Movement. id robot:129 point:(81, 94) , energy:976
+Did not movement. id robot:130 point:(22, 87) , energy:978
+Movement. id robot:131 point:(71, 40) , energy:977
+Movement. id robot:132 point:(99, 53) , energy:977
+Movement. id robot:133 point:(99, 34) , energy:977
+Movement. id robot:134 point:(86, 99) , energy:980
 step: 4
-Movement. id robot:0 point:(72, 62) , energy:991
-Movement. id robot:1 point:(69, 88) , energy:990
-Movement. id robot:2 point:(9, 25) , energy:990
-Movement. id robot:3 point:(21, 94) , energy:990
-Movement. id robot:4 point:(18, 24) , energy:990
-Movement. id robot:5 point:(62, 34) , energy:990
-Movement. id robot:6 point:(33, 79) , energy:990
-Movement. id robot:7 point:(21, 81) , energy:991
-Movement. id robot:8 point:(47, 5) , energy:992
-Movement. id robot:9 point:(18, 6) , energy:991
-Movement. id robot:10 point:(6, 6) , energy:990
-Movement. id robot:11 point:(66, 87) , energy:990
-Movement. id robot:12 point:(63, 46) , energy:990
-Movement. id robot:13 point:(99, 15) , energy:991
-Movement. id robot:14 point:(55, 9) , energy:991
-Did not movement. id robot:15 point:(87, 45) , energy:991
-Did not movement. id robot:16 point:(11, 4) , energy:992
-Movement. id robot:17 point:(6, 75) , energy:993
-Movement. id robot:18 point:(58, 56) , energy:991
-Movement. id robot:19 point:(40, 97) , energy:872
-Movement. id robot:20 point:(87, 66) , energy:918
-Movement. id robot:21 point:(41, 73) , energy:917
-Movement. id robot:22 point:(54, 99) , energy:918
-Movement. id robot:23 point:(30, 61) , energy:918
-Movement. id robot:24 point:(95, 99) , energy:919
-Movement. id robot:25 point:(99, 99) , energy:919
-Movement. id robot:26 point:(53, 66) , energy:919
-Movement. id robot:27 point:(99, 49) , energy:920
-Movement. id robot:28 point:(99, 75) , energy:922
-Movement. id robot:29 point:(99, 27) , energy:923
-Did not movement. id robot:30 point:(99, 68) , energy:924
-Did not movement. id robot:31 point:(88, 99) , energy:923
-Movement. id robot:32 point:(91, 53) , energy:921
-Movement. id robot:33 point:(88, 76) , energy:923
-Movement. id robot:34 point:(99, 28) , energy:922
-Movement. id robot:35 point:(99, 91) , energy:921
-Movement. id robot:36 point:(99, 99) , energy:921
-Movement. id robot:37 point:(43, 76) , energy:922
-Movement. id robot:38 point:(75, 30) , energy:923
-Did not movement. id robot:39 point:(38, 94) , energy:937
-Movement. id robot:40 point:(96, 92) , energy:935
-Movement. id robot:41 point:(20, 47) , energy:936
-Did not movement. id robot:42 point:(68, 36) , energy:938
-Did not movement. id robot:43 point:(21, 99) , energy:940
-Did not movement. id robot:44 point:(66, 57) , energy:939
-Did not movement. id robot:45 point:(99, 97) , energy:938
-Did not movement. id robot:46 point:(99, 83) , energy:940
-Did not movement. id robot:47 point:(86, 52) , energy:939
-Did not movement. id robot:48 point:(80, 22) , energy:939
-Movement. id robot:49 point:(59, 43) , energy:939
-Movement. id robot:50 point:(22, 52) , energy:938
-Movement. id robot:51 point:(99, 92) , energy:937
-Movement. id robot:52 point:(85, 97) , energy:938
-Movement. id robot:53 point:(53, 66) , energy:940
-Movement. id robot:54 point:(63, 63) , energy:940
-Movement. id robot:55 point:(94, 99) , energy:941
-Did not movement. id robot:56 point:(34, 15) , energy:944
-Did not movement. id robot:57 point:(72, 61) , energy:902
-Attack robot. id robot:57 point:(72, 61), id target robot: 0, attack:442
-Movement. id robot:58 point:(86, 54) , energy:941
-Did not movement. id robot:59 point:(45, 25) , energy:953
-Did not movement. id robot:60 point:(84, 58) , energy:954
-Movement. id robot:61 point:(52, 94) , energy:954
-Movement. id robot:62 point:(64, 74) , energy:954
-Movement. id robot:63 point:(92, 23) , energy:955
-Movement. id robot:64 point:(44, 28) , energy:954
-Movement. id robot:65 point:(93, 45) , energy:956
-Movement. id robot:66 point:(33, 43) , energy:957
-Movement. id robot:67 point:(13, 51) , energy:955
-Movement. id robot:68 point:(46, 69) , energy:957
-Movement. id robot:69 point:(30, 62) , energy:957
-Movement. id robot:70 point:(13, 58) , energy:957
-Movement. id robot:71 point:(43, 19) , energy:957
-Movement. id robot:72 point:(18, 97) , energy:958
-Movement. id robot:73 point:(54, 60) , energy:960
-Movement. id robot:74 point:(57, 78) , energy:962
-Movement. id robot:75 point:(98, 60) , energy:961
-Movement. id robot:76 point:(98, 99) , energy:961
-Movement. id robot:77 point:(53, 49) , energy:973
-Did not movement. id robot:78 point:(12, 89) , energy:976
-Did not movement. id robot:79 point:(92, 23) , energy:975
-Did not movement. id robot:80 point:(31, 68) , energy:974
-Did not movement. id robot:81 point:(7, 43) , energy:973
-Movement. id robot:82 point:(60, 12) , energy:972
-Movement. id robot:83 point:(44, 61) , energy:973
-Movement. id robot:84 point:(28, 76) , energy:974
-Movement. id robot:85 point:(42, 94) , energy:974
-Movement. id robot:86 point:(18, 83) , energy:973
-Movement. id robot:87 point:(54, 26) , energy:974
-Movement. id robot:88 point:(93, 25) , energy:975
-Movement. id robot:89 point:(26, 99) , energy:976
-Did not movement. id robot:90 point:(53, 85) , energy:979
-Did not movement. id robot:91 point:(66, 5) , energy:977
-Did not movement. id robot:92 point:(96, 58) , energy:976
-Did not movement. id robot:93 point:(22, 78) , energy:978
-Did not movement. id robot:94 point:(99, 8) , energy:982
+Movement. id robot:0 point:(47, 35) , energy:991
+Movement. id robot:1 point:(72, 10) , energy:991
+Movement. id robot:2 point:(62, 52) , energy:992
+Movement. id robot:3 point:(26, 83) , energy:990
+Movement. id robot:4 point:(27, 83) , energy:991
+Movement. id robot:5 point:(69, 83) , energy:991
+Movement. id robot:6 point:(31, 53) , energy:991
+Did not movement. id robot:7 point:(28, 93) , energy:992
+Movement. id robot:8 point:(89, 59) , energy:992
+Did not movement. id robot:9 point:(66, 11) , energy:991
+Movement. id robot:10 point:(14, 94) , energy:991
+Movement. id robot:11 point:(24, 26) , energy:990
+Movement. id robot:12 point:(96, 4) , energy:990
+Did not movement. id robot:13 point:(42, 33) , energy:952
+Attack robot. id robot:13 point:(42, 33), id target robot: 0, attack:422
+Movement. id robot:14 point:(73, 51) , energy:991
+Did not movement. id robot:15 point:(31, 99) , energy:991
+Movement. id robot:16 point:(4, 45) , energy:990
+Did not movement. id robot:17 point:(28, 14) , energy:991
+Did not movement. id robot:18 point:(99, 55) , energy:992
+Movement. id robot:19 point:(24, 46) , energy:991
+Movement. id robot:20 point:(99, 42) , energy:992
+Movement. id robot:21 point:(39, 24) , energy:991
+Movement. id robot:22 point:(33, 70) , energy:991
+Movement. id robot:23 point:(52, 45) , energy:991
+Movement. id robot:24 point:(72, 62) , energy:991
+Movement. id robot:25 point:(44, 21) , energy:991
+Movement. id robot:26 point:(33, 51) , energy:990
+Movement. id robot:27 point:(56, 71) , energy:819
+Movement. id robot:28 point:(84, 89) , energy:836
+Movement. id robot:29 point:(99, 69) , energy:917
+Movement. id robot:30 point:(99, 99) , energy:916
+Did not movement. id robot:31 point:(38, 48) , energy:917
+Did not movement. id robot:32 point:(89, 55) , energy:920
+Movement. id robot:33 point:(56, 99) , energy:918
+Did not movement. id robot:34 point:(90, 64) , energy:920
+Movement. id robot:35 point:(99, 99) , energy:919
+Movement. id robot:36 point:(95, 99) , energy:917
+Movement. id robot:37 point:(67, 98) , energy:919
+Movement. id robot:38 point:(55, 99) , energy:920
+Did not movement. id robot:39 point:(42, 68) , energy:921
+Did not movement. id robot:40 point:(86, 97) , energy:922
+Did not movement. id robot:41 point:(37, 44) , energy:921
+Did not movement. id robot:42 point:(99, 29) , energy:921
+Movement. id robot:43 point:(99, 21) , energy:920
+Movement. id robot:44 point:(26, 59) , energy:922
+Movement. id robot:45 point:(99, 99) , energy:923
+Did not movement. id robot:46 point:(99, 99) , energy:922
+Did not movement. id robot:47 point:(98, 74) , energy:924
+Did not movement. id robot:48 point:(75, 73) , energy:925
+Movement. id robot:49 point:(73, 27) , energy:923
+Movement. id robot:50 point:(55, 65) , energy:923
+Movement. id robot:51 point:(90, 73) , energy:924
+Movement. id robot:52 point:(70, 90) , energy:923
+Movement. id robot:53 point:(99, 52) , energy:924
+Movement. id robot:54 point:(36, 76) , energy:927
+Movement. id robot:55 point:(29, 25) , energy:934
+Did not movement. id robot:56 point:(39, 47) , energy:936
+Did not movement. id robot:57 point:(87, 90) , energy:937
+Movement. id robot:58 point:(99, 99) , energy:937
+Did not movement. id robot:59 point:(90, 76) , energy:938
+Did not movement. id robot:60 point:(23, 18) , energy:938
+Movement. id robot:61 point:(99, 60) , energy:937
+Movement. id robot:62 point:(20, 50) , energy:937
+Movement. id robot:63 point:(40, 30) , energy:938
+Movement. id robot:64 point:(68, 99) , energy:941
+Movement. id robot:65 point:(80, 24) , energy:938
+Movement. id robot:66 point:(65, 89) , energy:939
+Movement. id robot:67 point:(99, 31) , energy:937
+Did not movement. id robot:68 point:(62, 62) , energy:939
+Did not movement. id robot:69 point:(25, 88) , energy:940
+Movement. id robot:70 point:(99, 44) , energy:938
+Movement. id robot:71 point:(42, 44) , energy:938
+Movement. id robot:72 point:(97, 99) , energy:939
+Movement. id robot:73 point:(44, 99) , energy:941
+Movement. id robot:74 point:(30, 75) , energy:940
+Did not movement. id robot:75 point:(64, 40) , energy:942
+Did not movement. id robot:76 point:(54, 16) , energy:941
+Movement. id robot:77 point:(99, 54) , energy:941
+Did not movement. id robot:78 point:(55, 38) , energy:943
+Movement. id robot:79 point:(70, 22) , energy:942
+Movement. id robot:80 point:(99, 37) , energy:943
+Movement. id robot:81 point:(38, 84) , energy:953
+Movement. id robot:82 point:(52, 99) , energy:951
+Movement. id robot:83 point:(35, 38) , energy:952
+Movement. id robot:84 point:(99, 98) , energy:954
+Movement. id robot:85 point:(15, 21) , energy:953
+Movement. id robot:86 point:(62, 97) , energy:954
+Did not movement. id robot:87 point:(26, 27) , energy:956
+Movement. id robot:88 point:(95, 35) , energy:956
+Movement. id robot:89 point:(65, 93) , energy:955
+Movement. id robot:90 point:(36, 47) , energy:955
+Movement. id robot:91 point:(78, 88) , energy:955
+Movement. id robot:92 point:(38, 77) , energy:956
+Movement. id robot:93 point:(53, 71) , energy:956
+Movement. id robot:94 point:(30, 83) , energy:957
+Movement. id robot:95 point:(99, 34) , energy:956
+Movement. id robot:96 point:(31, 51) , energy:957
+Movement. id robot:97 point:(51, 86) , energy:957
+Movement. id robot:98 point:(14, 66) , energy:957
+Movement. id robot:99 point:(29, 83) , energy:958
+Movement. id robot:100 point:(33, 39) , energy:957
+Did not movement. id robot:101 point:(52, 99) , energy:958
+Movement. id robot:102 point:(26, 21) , energy:956
+Did not movement. id robot:103 point:(49, 44) , energy:958
+Movement. id robot:104 point:(35, 49) , energy:957
+Movement. id robot:105 point:(77, 97) , energy:959
+Did not movement. id robot:106 point:(70, 79) , energy:962
+Did not movement. id robot:107 point:(17, 19) , energy:962
+Movement. id robot:108 point:(87, 52) , energy:972
+Did not movement. id robot:109 point:(94, 56) , energy:972
+Did not movement. id robot:110 point:(61, 51) , energy:971
+Movement. id robot:111 point:(38, 80) , energy:972
+Did not movement. id robot:112 point:(67, 55) , energy:973
+Did not movement. id robot:113 point:(6, 77) , energy:973
+Movement. id robot:114 point:(91, 47) , energy:971
+Movement. id robot:115 point:(99, 48) , energy:972
+Movement. id robot:116 point:(65, 31) , energy:973
+Movement. id robot:117 point:(76, 58) , energy:973
+Movement. id robot:118 point:(28, 70) , energy:974
+Did not movement. id robot:119 point:(76, 52) , energy:975
+Movement. id robot:120 point:(53, 99) , energy:973
+Movement. id robot:121 point:(67, 79) , energy:973
+Movement. id robot:122 point:(35, 52) , energy:974
+Movement. id robot:123 point:(92, 93) , energy:974
+Movement. id robot:124 point:(56, 67) , energy:974
+Movement. id robot:125 point:(94, 88) , energy:974
+Movement. id robot:126 point:(57, 59) , energy:973
+Movement. id robot:127 point:(57, 16) , energy:974
+Movement. id robot:128 point:(59, 29) , energy:975
+Movement. id robot:129 point:(81, 95) , energy:974
+Movement. id robot:130 point:(22, 88) , energy:976
+Movement. id robot:131 point:(72, 40) , energy:975
+Did not movement. id robot:132 point:(99, 53) , energy:976
+Movement. id robot:133 point:(99, 35) , energy:975
+Movement. id robot:134 point:(86, 99) , energy:978
 step: 5
-Movement. id robot:0 point:(73, 63) , energy:989
-Movement. id robot:1 point:(70, 89) , energy:988
-Movement. id robot:2 point:(10, 25) , energy:988
-Movement. id robot:3 point:(22, 94) , energy:988
-Movement. id robot:4 point:(19, 25) , energy:988
-Movement. id robot:5 point:(63, 35) , energy:988
-Movement. id robot:6 point:(33, 80) , energy:988
-Movement. id robot:7 point:(21, 82) , energy:989
-Did not movement. id robot:8 point:(47, 5) , energy:991
-Did not movement. id robot:9 point:(18, 6) , energy:990
-Movement. id robot:10 point:(7, 7) , energy:988
-Movement. id robot:11 point:(67, 88) , energy:988
-Did not movement. id robot:12 point:(63, 46) , energy:989
-Movement. id robot:13 point:(99, 16) , energy:989
-Movement. id robot:14 point:(56, 10) , energy:989
-Movement. id robot:15 point:(87, 46) , energy:989
-Movement. id robot:16 point:(11, 5) , energy:990
-Movement. id robot:17 point:(7, 76) , energy:991
-Movement. id robot:18 point:(59, 57) , energy:989
-Movement. id robot:19 point:(40, 98) , energy:870
-Movement. id robot:20 point:(87, 67) , energy:916
-Movement. id robot:21 point:(42, 73) , energy:915
-Movement. id robot:22 point:(55, 99) , energy:916
-Movement. id robot:23 point:(30, 62) , energy:916
-Movement. id robot:24 point:(95, 99) , energy:917
-Movement. id robot:25 point:(99, 99) , energy:917
-Movement. id robot:26 point:(54, 66) , energy:917
-Movement. id robot:27 point:(99, 50) , energy:918
-Movement. id robot:28 point:(99, 76) , energy:920
-Did not movement. id robot:29 point:(99, 27) , energy:922
-Did not movement. id robot:30 point:(99, 68) , energy:923
-Did not movement. id robot:31 point:(88, 99) , energy:922
-Movement. id robot:32 point:(91, 54) , energy:919
-Movement. id robot:33 point:(88, 77) , energy:921
-Movement. id robot:34 point:(99, 28) , energy:920
-Movement. id robot:35 point:(99, 91) , energy:919
-Movement. id robot:36 point:(99, 99) , energy:919
-Movement. id robot:37 point:(44, 76) , energy:920
-Movement. id robot:38 point:(76, 30) , energy:921
-Did not movement. id robot:39 point:(38, 94) , energy:936
-Did not movement. id robot:40 point:(96, 92) , energy:934
-Did not movement. id robot:41 point:(20, 47) , energy:935
-Movement. id robot:42 point:(69, 37) , energy:936
-Movement. id robot:43 point:(22, 99) , energy:938
-Did not movement. id robot:44 point:(66, 57) , energy:938
-Did not movement. id robot:45 point:(99, 97) , energy:937
-Movement. id robot:46 point:(99, 84) , energy:938
-Movement. id robot:47 point:(87, 53) , energy:937
-Movement. id robot:48 point:(81, 22) , energy:937
-Movement. id robot:49 point:(60, 43) , energy:937
-Movement. id robot:50 point:(23, 52) , energy:936
-Movement. id robot:51 point:(99, 93) , energy:935
-Movement. id robot:52 point:(86, 98) , energy:936
-Movement. id robot:53 point:(53, 67) , energy:938
-Movement. id robot:54 point:(63, 64) , energy:938
-Did not movement. id robot:55 point:(94, 99) , energy:940
-Did not movement. id robot:56 point:(34, 15) , energy:943
-Movement. id robot:57 point:(72, 62) , energy:890
-Attack robot. id robot:57 point:(72, 62), id target robot: 0, attack:429
-Movement. id robot:58 point:(86, 55) , energy:939
-Did not movement. id robot:59 point:(45, 25) , energy:952
-Did not movement. id robot:60 point:(84, 58) , energy:953
-Movement. id robot:61 point:(53, 95) , energy:952
-Movement. id robot:62 point:(65, 75) , energy:952
-Movement. id robot:63 point:(93, 24) , energy:953
-Movement. id robot:64 point:(45, 29) , energy:952
-Movement. id robot:65 point:(94, 46) , energy:954
-Movement. id robot:66 point:(34, 44) , energy:955
-Movement. id robot:67 point:(13, 52) , energy:953
-Movement. id robot:68 point:(47, 69) , energy:955
-Movement. id robot:69 point:(31, 62) , energy:955
-Movement. id robot:70 point:(13, 59) , energy:955
-Movement. id robot:71 point:(43, 20) , energy:955
-Movement. id robot:72 point:(18, 98) , energy:956
-Movement. id robot:73 point:(55, 60) , energy:958
-Movement. id robot:74 point:(58, 78) , energy:960
-Movement. id robot:75 point:(99, 61) , energy:959
-Movement. id robot:76 point:(99, 99) , energy:959
-Movement. id robot:77 point:(54, 50) , energy:971
-Movement. id robot:78 point:(13, 90) , energy:974
-Did not movement. id robot:79 point:(92, 23) , energy:974
-Did not movement. id robot:80 point:(31, 68) , energy:973
-Did not movement. id robot:81 point:(7, 43) , energy:972
-Movement. id robot:82 point:(60, 13) , energy:970
-Movement. id robot:83 point:(44, 62) , energy:971
-Did not movement. id robot:84 point:(28, 76) , energy:973
-Did not movement. id robot:85 point:(42, 94) , energy:973
-Movement. id robot:86 point:(19, 83) , energy:971
-Movement. id robot:87 point:(55, 26) , energy:972
-Movement. id robot:88 point:(94, 25) , energy:973
-Movement. id robot:89 point:(27, 99) , energy:974
-Movement. id robot:90 point:(54, 85) , energy:977
-Did not movement. id robot:91 point:(66, 5) , energy:976
-Did not movement. id robot:92 point:(96, 58) , energy:975
-Movement. id robot:93 point:(23, 79) , energy:976
-Movement. id robot:94 point:(99, 9) , energy:980
+Movement. id robot:0 point:(47, 36) , energy:989
+Movement. id robot:1 point:(73, 10) , energy:989
+Movement. id robot:2 point:(63, 52) , energy:990
+Movement. id robot:3 point:(27, 83) , energy:988
+Did not movement. id robot:4 point:(27, 83) , energy:990
+Movement. id robot:5 point:(70, 84) , energy:989
+Movement. id robot:6 point:(32, 54) , energy:989
+Did not movement. id robot:7 point:(28, 93) , energy:991
+Movement. id robot:8 point:(90, 60) , energy:990
+Movement. id robot:9 point:(67, 11) , energy:989
+Movement. id robot:10 point:(15, 94) , energy:989
+Movement. id robot:11 point:(25, 26) , energy:988
+Movement. id robot:12 point:(96, 5) , energy:988
+Did not movement. id robot:13 point:(42, 33) , energy:941
+Movement. id robot:14 point:(73, 52) , energy:989
+Movement. id robot:15 point:(31, 99) , energy:989
+Movement. id robot:16 point:(5, 46) , energy:988
+Movement. id robot:17 point:(29, 15) , energy:989
+Movement. id robot:18 point:(99, 56) , energy:990
+Movement. id robot:19 point:(25, 46) , energy:989
+Movement. id robot:20 point:(99, 43) , energy:990
+Movement. id robot:21 point:(40, 24) , energy:989
+Movement. id robot:22 point:(33, 71) , energy:989
+Movement. id robot:23 point:(53, 46) , energy:989
+Did not movement. id robot:24 point:(72, 62) , energy:990
+Movement. id robot:25 point:(45, 22) , energy:989
+Did not movement. id robot:26 point:(33, 51) , energy:989
+Movement. id robot:27 point:(56, 72) , energy:817
+Movement. id robot:28 point:(84, 90) , energy:834
+Movement. id robot:29 point:(99, 69) , energy:915
+Movement. id robot:30 point:(99, 99) , energy:914
+Movement. id robot:31 point:(39, 49) , energy:915
+Did not movement. id robot:32 point:(89, 55) , energy:919
+Movement. id robot:33 point:(56, 99) , energy:916
+Did not movement. id robot:34 point:(90, 64) , energy:919
+Did not movement. id robot:35 point:(99, 99) , energy:918
+Movement. id robot:36 point:(96, 99) , energy:915
+Did not movement. id robot:37 point:(67, 98) , energy:918
+Movement. id robot:38 point:(56, 99) , energy:918
+Movement. id robot:39 point:(42, 69) , energy:919
+Movement. id robot:40 point:(86, 98) , energy:920
+Did not movement. id robot:41 point:(37, 44) , energy:920
+Movement. id robot:42 point:(99, 30) , energy:919
+Movement. id robot:43 point:(99, 22) , energy:918
+Movement. id robot:44 point:(27, 60) , energy:920
+Movement. id robot:45 point:(99, 99) , energy:921
+Movement. id robot:46 point:(99, 99) , energy:920
+Movement. id robot:47 point:(99, 74) , energy:922
+Movement. id robot:48 point:(75, 74) , energy:923
+Did not movement. id robot:49 point:(73, 27) , energy:922
+Movement. id robot:50 point:(55, 66) , energy:921
+Movement. id robot:51 point:(91, 74) , energy:922
+Did not movement. id robot:52 point:(70, 90) , energy:922
+Did not movement. id robot:53 point:(99, 52) , energy:923
+Movement. id robot:54 point:(37, 77) , energy:925
+Did not movement. id robot:55 point:(29, 25) , energy:933
+Did not movement. id robot:56 point:(39, 47) , energy:935
+Movement. id robot:57 point:(87, 91) , energy:935
+Did not movement. id robot:58 point:(99, 99) , energy:936
+Movement. id robot:59 point:(91, 76) , energy:936
+Movement. id robot:60 point:(24, 19) , energy:936
+Movement. id robot:61 point:(99, 61) , energy:935
+Movement. id robot:62 point:(21, 50) , energy:935
+Movement. id robot:63 point:(40, 31) , energy:936
+Movement. id robot:64 point:(68, 99) , energy:939
+Did not movement. id robot:65 point:(80, 24) , energy:937
+Did not movement. id robot:66 point:(65, 89) , energy:938
+Movement. id robot:67 point:(99, 31) , energy:935
+Movement. id robot:68 point:(62, 63) , energy:937
+Movement. id robot:69 point:(25, 89) , energy:938
+Movement. id robot:70 point:(99, 44) , energy:936
+Movement. id robot:71 point:(42, 45) , energy:936
+Movement. id robot:72 point:(98, 99) , energy:937
+Movement. id robot:73 point:(45, 99) , energy:939
+Did not movement. id robot:74 point:(30, 75) , energy:939
+Movement. id robot:75 point:(65, 41) , energy:940
+Movement. id robot:76 point:(55, 16) , energy:939
+Movement. id robot:77 point:(99, 54) , energy:939
+Movement. id robot:78 point:(55, 39) , energy:941
+Did not movement. id robot:79 point:(70, 22) , energy:941
+Movement. id robot:80 point:(99, 38) , energy:941
+Movement. id robot:81 point:(39, 85) , energy:951
+Movement. id robot:82 point:(53, 99) , energy:949
+Movement. id robot:83 point:(36, 38) , energy:950
+Movement. id robot:84 point:(99, 99) , energy:952
+Did not movement. id robot:85 point:(15, 21) , energy:952
+Movement. id robot:86 point:(63, 98) , energy:952
+Movement. id robot:87 point:(27, 28) , energy:954
+Did not movement. id robot:88 point:(95, 35) , energy:955
+Movement. id robot:89 point:(66, 93) , energy:953
+Movement. id robot:90 point:(37, 48) , energy:953
+Movement. id robot:91 point:(79, 89) , energy:953
+Movement. id robot:92 point:(39, 77) , energy:954
+Movement. id robot:93 point:(53, 72) , energy:954
+Did not movement. id robot:94 point:(30, 83) , energy:956
+Did not movement. id robot:95 point:(99, 34) , energy:955
+Did not movement. id robot:96 point:(31, 51) , energy:956
+Did not movement. id robot:97 point:(51, 86) , energy:956
+Movement. id robot:98 point:(15, 66) , energy:955
+Movement. id robot:99 point:(30, 84) , energy:956
+Movement. id robot:100 point:(34, 39) , energy:955
+Movement. id robot:101 point:(52, 99) , energy:956
+Movement. id robot:102 point:(27, 22) , energy:954
+Movement. id robot:103 point:(50, 45) , energy:956
+Did not movement. id robot:104 point:(35, 49) , energy:956
+Movement. id robot:105 point:(78, 98) , energy:957
+Movement. id robot:106 point:(71, 79) , energy:960
+Movement. id robot:107 point:(18, 20) , energy:960
+Movement. id robot:108 point:(88, 53) , energy:970
+Movement. id robot:109 point:(94, 57) , energy:970
+Movement. id robot:110 point:(61, 52) , energy:969
+Movement. id robot:111 point:(38, 81) , energy:970
+Movement. id robot:112 point:(67, 56) , energy:971
+Movement. id robot:113 point:(7, 77) , energy:971
+Movement. id robot:114 point:(92, 48) , energy:969
+Movement. id robot:115 point:(99, 49) , energy:970
+Movement. id robot:116 point:(66, 31) , energy:971
+Movement. id robot:117 point:(76, 59) , energy:971
+Movement. id robot:118 point:(29, 70) , energy:972
+Movement. id robot:119 point:(76, 53) , energy:973
+Movement. id robot:120 point:(53, 99) , energy:971
+Movement. id robot:121 point:(68, 79) , energy:971
+Did not movement. id robot:122 point:(35, 52) , energy:973
+Did not movement. id robot:123 point:(92, 93) , energy:973
+Movement. id robot:124 point:(57, 67) , energy:972
+Movement. id robot:125 point:(95, 88) , energy:972
+Movement. id robot:126 point:(58, 60) , energy:971
+Movement. id robot:127 point:(58, 16) , energy:972
+Movement. id robot:128 point:(59, 30) , energy:973
+Movement. id robot:129 point:(81, 96) , energy:972
+Did not movement. id robot:130 point:(22, 88) , energy:975
+Did not movement. id robot:131 point:(72, 40) , energy:974
+Movement. id robot:132 point:(99, 54) , energy:974
+Did not movement. id robot:133 point:(99, 35) , energy:974
+Movement. id robot:134 point:(87, 99) , energy:976
 step: 6
-Movement. id robot:0 point:(74, 64) , energy:987
-Movement. id robot:1 point:(71, 90) , energy:986
-Did not movement. id robot:2 point:(10, 25) , energy:987
-Did not movement. id robot:3 point:(22, 94) , energy:987
-Movement. id robot:4 point:(20, 25) , energy:986
-Movement. id robot:5 point:(64, 35) , energy:986
-Movement. id robot:6 point:(33, 81) , energy:986
-Movement. id robot:7 point:(21, 83) , energy:987
-Movement. id robot:8 point:(47, 6) , energy:989
-Movement. id robot:9 point:(19, 6) , energy:988
-Movement. id robot:10 point:(8, 7) , energy:986
-Movement. id robot:11 point:(67, 89) , energy:986
-Movement. id robot:12 point:(63, 47) , energy:987
-Did not movement. id robot:13 point:(99, 16) , energy:988
-Did not movement. id robot:14 point:(56, 10) , energy:988
-Movement. id robot:15 point:(88, 47) , energy:987
-Movement. id robot:16 point:(12, 6) , energy:988
-Movement. id robot:17 point:(8, 77) , energy:989
-Movement. id robot:18 point:(60, 58) , energy:987
-Movement. id robot:19 point:(41, 98) , energy:868
-Movement. id robot:20 point:(88, 67) , energy:914
-Movement. id robot:21 point:(42, 74) , energy:913
-Did not movement. id robot:22 point:(55, 99) , energy:915
-Did not movement. id robot:23 point:(30, 62) , energy:915
-Movement. id robot:24 point:(95, 99) , energy:915
-Movement. id robot:25 point:(99, 99) , energy:915
-Movement. id robot:26 point:(55, 66) , energy:915
-Movement. id robot:27 point:(99, 51) , energy:916
-Movement. id robot:28 point:(99, 77) , energy:918
-Movement. id robot:29 point:(99, 28) , energy:920
-Movement. id robot:30 point:(99, 69) , energy:921
-Did not movement. id robot:31 point:(88, 99) , energy:921
-Movement. id robot:32 point:(91, 55) , energy:917
-Movement. id robot:33 point:(88, 78) , energy:919
-Did not movement. id robot:34 point:(99, 28) , energy:919
-Did not movement. id robot:35 point:(99, 91) , energy:918
-Movement. id robot:36 point:(99, 99) , energy:917
-Movement. id robot:37 point:(45, 76) , energy:918
-Movement. id robot:38 point:(77, 30) , energy:919
-Did not movement. id robot:39 point:(38, 94) , energy:935
-Movement. id robot:40 point:(97, 92) , energy:932
-Movement. id robot:41 point:(21, 48) , energy:933
-Movement. id robot:42 point:(70, 38) , energy:934
-Did not movement. id robot:43 point:(22, 99) , energy:937
-Did not movement. id robot:44 point:(66, 57) , energy:937
-Movement. id robot:45 point:(99, 98) , energy:935
-Movement. id robot:46 point:(99, 85) , energy:936
-Did not movement. id robot:47 point:(87, 53) , energy:936
-Movement. id robot:48 point:(82, 22) , energy:935
-Movement. id robot:49 point:(61, 43) , energy:935
-Movement. id robot:50 point:(23, 53) , energy:934
-Movement. id robot:51 point:(99, 94) , energy:933
-Movement. id robot:52 point:(87, 98) , energy:934
-Movement. id robot:53 point:(54, 67) , energy:936
-Movement. id robot:54 point:(63, 65) , energy:936
-Movement. id robot:55 point:(94, 99) , energy:938
-Did not movement. id robot:56 point:(34, 15) , energy:942
-Did not movement. id robot:57 point:(72, 62) , energy:879
-Attack robot. id robot:57 point:(72, 62), id target robot: 0, attack:446
-Movement. id robot:58 point:(86, 56) , energy:937
-Movement. id robot:59 point:(46, 26) , energy:950
-Movement. id robot:60 point:(85, 59) , energy:951
-Movement. id robot:61 point:(54, 95) , energy:950
-Movement. id robot:62 point:(66, 75) , energy:950
-Movement. id robot:63 point:(94, 25) , energy:951
-Did not movement. id robot:64 point:(45, 29) , energy:951
-Did not movement. id robot:65 point:(94, 46) , energy:953
-Did not movement. id robot:66 point:(34, 44) , energy:954
-Movement. id robot:67 point:(13, 53) , energy:951
-Movement. id robot:68 point:(48, 70) , energy:953
-Movement. id robot:69 point:(32, 63) , energy:953
-Movement. id robot:70 point:(13, 60) , energy:953
-Movement. id robot:71 point:(43, 21) , energy:953
-Movement. id robot:72 point:(19, 99) , energy:954
-Movement. id robot:73 point:(56, 61) , energy:956
-Did not movement. id robot:74 point:(58, 78) , energy:959
-Movement. id robot:75 point:(99, 62) , energy:957
-Movement. id robot:76 point:(99, 99) , energy:957
-Did not movement. id robot:77 point:(54, 50) , energy:970
-Did not movement. id robot:78 point:(13, 90) , energy:973
-Movement. id robot:79 point:(93, 23) , energy:972
-Movement. id robot:80 point:(32, 68) , energy:971
-Movement. id robot:81 point:(7, 44) , energy:970
-Movement. id robot:82 point:(60, 14) , energy:968
-Movement. id robot:83 point:(45, 62) , energy:969
-Movement. id robot:84 point:(29, 76) , energy:971
-Movement. id robot:85 point:(43, 95) , energy:971
-Movement. id robot:86 point:(20, 84) , energy:969
-Did not movement. id robot:87 point:(55, 26) , energy:971
-Did not movement. id robot:88 point:(94, 25) , energy:972
-Movement. id robot:89 point:(27, 99) , energy:972
-Did not movement. id robot:90 point:(54, 85) , energy:976
-Did not movement. id robot:91 point:(66, 5) , energy:975
-Movement. id robot:92 point:(97, 58) , energy:973
-Movement. id robot:93 point:(24, 79) , energy:974
-Movement. id robot:94 point:(99, 10) , energy:978
+Movement. id robot:0 point:(47, 37) , energy:987
+Movement. id robot:1 point:(73, 11) , energy:987
+Movement. id robot:2 point:(64, 52) , energy:988
+Movement. id robot:3 point:(28, 84) , energy:986
+Movement. id robot:4 point:(28, 83) , energy:988
+Movement. id robot:5 point:(71, 85) , energy:987
+Movement. id robot:6 point:(32, 55) , energy:987
+Movement. id robot:7 point:(28, 94) , energy:989
+Movement. id robot:8 point:(91, 60) , energy:988
+Movement. id robot:9 point:(67, 12) , energy:987
+Movement. id robot:10 point:(16, 94) , energy:987
+Did not movement. id robot:11 point:(25, 26) , energy:987
+Did not movement. id robot:12 point:(96, 5) , energy:987
+Movement. id robot:13 point:(43, 33) , energy:939
+Did not movement. id robot:14 point:(73, 52) , energy:988
+Did not movement. id robot:15 point:(31, 99) , energy:988
+Movement. id robot:16 point:(5, 47) , energy:986
+Did not movement. id robot:17 point:(29, 15) , energy:988
+Movement. id robot:18 point:(99, 57) , energy:988
+Movement. id robot:19 point:(26, 47) , energy:987
+Movement. id robot:20 point:(99, 43) , energy:988
+Movement. id robot:21 point:(41, 24) , energy:987
+Movement. id robot:22 point:(33, 72) , energy:987
+Did not movement. id robot:23 point:(53, 46) , energy:988
+Movement. id robot:24 point:(73, 63) , energy:988
+Did not movement. id robot:25 point:(45, 22) , energy:988
+Movement. id robot:26 point:(34, 52) , energy:987
+Movement. id robot:27 point:(56, 73) , energy:815
+Movement. id robot:28 point:(84, 91) , energy:832
+Movement. id robot:29 point:(99, 70) , energy:913
+Movement. id robot:30 point:(99, 99) , energy:912
+Movement. id robot:31 point:(40, 49) , energy:913
+Movement. id robot:32 point:(90, 55) , energy:917
+Movement. id robot:33 point:(56, 99) , energy:914
+Movement. id robot:34 point:(91, 64) , energy:917
+Movement. id robot:35 point:(99, 99) , energy:916
+Movement. id robot:36 point:(97, 99) , energy:913
+Movement. id robot:37 point:(67, 99) , energy:916
+Did not movement. id robot:38 point:(56, 99) , energy:917
+Movement. id robot:39 point:(42, 70) , energy:917
+Movement. id robot:40 point:(86, 99) , energy:918
+Movement. id robot:41 point:(38, 44) , energy:918
+Movement. id robot:42 point:(99, 30) , energy:917
+Movement. id robot:43 point:(99, 22) , energy:916
+Did not movement. id robot:44 point:(27, 60) , energy:919
+Movement. id robot:45 point:(99, 99) , energy:919
+Movement. id robot:46 point:(99, 99) , energy:918
+Did not movement. id robot:47 point:(99, 74) , energy:921
+Movement. id robot:48 point:(76, 75) , energy:921
+Movement. id robot:49 point:(74, 27) , energy:920
+Movement. id robot:50 point:(56, 66) , energy:919
+Movement. id robot:51 point:(92, 74) , energy:920
+Movement. id robot:52 point:(70, 91) , energy:920
+Did not movement. id robot:53 point:(99, 52) , energy:922
+Movement. id robot:54 point:(37, 78) , energy:923
+Movement. id robot:55 point:(29, 26) , energy:931
+Did not movement. id robot:56 point:(39, 47) , energy:934
+Movement. id robot:57 point:(88, 92) , energy:933
+Movement. id robot:58 point:(99, 99) , energy:934
+Movement. id robot:59 point:(92, 76) , energy:934
+Movement. id robot:60 point:(24, 20) , energy:934
+Movement. id robot:61 point:(99, 62) , energy:933
+Movement. id robot:62 point:(22, 50) , energy:933
+Movement. id robot:63 point:(40, 32) , energy:934
+Movement. id robot:64 point:(69, 99) , energy:937
+Movement. id robot:65 point:(81, 25) , energy:935
+Movement. id robot:66 point:(66, 90) , energy:936
+Movement. id robot:67 point:(99, 32) , energy:933
+Did not movement. id robot:68 point:(62, 63) , energy:936
+Movement. id robot:69 point:(25, 90) , energy:936
+Movement. id robot:70 point:(99, 44) , energy:934
+Movement. id robot:71 point:(43, 45) , energy:934
+Movement. id robot:72 point:(99, 99) , energy:935
+Movement. id robot:73 point:(46, 99) , energy:937
+Did not movement. id robot:74 point:(30, 75) , energy:938
+Movement. id robot:75 point:(66, 42) , energy:938
+Did not movement. id robot:76 point:(55, 16) , energy:938
+Did not movement. id robot:77 point:(99, 54) , energy:938
+Movement. id robot:78 point:(56, 39) , energy:939
+Movement. id robot:79 point:(70, 23) , energy:939
+Did not movement. id robot:80 point:(99, 38) , energy:940
+Movement. id robot:81 point:(39, 86) , energy:949
+Did not movement. id robot:82 point:(53, 99) , energy:948
+Movement. id robot:83 point:(37, 39) , energy:948
+Movement. id robot:84 point:(99, 99) , energy:950
+Movement. id robot:85 point:(16, 22) , energy:950
+Movement. id robot:86 point:(64, 98) , energy:950
+Did not movement. id robot:87 point:(27, 28) , energy:953
+Movement. id robot:88 point:(95, 36) , energy:953
+Movement. id robot:89 point:(67, 94) , energy:951
+Movement. id robot:90 point:(38, 49) , energy:951
+Movement. id robot:91 point:(80, 90) , energy:951
+Did not movement. id robot:92 point:(39, 77) , energy:953
+Movement. id robot:93 point:(53, 73) , energy:952
+Did not movement. id robot:94 point:(30, 83) , energy:955
+Movement. id robot:95 point:(99, 34) , energy:953
+Movement. id robot:96 point:(32, 51) , energy:954
+Movement. id robot:97 point:(52, 87) , energy:954
+Movement. id robot:98 point:(16, 66) , energy:953
+Movement. id robot:99 point:(31, 84) , energy:954
+Movement. id robot:100 point:(35, 40) , energy:953
+Did not movement. id robot:101 point:(52, 99) , energy:955
+Did not movement. id robot:102 point:(27, 22) , energy:953
+Movement. id robot:103 point:(51, 45) , energy:954
+Did not movement. id robot:104 point:(35, 49) , energy:955
+Movement. id robot:105 point:(78, 99) , energy:955
+Movement. id robot:106 point:(72, 79) , energy:958
+Movement. id robot:107 point:(19, 20) , energy:958
+Movement. id robot:108 point:(88, 54) , energy:968
+Did not movement. id robot:109 point:(94, 57) , energy:969
+Movement. id robot:110 point:(61, 53) , energy:967
+Movement. id robot:111 point:(39, 82) , energy:968
+Movement. id robot:112 point:(68, 56) , energy:969
+Movement. id robot:113 point:(8, 77) , energy:969
+Movement. id robot:114 point:(92, 49) , energy:967
+Did not movement. id robot:115 point:(99, 49) , energy:969
+Movement. id robot:116 point:(66, 32) , energy:969
+Movement. id robot:117 point:(77, 60) , energy:969
+Movement. id robot:118 point:(29, 71) , energy:970
+Movement. id robot:119 point:(77, 54) , energy:971
+Did not movement. id robot:120 point:(53, 99) , energy:970
+Movement. id robot:121 point:(69, 80) , energy:969
+Did not movement. id robot:122 point:(35, 52) , energy:972
+Movement. id robot:123 point:(93, 93) , energy:971
+Movement. id robot:124 point:(58, 68) , energy:970
+Movement. id robot:125 point:(96, 88) , energy:970
+Movement. id robot:126 point:(59, 61) , energy:969
+Did not movement. id robot:127 point:(58, 16) , energy:971
+Did not movement. id robot:128 point:(59, 30) , energy:972
+Did not movement. id robot:129 point:(81, 96) , energy:971
+Movement. id robot:130 point:(23, 88) , energy:973
+Movement. id robot:131 point:(73, 40) , energy:972
+Movement. id robot:132 point:(99, 55) , energy:972
+Movement. id robot:133 point:(99, 35) , energy:972
+Did not movement. id robot:134 point:(87, 99) , energy:975
 step: 7
-Movement. id robot:0 point:(75, 64) , energy:985
-Movement. id robot:1 point:(71, 91) , energy:984
-Movement. id robot:2 point:(11, 25) , energy:985
-Movement. id robot:3 point:(23, 94) , energy:985
-Movement. id robot:4 point:(20, 26) , energy:984
-Movement. id robot:5 point:(65, 36) , energy:984
-Movement. id robot:6 point:(34, 82) , energy:984
-Movement. id robot:7 point:(22, 83) , energy:985
-Movement. id robot:8 point:(48, 6) , energy:987
-Movement. id robot:9 point:(20, 7) , energy:986
-Movement. id robot:10 point:(9, 8) , energy:984
-Did not movement. id robot:11 point:(67, 89) , energy:985
-Movement. id robot:12 point:(63, 48) , energy:985
-Movement. id robot:13 point:(99, 17) , energy:986
-Movement. id robot:14 point:(56, 11) , energy:986
-Movement. id robot:15 point:(88, 48) , energy:985
-Movement. id robot:16 point:(12, 7) , energy:986
-Movement. id robot:17 point:(8, 78) , energy:987
-Movement. id robot:18 point:(61, 59) , energy:985
-Movement. id robot:19 point:(42, 99) , energy:866
-Did not movement. id robot:20 point:(88, 67) , energy:913
-Did not movement. id robot:21 point:(42, 74) , energy:912
-Movement. id robot:22 point:(56, 99) , energy:913
-Did not movement. id robot:23 point:(30, 62) , energy:914
-Did not movement. id robot:24 point:(95, 99) , energy:914
-Movement. id robot:25 point:(99, 99) , energy:913
-Movement. id robot:26 point:(55, 67) , energy:913
-Movement. id robot:27 point:(99, 52) , energy:914
-Movement. id robot:28 point:(99, 77) , energy:916
-Movement. id robot:29 point:(99, 29) , energy:918
-Movement. id robot:30 point:(99, 70) , energy:919
-Movement. id robot:31 point:(89, 99) , energy:919
-Movement. id robot:32 point:(92, 55) , energy:915
-Did not movement. id robot:33 point:(88, 78) , energy:918
-Did not movement. id robot:34 point:(99, 28) , energy:918
-Did not movement. id robot:35 point:(99, 91) , energy:917
-Did not movement. id robot:36 point:(99, 99) , energy:916
-Movement. id robot:37 point:(46, 76) , energy:916
-Movement. id robot:38 point:(78, 30) , energy:917
-Did not movement. id robot:39 point:(38, 94) , energy:934
-Movement. id robot:40 point:(98, 93) , energy:930
-Movement. id robot:41 point:(22, 48) , energy:931
-Movement. id robot:42 point:(71, 38) , energy:932
-Movement. id robot:43 point:(22, 99) , energy:935
-Movement. id robot:44 point:(66, 58) , energy:935
-Movement. id robot:45 point:(99, 98) , energy:933
-Did not movement. id robot:46 point:(99, 85) , energy:935
-Did not movement. id robot:47 point:(87, 53) , energy:935
-Movement. id robot:48 point:(83, 23) , energy:933
-Movement. id robot:49 point:(62, 44) , energy:933
-Did not movement. id robot:50 point:(23, 53) , energy:933
-Movement. id robot:51 point:(99, 95) , energy:931
-Movement. id robot:52 point:(88, 99) , energy:932
-Did not movement. id robot:53 point:(54, 67) , energy:935
-Did not movement. id robot:54 point:(63, 65) , energy:935
-Movement. id robot:55 point:(94, 99) , energy:936
-Movement. id robot:56 point:(34, 16) , energy:940
-Movement. id robot:57 point:(72, 63) , energy:867
-Attack robot. id robot:57 point:(72, 63), id target robot: 0, attack:462
-Movement. id robot:58 point:(86, 57) , energy:935
-Movement. id robot:59 point:(47, 27) , energy:948
-Movement. id robot:60 point:(86, 59) , energy:949
-Movement. id robot:61 point:(55, 95) , energy:948
-Movement. id robot:62 point:(67, 76) , energy:948
-Did not movement. id robot:63 point:(94, 25) , energy:950
-Did not movement. id robot:64 point:(45, 29) , energy:950
-Did not movement. id robot:65 point:(94, 46) , energy:952
-Movement. id robot:66 point:(34, 45) , energy:952
-Movement. id robot:67 point:(13, 54) , energy:949
-Movement. id robot:68 point:(49, 70) , energy:951
-Movement. id robot:69 point:(33, 63) , energy:951
-Movement. id robot:70 point:(13, 61) , energy:951
-Movement. id robot:71 point:(43, 22) , energy:951
-Movement. id robot:72 point:(20, 99) , energy:952
-Did not movement. id robot:73 point:(56, 61) , energy:955
-Did not movement. id robot:74 point:(58, 78) , energy:958
-Did not movement. id robot:75 point:(99, 62) , energy:956
-Did not movement. id robot:76 point:(99, 99) , energy:956
-Did not movement. id robot:77 point:(54, 50) , energy:969
-Did not movement. id robot:78 point:(13, 90) , energy:972
-Did not movement. id robot:79 point:(93, 23) , energy:971
-Movement. id robot:80 point:(33, 69) , energy:969
-Movement. id robot:81 point:(8, 45) , energy:968
-Movement. id robot:82 point:(61, 14) , energy:966
-Movement. id robot:83 point:(46, 62) , energy:967
-Movement. id robot:84 point:(30, 77) , energy:969
-Movement. id robot:85 point:(44, 96) , energy:969
-Movement. id robot:86 point:(21, 84) , energy:967
-Movement. id robot:87 point:(56, 26) , energy:969
-Movement. id robot:88 point:(95, 25) , energy:970
-Did not movement. id robot:89 point:(27, 99) , energy:971
-Did not movement. id robot:90 point:(54, 85) , energy:975
-Movement. id robot:91 point:(67, 6) , energy:973
-Movement. id robot:92 point:(98, 59) , energy:971
-Did not movement. id robot:93 point:(24, 79) , energy:973
-Did not movement. id robot:94 point:(99, 10) , energy:977
+Movement. id robot:0 point:(48, 38) , energy:985
+Movement. id robot:1 point:(74, 12) , energy:985
+Movement. id robot:2 point:(65, 52) , energy:986
+Movement. id robot:3 point:(29, 85) , energy:984
+Movement. id robot:4 point:(28, 84) , energy:986
+Movement. id robot:5 point:(71, 86) , energy:985
+Movement. id robot:6 point:(32, 56) , energy:985
+Did not movement. id robot:7 point:(28, 94) , energy:988
+Movement. id robot:8 point:(92, 61) , energy:986
+Did not movement. id robot:9 point:(67, 12) , energy:986
+Did not movement. id robot:10 point:(16, 94) , energy:986
+Movement. id robot:11 point:(26, 26) , energy:985
+Movement. id robot:12 point:(96, 6) , energy:985
+Movement. id robot:13 point:(43, 34) , energy:937
+Movement. id robot:14 point:(74, 52) , energy:986
+Movement. id robot:15 point:(32, 99) , energy:986
+Movement. id robot:16 point:(6, 48) , energy:984
+Movement. id robot:17 point:(30, 15) , energy:986
+Did not movement. id robot:18 point:(99, 57) , energy:987
+Did not movement. id robot:19 point:(26, 47) , energy:986
+Movement. id robot:20 point:(99, 43) , energy:986
+Movement. id robot:21 point:(42, 24) , energy:985
+Movement. id robot:22 point:(34, 73) , energy:985
+Movement. id robot:23 point:(54, 46) , energy:986
+Movement. id robot:24 point:(73, 64) , energy:986
+Movement. id robot:25 point:(45, 23) , energy:986
+Movement. id robot:26 point:(35, 52) , energy:985
+Did not movement. id robot:27 point:(56, 73) , energy:814
+Movement. id robot:28 point:(85, 92) , energy:830
+Did not movement. id robot:29 point:(99, 70) , energy:912
+Movement. id robot:30 point:(99, 99) , energy:910
+Movement. id robot:31 point:(41, 50) , energy:911
+Movement. id robot:32 point:(90, 56) , energy:915
+Movement. id robot:33 point:(56, 99) , energy:912
+Movement. id robot:34 point:(91, 65) , energy:915
+Movement. id robot:35 point:(99, 99) , energy:914
+Did not movement. id robot:36 point:(97, 99) , energy:912
+Movement. id robot:37 point:(68, 99) , energy:914
+Movement. id robot:38 point:(57, 99) , energy:915
+Movement. id robot:39 point:(43, 70) , energy:915
+Movement. id robot:40 point:(87, 99) , energy:916
+Movement. id robot:41 point:(38, 45) , energy:916
+Movement. id robot:42 point:(99, 31) , energy:915
+Movement. id robot:43 point:(99, 22) , energy:914
+Movement. id robot:44 point:(27, 61) , energy:917
+Movement. id robot:45 point:(99, 99) , energy:917
+Movement. id robot:46 point:(99, 99) , energy:916
+Movement. id robot:47 point:(99, 74) , energy:919
+Did not movement. id robot:48 point:(76, 75) , energy:920
+Did not movement. id robot:49 point:(74, 27) , energy:919
+Movement. id robot:50 point:(56, 67) , energy:917
+Did not movement. id robot:51 point:(92, 74) , energy:919
+Movement. id robot:52 point:(71, 92) , energy:918
+Movement. id robot:53 point:(99, 52) , energy:920
+Movement. id robot:54 point:(38, 78) , energy:921
+Movement. id robot:55 point:(29, 27) , energy:929
+Movement. id robot:56 point:(40, 47) , energy:932
+Did not movement. id robot:57 point:(88, 92) , energy:932
+Did not movement. id robot:58 point:(99, 99) , energy:933
+Movement. id robot:59 point:(93, 77) , energy:932
+Did not movement. id robot:60 point:(24, 20) , energy:933
+Movement. id robot:61 point:(99, 63) , energy:931
+Movement. id robot:62 point:(22, 51) , energy:931
+Movement. id robot:63 point:(41, 33) , energy:932
+Movement. id robot:64 point:(69, 99) , energy:935
+Movement. id robot:65 point:(81, 26) , energy:933
+Did not movement. id robot:66 point:(66, 90) , energy:935
+Movement. id robot:67 point:(99, 33) , energy:931
+Movement. id robot:68 point:(63, 63) , energy:934
+Movement. id robot:69 point:(26, 90) , energy:934
+Movement. id robot:70 point:(99, 45) , energy:932
+Movement. id robot:71 point:(43, 46) , energy:932
+Did not movement. id robot:72 point:(99, 99) , energy:934
+Movement. id robot:73 point:(46, 99) , energy:935
+Movement. id robot:74 point:(30, 76) , energy:936
+Movement. id robot:75 point:(67, 42) , energy:936
+Movement. id robot:76 point:(55, 17) , energy:936
+Movement. id robot:77 point:(99, 55) , energy:936
+Movement. id robot:78 point:(57, 39) , energy:937
+Did not movement. id robot:79 point:(70, 23) , energy:938
+Did not movement. id robot:80 point:(99, 38) , energy:939
+Movement. id robot:81 point:(40, 87) , energy:947
+Movement. id robot:82 point:(54, 99) , energy:946
+Movement. id robot:83 point:(38, 39) , energy:946
+Movement. id robot:84 point:(99, 99) , energy:948
+Movement. id robot:85 point:(17, 22) , energy:948
+Did not movement. id robot:86 point:(64, 98) , energy:949
+Did not movement. id robot:87 point:(27, 28) , energy:952
+Movement. id robot:88 point:(95, 37) , energy:951
+Did not movement. id robot:89 point:(67, 94) , energy:950
+Movement. id robot:90 point:(39, 50) , energy:949
+Movement. id robot:91 point:(81, 91) , energy:949
+Movement. id robot:92 point:(39, 78) , energy:951
+Movement. id robot:93 point:(54, 73) , energy:950
+Movement. id robot:94 point:(30, 84) , energy:953
+Did not movement. id robot:95 point:(99, 34) , energy:952
+Movement. id robot:96 point:(32, 52) , energy:952
+Movement. id robot:97 point:(53, 87) , energy:952
+Movement. id robot:98 point:(17, 67) , energy:951
+Movement. id robot:99 point:(32, 85) , energy:952
+Did not movement. id robot:100 point:(35, 40) , energy:952
+Movement. id robot:101 point:(52, 99) , energy:953
+Movement. id robot:102 point:(27, 23) , energy:951
+Movement. id robot:103 point:(52, 45) , energy:952
+Movement. id robot:104 point:(35, 50) , energy:953
+Did not movement. id robot:105 point:(78, 99) , energy:954
+Movement. id robot:106 point:(73, 80) , energy:956
+Did not movement. id robot:107 point:(19, 20) , energy:957
+Did not movement. id robot:108 point:(88, 54) , energy:967
+Movement. id robot:109 point:(95, 58) , energy:967
+Did not movement. id robot:110 point:(61, 53) , energy:966
+Movement. id robot:111 point:(40, 82) , energy:966
+Movement. id robot:112 point:(69, 56) , energy:967
+Did not movement. id robot:113 point:(8, 77) , energy:968
+Movement. id robot:114 point:(92, 50) , energy:965
+Movement. id robot:115 point:(99, 50) , energy:967
+Did not movement. id robot:116 point:(66, 32) , energy:968
+Movement. id robot:117 point:(78, 61) , energy:967
+Movement. id robot:118 point:(30, 72) , energy:968
+Movement. id robot:119 point:(78, 55) , energy:969
+Movement. id robot:120 point:(54, 99) , energy:968
+Movement. id robot:121 point:(69, 81) , energy:967
+Movement. id robot:122 point:(36, 52) , energy:970
+Movement. id robot:123 point:(94, 93) , energy:969
+Movement. id robot:124 point:(58, 69) , energy:968
+Movement. id robot:125 point:(97, 89) , energy:968
+Movement. id robot:126 point:(60, 62) , energy:967
+Did not movement. id robot:127 point:(58, 16) , energy:970
+Movement. id robot:128 point:(59, 31) , energy:970
+Did not movement. id robot:129 point:(81, 96) , energy:970
+Did not movement. id robot:130 point:(23, 88) , energy:972
+Movement. id robot:131 point:(73, 41) , energy:970
+Movement. id robot:132 point:(99, 55) , energy:970
+Movement. id robot:133 point:(99, 35) , energy:970
+Movement. id robot:134 point:(88, 99) , energy:973
 step: 8
-Movement. id robot:0 point:(76, 65) , energy:983
-Movement. id robot:1 point:(71, 92) , energy:982
-Movement. id robot:2 point:(11, 26) , energy:983
-Movement. id robot:3 point:(24, 95) , energy:983
-Movement. id robot:4 point:(21, 27) , energy:982
-Movement. id robot:5 point:(65, 37) , energy:982
-Movement. id robot:6 point:(34, 83) , energy:982
-Did not movement. id robot:7 point:(22, 83) , energy:984
-Did not movement. id robot:8 point:(48, 6) , energy:986
-Movement. id robot:9 point:(20, 8) , energy:984
-Movement. id robot:10 point:(9, 9) , energy:982
-Movement. id robot:11 point:(68, 89) , energy:983
-Movement. id robot:12 point:(64, 48) , energy:983
-Movement. id robot:13 point:(99, 17) , energy:984
-Movement. id robot:14 point:(57, 12) , energy:984
-Movement. id robot:15 point:(89, 49) , energy:983
-Movement. id robot:16 point:(12, 8) , energy:984
-Movement. id robot:17 point:(8, 79) , energy:985
-Did not movement. id robot:18 point:(61, 59) , energy:984
-Did not movement. id robot:19 point:(42, 99) , energy:865
-Movement. id robot:20 point:(88, 68) , energy:911
-Movement. id robot:21 point:(42, 75) , energy:910
-Movement. id robot:22 point:(57, 99) , energy:911
-Movement. id robot:23 point:(31, 62) , energy:912
-Movement. id robot:24 point:(95, 99) , energy:912
-Movement. id robot:25 point:(99, 99) , energy:911
-Movement. id robot:26 point:(55, 68) , energy:911
-Movement. id robot:27 point:(99, 52) , energy:912
-Movement. id robot:28 point:(99, 77) , energy:914
-Did not movement. id robot:29 point:(99, 29) , energy:917
-Did not movement. id robot:30 point:(99, 70) , energy:918
-Movement. id robot:31 point:(90, 99) , energy:917
-Movement. id robot:32 point:(93, 55) , energy:913
-Did not movement. id robot:33 point:(88, 78) , energy:917
-Did not movement. id robot:34 point:(99, 28) , energy:917
-Movement. id robot:35 point:(99, 92) , energy:915
-Movement. id robot:36 point:(99, 99) , energy:914
-Movement. id robot:37 point:(47, 76) , energy:914
-Movement. id robot:38 point:(79, 30) , energy:915
-Did not movement. id robot:39 point:(38, 94) , energy:933
-Movement. id robot:40 point:(99, 94) , energy:928
-Movement. id robot:41 point:(23, 48) , energy:929
-Movement. id robot:42 point:(72, 38) , energy:930
-Movement. id robot:43 point:(23, 99) , energy:933
-Did not movement. id robot:44 point:(66, 58) , energy:934
-Did not movement. id robot:45 point:(99, 98) , energy:932
-Movement. id robot:46 point:(99, 86) , energy:933
-Movement. id robot:47 point:(87, 54) , energy:933
-Did not movement. id robot:48 point:(83, 23) , energy:932
-Did not movement. id robot:49 point:(62, 44) , energy:932
-Movement. id robot:50 point:(24, 54) , energy:931
-Movement. id robot:51 point:(99, 96) , energy:929
-Movement. id robot:52 point:(89, 99) , energy:930
-Movement. id robot:53 point:(55, 68) , energy:933
-Movement. id robot:54 point:(64, 66) , energy:933
-Movement. id robot:55 point:(95, 99) , energy:934
-Movement. id robot:56 point:(35, 17) , energy:938
-Movement. id robot:57 point:(72, 64) , energy:855
-Attack robot. id robot:57 point:(72, 64), id target robot: 0, attack:458
-Did not movement. id robot:58 point:(86, 57) , energy:934
-Did not movement. id robot:59 point:(47, 27) , energy:947
-Movement. id robot:60 point:(86, 60) , energy:947
-Movement. id robot:61 point:(55, 96) , energy:946
-Movement. id robot:62 point:(68, 76) , energy:946
-Movement. id robot:63 point:(95, 25) , energy:948
-Movement. id robot:64 point:(46, 30) , energy:948
-Movement. id robot:65 point:(95, 47) , energy:950
-Movement. id robot:66 point:(35, 46) , energy:950
-Movement. id robot:67 point:(14, 55) , energy:947
-Did not movement. id robot:68 point:(49, 70) , energy:950
-Did not movement. id robot:69 point:(33, 63) , energy:950
-Movement. id robot:70 point:(13, 62) , energy:949
-Movement. id robot:71 point:(43, 23) , energy:949
-Movement. id robot:72 point:(20, 99) , energy:950
-Did not movement. id robot:73 point:(56, 61) , energy:954
-Did not movement. id robot:74 point:(58, 78) , energy:957
-Movement. id robot:75 point:(99, 63) , energy:954
-Movement. id robot:76 point:(99, 99) , energy:954
-Movement. id robot:77 point:(55, 50) , energy:967
-Movement. id robot:78 point:(14, 90) , energy:970
-Did not movement. id robot:79 point:(93, 23) , energy:970
-Did not movement. id robot:80 point:(33, 69) , energy:968
-Movement. id robot:81 point:(9, 46) , energy:966
-Movement. id robot:82 point:(62, 15) , energy:964
-Did not movement. id robot:83 point:(46, 62) , energy:966
-Movement. id robot:84 point:(31, 78) , energy:967
-Movement. id robot:85 point:(45, 97) , energy:967
-Did not movement. id robot:86 point:(21, 84) , energy:966
-Did not movement. id robot:87 point:(56, 26) , energy:968
-Movement. id robot:88 point:(96, 25) , energy:968
-Movement. id robot:89 point:(28, 99) , energy:969
-Movement. id robot:90 point:(55, 85) , energy:973
-Movement. id robot:91 point:(68, 6) , energy:971
-Movement. id robot:92 point:(99, 59) , energy:969
-Movement. id robot:93 point:(24, 80) , energy:971
-Did not movement. id robot:94 point:(99, 10) , energy:976
+Movement. id robot:0 point:(49, 39) , energy:983
+Did not movement. id robot:1 point:(74, 12) , energy:984
+Movement. id robot:2 point:(66, 52) , energy:984
+Movement. id robot:3 point:(30, 85) , energy:982
+Movement. id robot:4 point:(28, 85) , energy:984
+Movement. id robot:5 point:(71, 87) , energy:983
+Did not movement. id robot:6 point:(32, 56) , energy:984
+Movement. id robot:7 point:(28, 95) , energy:986
+Movement. id robot:8 point:(93, 62) , energy:984
+Movement. id robot:9 point:(68, 13) , energy:984
+Movement. id robot:10 point:(17, 94) , energy:984
+Movement. id robot:11 point:(26, 27) , energy:983
+Movement. id robot:12 point:(96, 7) , energy:983
+Movement. id robot:13 point:(44, 34) , energy:935
+Movement. id robot:14 point:(74, 53) , energy:984
+Movement. id robot:15 point:(33, 99) , energy:984
+Movement. id robot:16 point:(6, 49) , energy:982
+Movement. id robot:17 point:(31, 16) , energy:984
+Movement. id robot:18 point:(99, 58) , energy:985
+Did not movement. id robot:19 point:(26, 47) , energy:985
+Movement. id robot:20 point:(99, 44) , energy:984
+Did not movement. id robot:21 point:(42, 24) , energy:984
+Movement. id robot:22 point:(34, 74) , energy:983
+Movement. id robot:23 point:(55, 47) , energy:984
+Movement. id robot:24 point:(74, 64) , energy:984
+Movement. id robot:25 point:(46, 23) , energy:984
+Movement. id robot:26 point:(36, 53) , energy:983
+Did not movement. id robot:27 point:(56, 73) , energy:813
+Did not movement. id robot:28 point:(85, 92) , energy:829
+Did not movement. id robot:29 point:(99, 70) , energy:911
+Did not movement. id robot:30 point:(99, 99) , energy:909
+Movement. id robot:31 point:(42, 50) , energy:909
+Movement. id robot:32 point:(90, 57) , energy:913
+Movement. id robot:33 point:(57, 99) , energy:910
+Movement. id robot:34 point:(92, 65) , energy:913
+Movement. id robot:35 point:(99, 99) , energy:912
+Did not movement. id robot:36 point:(97, 99) , energy:911
+Did not movement. id robot:37 point:(68, 99) , energy:913
+Movement. id robot:38 point:(58, 99) , energy:913
+Movement. id robot:39 point:(44, 70) , energy:913
+Movement. id robot:40 point:(88, 99) , energy:914
+Movement. id robot:41 point:(39, 45) , energy:914
+Movement. id robot:42 point:(99, 32) , energy:913
+Movement. id robot:43 point:(99, 23) , energy:912
+Movement. id robot:44 point:(28, 62) , energy:915
+Movement. id robot:45 point:(99, 99) , energy:915
+Movement. id robot:46 point:(99, 99) , energy:914
+Did not movement. id robot:47 point:(99, 74) , energy:918
+Movement. id robot:48 point:(77, 76) , energy:918
+Did not movement. id robot:49 point:(74, 27) , energy:918
+Movement. id robot:50 point:(56, 68) , energy:915
+Movement. id robot:51 point:(93, 74) , energy:917
+Movement. id robot:52 point:(72, 93) , energy:916
+Did not movement. id robot:53 point:(99, 52) , energy:919
+Did not movement. id robot:54 point:(38, 78) , energy:920
+Did not movement. id robot:55 point:(29, 27) , energy:928
+Did not movement. id robot:56 point:(40, 47) , energy:931
+Movement. id robot:57 point:(89, 92) , energy:930
+Movement. id robot:58 point:(99, 99) , energy:931
+Movement. id robot:59 point:(93, 78) , energy:930
+Movement. id robot:60 point:(25, 20) , energy:931
+Movement. id robot:61 point:(99, 63) , energy:929
+Movement. id robot:62 point:(22, 52) , energy:929
+Movement. id robot:63 point:(42, 33) , energy:930
+Did not movement. id robot:64 point:(69, 99) , energy:934
+Did not movement. id robot:65 point:(81, 26) , energy:932
+Movement. id robot:66 point:(67, 91) , energy:933
+Movement. id robot:67 point:(99, 33) , energy:929
+Movement. id robot:68 point:(64, 63) , energy:932
+Movement. id robot:69 point:(26, 91) , energy:932
+Movement. id robot:70 point:(99, 46) , energy:930
+Did not movement. id robot:71 point:(43, 46) , energy:931
+Did not movement. id robot:72 point:(99, 99) , energy:933
+Movement. id robot:73 point:(47, 99) , energy:933
+Movement. id robot:74 point:(31, 76) , energy:934
+Movement. id robot:75 point:(68, 43) , energy:934
+Movement. id robot:76 point:(56, 18) , energy:934
+Movement. id robot:77 point:(99, 56) , energy:934
+Movement. id robot:78 point:(58, 40) , energy:935
+Movement. id robot:79 point:(70, 24) , energy:936
+Movement. id robot:80 point:(99, 39) , energy:937
+Movement. id robot:81 point:(41, 87) , energy:945
+Movement. id robot:82 point:(55, 99) , energy:944
+Movement. id robot:83 point:(39, 39) , energy:944
+Did not movement. id robot:84 point:(99, 99) , energy:947
+Did not movement. id robot:85 point:(17, 22) , energy:947
+Did not movement. id robot:86 point:(64, 98) , energy:948
+Movement. id robot:87 point:(27, 29) , energy:950
+Movement. id robot:88 point:(96, 37) , energy:949
+Movement. id robot:89 point:(68, 94) , energy:948
+Movement. id robot:90 point:(39, 51) , energy:947
+Movement. id robot:91 point:(82, 91) , energy:947
+Did not movement. id robot:92 point:(39, 78) , energy:950
+Did not movement. id robot:93 point:(54, 73) , energy:949
+Movement. id robot:94 point:(31, 85) , energy:951
+Did not movement. id robot:95 point:(99, 34) , energy:951
+Movement. id robot:96 point:(33, 53) , energy:950
+Movement. id robot:97 point:(54, 88) , energy:950
+Movement. id robot:98 point:(18, 67) , energy:949
+Movement. id robot:99 point:(33, 86) , energy:950
+Movement. id robot:100 point:(36, 41) , energy:950
+Movement. id robot:101 point:(53, 99) , energy:951
+Movement. id robot:102 point:(28, 24) , energy:949
+Movement. id robot:103 point:(52, 46) , energy:950
+Movement. id robot:104 point:(35, 51) , energy:951
+Movement. id robot:105 point:(79, 99) , energy:952
+Movement. id robot:106 point:(73, 81) , energy:954
+Movement. id robot:107 point:(20, 20) , energy:955
+Movement. id robot:108 point:(88, 55) , energy:965
+Movement. id robot:109 point:(95, 59) , energy:965
+Movement. id robot:110 point:(62, 53) , energy:964
+Did not movement. id robot:111 point:(40, 82) , energy:965
+Movement. id robot:112 point:(69, 57) , energy:965
+Movement. id robot:113 point:(8, 78) , energy:966
+Movement. id robot:114 point:(92, 51) , energy:963
+Movement. id robot:115 point:(99, 51) , energy:965
+Movement. id robot:116 point:(67, 32) , energy:966
+Movement. id robot:117 point:(79, 61) , energy:965
+Movement. id robot:118 point:(31, 72) , energy:966
+Did not movement. id robot:119 point:(78, 55) , energy:968
+Movement. id robot:120 point:(54, 99) , energy:966
+Did not movement. id robot:121 point:(69, 81) , energy:966
+Movement. id robot:122 point:(37, 53) , energy:968
+Movement. id robot:123 point:(95, 94) , energy:967
+Movement. id robot:124 point:(59, 69) , energy:966
+Movement. id robot:125 point:(98, 90) , energy:966
+Movement. id robot:126 point:(60, 63) , energy:965
+Movement. id robot:127 point:(58, 17) , energy:968
+Did not movement. id robot:128 point:(59, 31) , energy:969
+Movement. id robot:129 point:(81, 97) , energy:968
+Movement. id robot:130 point:(24, 88) , energy:970
+Movement. id robot:131 point:(74, 42) , energy:968
+Movement. id robot:132 point:(99, 56) , energy:968
+Movement. id robot:133 point:(99, 36) , energy:968
+Movement. id robot:134 point:(89, 99) , energy:971
 step: 9
-Movement. id robot:0 point:(77, 66) , energy:981
-Movement. id robot:1 point:(72, 93) , energy:980
-Movement. id robot:2 point:(12, 27) , energy:981
-Movement. id robot:3 point:(25, 96) , energy:981
-Movement. id robot:4 point:(22, 28) , energy:980
-Movement. id robot:5 point:(65, 38) , energy:980
-Movement. id robot:6 point:(34, 84) , energy:980
-Movement. id robot:7 point:(23, 83) , energy:982
-Movement. id robot:8 point:(49, 6) , energy:984
-Movement. id robot:9 point:(20, 9) , energy:982
-Movement. id robot:10 point:(9, 10) , energy:980
-Movement. id robot:11 point:(69, 89) , energy:981
-Movement. id robot:12 point:(64, 49) , energy:981
-Movement. id robot:13 point:(99, 18) , energy:982
-Movement. id robot:14 point:(58, 13) , energy:982
-Did not movement. id robot:15 point:(89, 49) , energy:982
-Did not movement. id robot:16 point:(12, 8) , energy:983
-Movement. id robot:17 point:(8, 80) , energy:983
-Did not movement. id robot:18 point:(61, 59) , energy:983
-Did not movement. id robot:19 point:(42, 99) , energy:864
-Movement. id robot:20 point:(88, 69) , energy:909
-Movement. id robot:21 point:(43, 75) , energy:908
-Movement. id robot:22 point:(58, 99) , energy:909
-Movement. id robot:23 point:(32, 62) , energy:910
-Movement. id robot:24 point:(96, 99) , energy:910
-Movement. id robot:25 point:(99, 99) , energy:909
-Did not movement. id robot:26 point:(55, 68) , energy:910
-Did not movement. id robot:27 point:(99, 52) , energy:911
-Movement. id robot:28 point:(99, 78) , energy:912
-Did not movement. id robot:29 point:(99, 29) , energy:916
-Did not movement. id robot:30 point:(99, 70) , energy:917
-Movement. id robot:31 point:(91, 99) , energy:915
-Movement. id robot:32 point:(94, 55) , energy:911
-Movement. id robot:33 point:(89, 78) , energy:915
-Movement. id robot:34 point:(99, 28) , energy:915
-Movement. id robot:35 point:(99, 92) , energy:913
-Movement. id robot:36 point:(99, 99) , energy:912
-Movement. id robot:37 point:(47, 77) , energy:912
-Did not movement. id robot:38 point:(79, 30) , energy:914
-Did not movement. id robot:39 point:(38, 94) , energy:932
-Movement. id robot:40 point:(99, 95) , energy:926
-Movement. id robot:41 point:(24, 49) , energy:927
-Movement. id robot:42 point:(73, 39) , energy:928
-Movement. id robot:43 point:(24, 99) , energy:931
-Movement. id robot:44 point:(67, 58) , energy:932
-Movement. id robot:45 point:(99, 99) , energy:930
-Movement. id robot:46 point:(99, 87) , energy:931
-Movement. id robot:47 point:(88, 54) , energy:931
-Movement. id robot:48 point:(84, 23) , energy:930
-Movement. id robot:49 point:(62, 45) , energy:930
-Movement. id robot:50 point:(24, 55) , energy:929
-Movement. id robot:51 point:(99, 97) , energy:927
-Movement. id robot:52 point:(90, 99) , energy:928
-Movement. id robot:53 point:(55, 69) , energy:931
-Movement. id robot:54 point:(64, 67) , energy:931
-Movement. id robot:55 point:(96, 99) , energy:932
-Movement. id robot:56 point:(36, 18) , energy:936
-Did not movement. id robot:57 point:(72, 64) , energy:844
-Attack robot. id robot:57 point:(72, 64), id target robot: 0, attack:475
-Movement. id robot:58 point:(87, 58) , energy:932
-Movement. id robot:59 point:(48, 28) , energy:945
-Did not movement. id robot:60 point:(86, 60) , energy:946
-Movement. id robot:61 point:(55, 97) , energy:944
-Movement. id robot:62 point:(68, 77) , energy:944
-Did not movement. id robot:63 point:(95, 25) , energy:947
-Did not movement. id robot:64 point:(46, 30) , energy:947
-Movement. id robot:65 point:(96, 47) , energy:948
-Movement. id robot:66 point:(36, 47) , energy:948
-Movement. id robot:67 point:(15, 56) , energy:945
-Did not movement. id robot:68 point:(49, 70) , energy:949
-Did not movement. id robot:69 point:(33, 63) , energy:949
-Movement. id robot:70 point:(13, 63) , energy:947
-Movement. id robot:71 point:(43, 24) , energy:947
-Did not movement. id robot:72 point:(20, 99) , energy:949
-Did not movement. id robot:73 point:(56, 61) , energy:953
-Movement. id robot:74 point:(59, 78) , energy:955
-Movement. id robot:75 point:(99, 63) , energy:952
-Did not movement. id robot:76 point:(99, 99) , energy:953
-Did not movement. id robot:77 point:(55, 50) , energy:966
-Movement. id robot:78 point:(15, 90) , energy:968
-Movement. id robot:79 point:(94, 23) , energy:968
-Movement. id robot:80 point:(33, 70) , energy:966
-Movement. id robot:81 point:(9, 47) , energy:964
-Movement. id robot:82 point:(63, 15) , energy:962
-Movement. id robot:83 point:(47, 62) , energy:964
-Movement. id robot:84 point:(31, 79) , energy:965
-Movement. id robot:85 point:(46, 98) , energy:965
-Movement. id robot:86 point:(22, 85) , energy:964
-Movement. id robot:87 point:(57, 26) , energy:966
-Movement. id robot:88 point:(97, 25) , energy:966
-Movement. id robot:89 point:(29, 99) , energy:967
-Movement. id robot:90 point:(56, 86) , energy:971
-Movement. id robot:91 point:(69, 6) , energy:969
-Movement. id robot:92 point:(99, 59) , energy:967
-Movement. id robot:93 point:(24, 81) , energy:969
-Movement. id robot:94 point:(99, 11) , energy:974
+Movement. id robot:0 point:(50, 39) , energy:981
+Did not movement. id robot:1 point:(74, 12) , energy:983
+Movement. id robot:2 point:(67, 53) , energy:982
+Did not movement. id robot:3 point:(30, 85) , energy:981
+Did not movement. id robot:4 point:(28, 85) , energy:983
+Movement. id robot:5 point:(71, 88) , energy:981
+Did not movement. id robot:6 point:(32, 56) , energy:983
+Movement. id robot:7 point:(29, 95) , energy:984
+Movement. id robot:8 point:(94, 62) , energy:982
+Did not movement. id robot:9 point:(68, 13) , energy:983
+Movement. id robot:10 point:(17, 95) , energy:982
+Movement. id robot:11 point:(26, 28) , energy:981
+Did not movement. id robot:12 point:(96, 7) , energy:982
+Movement. id robot:13 point:(45, 35) , energy:933
+Did not movement. id robot:14 point:(74, 53) , energy:983
+Did not movement. id robot:15 point:(33, 99) , energy:983
+Movement. id robot:16 point:(7, 49) , energy:980
+Movement. id robot:17 point:(31, 17) , energy:982
+Movement. id robot:18 point:(99, 58) , energy:983
+Movement. id robot:19 point:(27, 47) , energy:983
+Movement. id robot:20 point:(99, 45) , energy:982
+Movement. id robot:21 point:(43, 25) , energy:982
+Movement. id robot:22 point:(35, 75) , energy:981
+Movement. id robot:23 point:(56, 48) , energy:982
+Movement. id robot:24 point:(75, 65) , energy:982
+Movement. id robot:25 point:(46, 24) , energy:982
+Did not movement. id robot:26 point:(36, 53) , energy:982
+Movement. id robot:27 point:(56, 74) , energy:811
+Movement. id robot:28 point:(86, 92) , energy:827
+Movement. id robot:29 point:(99, 70) , energy:909
+Movement. id robot:30 point:(99, 99) , energy:907
+Did not movement. id robot:31 point:(42, 50) , energy:908
+Movement. id robot:32 point:(91, 57) , energy:911
+Movement. id robot:33 point:(58, 99) , energy:908
+Movement. id robot:34 point:(93, 65) , energy:911
+Movement. id robot:35 point:(99, 99) , energy:910
+Did not movement. id robot:36 point:(97, 99) , energy:910
+Did not movement. id robot:37 point:(68, 99) , energy:912
+Did not movement. id robot:38 point:(58, 99) , energy:912
+Movement. id robot:39 point:(45, 70) , energy:911
+Movement. id robot:40 point:(89, 99) , energy:912
+Movement. id robot:41 point:(39, 46) , energy:912
+Movement. id robot:42 point:(99, 33) , energy:911
+Movement. id robot:43 point:(99, 24) , energy:910
+Movement. id robot:44 point:(29, 63) , energy:913
+Movement. id robot:45 point:(99, 99) , energy:913
+Movement. id robot:46 point:(99, 99) , energy:912
+Movement. id robot:47 point:(99, 75) , energy:916
+Did not movement. id robot:48 point:(77, 76) , energy:917
+Movement. id robot:49 point:(74, 28) , energy:916
+Movement. id robot:50 point:(57, 69) , energy:913
+Movement. id robot:51 point:(94, 74) , energy:915
+Movement. id robot:52 point:(73, 94) , energy:914
+Did not movement. id robot:53 point:(99, 52) , energy:918
+Movement. id robot:54 point:(39, 79) , energy:918
+Did not movement. id robot:55 point:(29, 27) , energy:927
+Did not movement. id robot:56 point:(40, 47) , energy:930
+Movement. id robot:57 point:(90, 92) , energy:928
+Did not movement. id robot:58 point:(99, 99) , energy:930
+Movement. id robot:59 point:(94, 78) , energy:928
+Movement. id robot:60 point:(25, 21) , energy:929
+Did not movement. id robot:61 point:(99, 63) , energy:928
+Did not movement. id robot:62 point:(22, 52) , energy:928
+Movement. id robot:63 point:(42, 34) , energy:928
+Did not movement. id robot:64 point:(69, 99) , energy:933
+Movement. id robot:65 point:(82, 26) , energy:930
+Movement. id robot:66 point:(68, 92) , energy:931
+Movement. id robot:67 point:(99, 33) , energy:927
+Movement. id robot:68 point:(64, 64) , energy:930
+Movement. id robot:69 point:(27, 92) , energy:930
+Movement. id robot:70 point:(99, 47) , energy:928
+Movement. id robot:71 point:(44, 47) , energy:929
+Movement. id robot:72 point:(99, 99) , energy:931
+Movement. id robot:73 point:(48, 99) , energy:931
+Movement. id robot:74 point:(32, 77) , energy:932
+Did not movement. id robot:75 point:(68, 43) , energy:933
+Movement. id robot:76 point:(56, 19) , energy:932
+Movement. id robot:77 point:(99, 57) , energy:932
+Movement. id robot:78 point:(59, 40) , energy:933
+Movement. id robot:79 point:(71, 25) , energy:934
+Did not movement. id robot:80 point:(99, 39) , energy:936
+Movement. id robot:81 point:(42, 88) , energy:943
+Did not movement. id robot:82 point:(55, 99) , energy:943
+Movement. id robot:83 point:(40, 39) , energy:942
+Movement. id robot:84 point:(99, 99) , energy:945
+Movement. id robot:85 point:(17, 23) , energy:945
+Movement. id robot:86 point:(65, 98) , energy:946
+Movement. id robot:87 point:(27, 30) , energy:948
+Movement. id robot:88 point:(96, 38) , energy:947
+Movement. id robot:89 point:(69, 94) , energy:946
+Did not movement. id robot:90 point:(39, 51) , energy:946
+Did not movement. id robot:91 point:(82, 91) , energy:946
+Did not movement. id robot:92 point:(39, 78) , energy:949
+Movement. id robot:93 point:(55, 73) , energy:947
+Movement. id robot:94 point:(32, 86) , energy:949
+Movement. id robot:95 point:(99, 34) , energy:949
+Movement. id robot:96 point:(34, 53) , energy:948
+Movement. id robot:97 point:(54, 89) , energy:948
+Movement. id robot:98 point:(18, 68) , energy:947
+Movement. id robot:99 point:(33, 87) , energy:948
+Movement. id robot:100 point:(37, 42) , energy:948
+Did not movement. id robot:101 point:(53, 99) , energy:950
+Movement. id robot:102 point:(29, 25) , energy:947
+Did not movement. id robot:103 point:(52, 46) , energy:949
+Movement. id robot:104 point:(35, 52) , energy:949
+Movement. id robot:105 point:(79, 99) , energy:950
+Movement. id robot:106 point:(74, 81) , energy:952
+Movement. id robot:107 point:(21, 21) , energy:953
+Movement. id robot:108 point:(89, 55) , energy:963
+Movement. id robot:109 point:(96, 60) , energy:963
+Did not movement. id robot:110 point:(62, 53) , energy:963
+Did not movement. id robot:111 point:(40, 82) , energy:964
+Movement. id robot:112 point:(70, 57) , energy:963
+Movement. id robot:113 point:(9, 78) , energy:964
+Movement. id robot:114 point:(92, 52) , energy:961
+Movement. id robot:115 point:(99, 51) , energy:963
+Did not movement. id robot:116 point:(67, 32) , energy:965
+Did not movement. id robot:117 point:(79, 61) , energy:964
+Did not movement. id robot:118 point:(31, 72) , energy:965
+Did not movement. id robot:119 point:(78, 55) , energy:967
+Movement. id robot:120 point:(55, 99) , energy:964
+Movement. id robot:121 point:(70, 81) , energy:964
+Movement. id robot:122 point:(38, 54) , energy:966
+Movement. id robot:123 point:(95, 95) , energy:965
+Did not movement. id robot:124 point:(59, 69) , energy:965
+Did not movement. id robot:125 point:(98, 90) , energy:965
+Movement. id robot:126 point:(61, 64) , energy:963
+Movement. id robot:127 point:(58, 18) , energy:966
+Movement. id robot:128 point:(60, 32) , energy:967
+Movement. id robot:129 point:(81, 98) , energy:966
+Movement. id robot:130 point:(25, 88) , energy:968
+Movement. id robot:131 point:(74, 43) , energy:966
+Movement. id robot:132 point:(99, 57) , energy:966
+Movement. id robot:133 point:(99, 36) , energy:966
+Movement. id robot:134 point:(90, 99) , energy:969
