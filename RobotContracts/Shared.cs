@@ -33,6 +33,11 @@ namespace RobotContracts
 
     public class RoundConfig
     {
+        public RoundConfig ShallowCopy()
+        {
+            return (RoundConfig)this.MemberwiseClone();
+        }
+
         public int width;
         public int height;
         public int steps;
@@ -66,6 +71,28 @@ namespace RobotContracts
 
     public class GameState
     {
+        public GameState ShallowCopy()
+        {
+            return (GameState)this.MemberwiseClone();
+        }
+
+        public GameState DeepCopy()
+        {
+            GameState other = (GameState)this.MemberwiseClone();
+            other.robots = new List<RobotState>();
+            other.points = new List<Point>();
+            foreach (RobotState rs in this.robots)
+            {
+                other.robots.Add(rs.ShallowCopy());
+            }
+            foreach (Point ps in this.points)
+            {
+                other.points.Add(ps.ShallowCopy());
+            }
+
+            return other;
+        }
+
         public IList<RobotState> robots = new List<RobotState>();
         public IList<Point> points = new List<Point>();
     }
@@ -85,6 +112,10 @@ namespace RobotContracts
 
     public class Point
     {
+        public Point ShallowCopy()
+        {
+            return (Point)this.MemberwiseClone();
+        }
         public int X, Y;
         public PointType type;
     }

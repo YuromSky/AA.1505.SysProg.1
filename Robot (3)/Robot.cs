@@ -19,7 +19,7 @@ namespace Robot
             RobotAction action = new RobotAction();
 
             Random rng = new Random();
-            action.targetId = state.robots[robotId > 0 ? 0 : 1].id;
+            action.targetId = -1;
             if (rng.Next(0, 2) > 0)
                 action.dX = 1;
 

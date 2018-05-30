@@ -26,7 +26,7 @@ namespace Engine
         private void UpdateState(RoundConfig round_config, int id, RobotAction action)
         {
             RobotState robot = state.robots[id].ShallowCopy();
-            RobotState target_robot = state.robots[action.targetId];
+            
             future_robots.Add(robot);
 
             if (action == null)
@@ -115,53 +115,65 @@ namespace Engine
             }
 
             // attack and defence
-            int distance_attack = (int)Math.Sqrt(Math.Pow((target_robot.X - robot.X), 2) + Math.Pow((target_robot.Y - robot.Y), 2));
-            int max_distance_attack = 10 * round_config.max_radius * robot.speed / round_config.max_health * robot.energy / round_config.max_energy;
-
-            int real_power = SingleRandom.Instance.Next((int)(round_config.minRND * 10), (int)(round_config.maxRND * 10)) * robot.attack / 10;
-            int max_power = real_power * robot.energy / round_config.max_energy;
-
-            int real_target_defence = (10 - SingleRandom.Instance.Next((int)(round_config.minRND * 10), (int)(round_config.maxRND * 10))) * target_robot.defence / 10;
-            int max_target_defence = real_target_defence * robot.energy / round_config.max_energy;
-
-            if ((distance_attack <= max_distance_attack) && (target_robot.energy > 0))
+            if (action.targetId != -1)
             {
-                if (max_power >= max_target_defence)
+                RobotState target_robot = state.robots[action.targetId];
+
+                int distance_attack = (int)Math.Sqrt(Math.Pow((target_robot.X - robot.X), 2) + Math.Pow((target_robot.Y - robot.Y), 2));
+                int max_distance_attack = 10 * round_config.max_radius * robot.speed / round_config.max_health * robot.energy / round_config.max_energy;
+
+                int real_power = SingleRandom.Instance.Next((int)(round_config.minRND * 10), (int)(round_config.maxRND * 10)) * robot.attack / 10;
+                int max_power = real_power * robot.energy / round_config.max_energy;
+
+                int real_target_defence = (10 - SingleRandom.Instance.Next((int)(round_config.minRND * 10), (int)(round_config.maxRND * 10))) * target_robot.defence / 10;
+                int max_target_defence = real_target_defence * robot.energy / round_config.max_energy;
+
+                if ((distance_attack <= max_distance_attack) && (target_robot.energy > 0))
                 {
-                    if (target_robot.defence <= 0)
+                    if (max_power >= max_target_defence)
                     {
-                        target_robot.defence = 0;
-                        target_robot.energy = (int)(max_power - max_target_defence) * round_config.max_energy / round_config.max_health;
+                        if (target_robot.defence <= 0)
+                        {
+                            target_robot.defence = 0;
+                            target_robot.energy = (int)(max_power - max_target_defence) * round_config.max_energy / round_config.max_health;
+                        }
+                        else
+                        {
+                            target_robot.defence -= (int)(max_power - max_target_defence);
+                        }
+                        File.AppendAllText(logpath, "Attack robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id target robot: " + target_robot.id + ", attack:" + (int)(max_power - max_target_defence) + Environment.NewLine, Encoding.UTF8);
                     }
                     else
                     {
-                        target_robot.defence -= (int)(max_power - max_target_defence);
+                        if (robot.attack <= 0)
+                        {
+                            robot.attack = 0;
+                            robot.energy -= (int)(max_target_defence - max_power) * round_config.max_energy / round_config.max_health;
+                        }
+                        else
+                        {
+                            robot.attack -= (int)(max_target_defence - max_power);
+                        }
+                        File.AppendAllText(logpath, "Defence target robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id target robot: " + target_robot.id + ", defence:" + (int)(max_power - max_target_defence) + Environment.NewLine, Encoding.UTF8);
                     }
-                    File.AppendAllText(logpath, "Attack robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id target robot: " + target_robot.id + ", attack:" + (int)(max_power - max_target_defence) + Environment.NewLine, Encoding.UTF8);
+                    robot.energy -= round_config.dEa;
+                    target_robot.energy -= round_config.dEd;
                 }
-                else
+
+                if (target_robot.energy <= 0)
                 {
-                    if (robot.attack <= 0)
-                    {
-                        robot.attack = 0;
-                        robot.energy -= (int)(max_target_defence - max_power) * round_config.max_energy / round_config.max_health;
-                    }
-                    else
-                    {
-                        robot.attack -= (int)(max_target_defence - max_power);
-                    }
-                    File.AppendAllText(logpath, "Defence target robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id target robot: " + target_robot.id + ", defence:" + (int)(max_power - max_target_defence) + Environment.NewLine, Encoding.UTF8);
+                    target_robot.isAlive = false;
+                    robot.kill++;
+                    File.AppendAllText(logpath, "Dead target robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id target robot: " + target_robot.id + Environment.NewLine, Encoding.UTF8);
                 }
-                robot.energy -= round_config.dEa;
-                target_robot.energy -= round_config.dEd;
+
+                target_robot.defence = (target_robot.defence < 0) ? 0 : target_robot.defence;
             }
 
-            if (target_robot.energy <= 0)
-            {
-                target_robot.isAlive = false;
-                robot.kill++;
-                File.AppendAllText(logpath, "Dead target robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id target robot: " + target_robot.id + Environment.NewLine, Encoding.UTF8);
-            }
+            robot.defence = (robot.defence < 0) ? 0 : robot.defence;
+            robot.attack = (robot.attack < 0) ? 0 : robot.attack;
+            robot.speed = (robot.speed < 0) ? 0 : robot.speed;
+
 
             if (robot.energy <= 0)
             {
