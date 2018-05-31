@@ -49,17 +49,39 @@ namespace Interface
             Bitmap bmp = new Bitmap(750, 750);//(Form1.pictureBox1.Width, Form1.pictureBox1.Height);
             Graphics graph = Graphics.FromImage(bmp);
             Pen pen = new Pen(Color.Blue);
-            SolidBrush brush = new SolidBrush(Color.Blue);
+            SolidBrush brushR1 = new SolidBrush(Color.Blue);
+            SolidBrush brushR2 = new SolidBrush(Color.Purple);
+            SolidBrush brushR3 = new SolidBrush(Color.Red);
+            SolidBrush brushR4 = new SolidBrush(Color.GreenYellow);
             SolidBrush brushSelect = new SolidBrush(Color.Green);
             SolidBrush brushHealth = new SolidBrush(Color.Black);
-            SolidBrush brushEnergy = new SolidBrush(Color.Azure);
+            SolidBrush brushEnergy = new SolidBrush(Color.Green);
+ 
+
             Form1.pictureBox1.Image = bmp;
 
             graph.Clear(Color.White);
 
             for (int i = 0; i < robots.Count; i++)
             {
-                graph.FillEllipse(brush, xList[robots[i].X], yList[robots[i].Y], width, height);
+                graph.FillEllipse(brushR4, xList[robots[i].X], yList[robots[i].Y], width, height);
+
+                //if(robots[i].color == 0)
+                //{
+                //    graph.FillEllipse(brushR1, xList[robots[i].X], yList[robots[i].Y], width, height);
+                //}
+                //else if (robots[i].color == 1)
+                //{
+                //    graph.FillEllipse(brushR2, xList[robots[i].X], yList[robots[i].Y], width, height);
+                //}
+                //else if (robots[i].color == 2)
+                //{
+                //    graph.FillEllipse(brushR3, xList[robots[i].X], yList[robots[i].Y], width, height);
+                //}
+                //else if (robots[i].color == 3)
+                //{
+                //    graph.FillEllipse(brushR4, xList[robots[i].X], yList[robots[i].Y], width, height);
+                //}
             }
 
             for (int i = 0; i < points.Count; i++)
