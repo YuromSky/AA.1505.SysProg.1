@@ -259,7 +259,7 @@ namespace Interface
                 roundId++;
                 if (roundId > 4)
                 {
-                    roundId = 0;
+                    Application.Exit();
                 }
             }
         }
