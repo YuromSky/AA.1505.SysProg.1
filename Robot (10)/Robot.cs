@@ -12,6 +12,13 @@ namespace Robot
                 return "Baseline Robot";
             }
         }
+        public int Colour
+        {
+            get
+            {
+                return 0;
+            }
+        }
 
         public RobotAction Tick(int robotId, RoundConfig config, GameState state)
         {

@@ -9,6 +9,10 @@ namespace RobotContracts
         {
             get;
         }
+        int Colour
+        {
+            get;
+        }
 
         RobotAction Tick(int robotId, RoundConfig config, GameState state);
     }

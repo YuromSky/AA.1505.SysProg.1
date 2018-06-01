@@ -27,7 +27,10 @@ namespace Interface
         {
             RobotState robot = state.robots[id].ShallowCopy();
             future_robots.Add(robot);
-
+            if(!robot.isAlive)
+            {
+                return;
+            }
             if (action == null)
             {
                 File.AppendAllText(logpath, robot.id + " timed out" + Environment.NewLine, Encoding.UTF8);
@@ -92,7 +95,9 @@ namespace Interface
                             donor.speed -= donor.speed / donor_health * round_config.dHealth;
                         }
                         File.AppendAllText(logpath, "Drain health from dead robots. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id dead robot: " + donor.id + ", health:" + GetHealth() + Environment.NewLine, Encoding.UTF8);
+                        break;
                     }
+
                 }
             }
 
@@ -216,17 +221,19 @@ namespace Interface
                     defence = 45,
                     isAlive = true,
                     kill = 0,
-                    name = robots[j].Name // попросили добавить чтобы кооперироваться
+                    name = robots[j].Name, // попросили добавить чтобы кооперироваться
+                    colour = robots[j].Colour // попросили добавить чтобы дебажить
                 };
                 state.robots.Add(robot);
             }
 
             foreach (RobotState rs in future_robots)
             {
-                if (rs.kill == 0)
+                if (rs.isAlive)
                 {
-                    rs.id = j++;
-                    state.robots.Add(rs);
+                    RobotState rss = rs.ShallowCopy();
+                    rss.id = j++;
+                    state.robots.Add(rss);
                 }
             }
 

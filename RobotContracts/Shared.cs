@@ -11,6 +11,8 @@ namespace RobotContracts
         public bool isAlive;
         public string name;
         public int kill;
+        public int colour;
+
 
         public RobotState ShallowCopy()
         {
