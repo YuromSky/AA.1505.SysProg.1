@@ -32,7 +32,7 @@ namespace Interface
         public static void drawing(IList<RobotState> robots, IList<RobotContracts.Point>points, int w, int h)
         {
             int width = 750 / w; //Form1.pictureBox1.Width / w; ;
-            int height = 750 / w;//Form1.pictureBox1.Height / h;
+            int height = 750 / h;//Form1.pictureBox1.Height / h;
             List<int> xList = new List<int>();
             List<int> yList = new List<int>();
 
@@ -64,24 +64,24 @@ namespace Interface
 
             for (int i = 0; i < robots.Count; i++)
             {
-                graph.FillEllipse(brushR4, xList[robots[i].X], yList[robots[i].Y], width, height);
+                //graph.FillEllipse(brushR4, xList[robots[i].X], yList[robots[i].Y], width, height);
 
-                //if(robots[i].color == 0)
-                //{
-                //    graph.FillEllipse(brushR1, xList[robots[i].X], yList[robots[i].Y], width, height);
-                //}
-                //else if (robots[i].color == 1)
-                //{
-                //    graph.FillEllipse(brushR2, xList[robots[i].X], yList[robots[i].Y], width, height);
-                //}
-                //else if (robots[i].color == 2)
-                //{
-                //    graph.FillEllipse(brushR3, xList[robots[i].X], yList[robots[i].Y], width, height);
-                //}
-                //else if (robots[i].color == 3)
-                //{
-                //    graph.FillEllipse(brushR4, xList[robots[i].X], yList[robots[i].Y], width, height);
-                //}
+                if (robots[i].colour == 0)
+                {
+                    graph.FillEllipse(brushR1, xList[robots[i].X], yList[robots[i].Y], width, height);
+                }
+                else if (robots[i].colour == 1)
+                {
+                    graph.FillEllipse(brushR2, xList[robots[i].X], yList[robots[i].Y], width, height);
+                }
+                else if (robots[i].colour == 2)
+                {
+                    graph.FillEllipse(brushR3, xList[robots[i].X], yList[robots[i].Y], width, height);
+                }
+                else if (robots[i].colour == 3)
+                {
+                    graph.FillEllipse(brushR4, xList[robots[i].X], yList[robots[i].Y], width, height);
+                }
             }
 
             for (int i = 0; i < points.Count; i++)
