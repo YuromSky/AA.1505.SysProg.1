@@ -74,7 +74,7 @@ namespace Interface
                 if ((robot.id != donor.id) && (robot.X == donor.X) && (robot.Y == donor.Y) && !donor.isAlive)
                 {
                     int health = GetHealth();
-                    if (health <= round_config.max_health)
+                    if (health < round_config.max_health)
                     {
                         int donor_health = donor.attack + donor.defence + donor.speed;
                         if (donor.attack >= 0)
@@ -121,7 +121,16 @@ namespace Interface
             // attack and defence
             if (action.targetId != -1)
             {
-                RobotState target_robot = state.robots[action.targetId];
+                RobotState target_robot = null;
+                if (action.targetId < robot.id)
+                {
+                    target_robot = future_robots[action.targetId];
+                }
+                else
+                {
+                    target_robot = state.robots[action.targetId];
+                }
+                
 
                 int distance_attack = (int)Math.Sqrt(Math.Pow((target_robot.X - robot.X), 2) + Math.Pow((target_robot.Y - robot.Y), 2));
                 int max_distance_attack = 10 * round_config.max_radius * robot.speed / round_config.max_health * robot.energy / round_config.max_energy;
@@ -139,7 +148,7 @@ namespace Interface
                         if (target_robot.defence <= 0)
                         {
                             target_robot.defence = 0;
-                            target_robot.energy = (int)(max_power - max_target_defence) * round_config.max_energy / round_config.max_health;
+                            target_robot.energy -= (int)(max_power - max_target_defence) * round_config.max_energy / round_config.max_health;
                         }
                         else
                         {
@@ -164,14 +173,28 @@ namespace Interface
                     target_robot.energy -= round_config.dEd;
                 }
 
-                if (target_robot.energy <= 0)
+                if ((target_robot.energy <= 0)&&(target_robot.defence == 0))
                 {
-                    target_robot.isAlive = false;
-                    robot.kill++;
-                    File.AppendAllText(logpath, "Dead target robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id target robot: " + target_robot.id + Environment.NewLine, Encoding.UTF8);
+                    bool flag = true;
+                    for (int i = 0; i < robot.kill; i++)
+                    {
+                        if (target_robot.id == robot.kill_id[i])
+                        {
+                            flag = false;
+                        }
+                    }
+                    if (flag)
+                    {
+                        target_robot.isAlive = false;
+                        robot.kill++;
+                        robot.kill_id[robot.kill - 1] = target_robot.id;
+                        File.AppendAllText(logpath, "Dead target robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id target robot: " + target_robot.id + Environment.NewLine, Encoding.UTF8);
+
+                    }
                 }
 
                 target_robot.defence = (target_robot.defence < 0) ? 0 : target_robot.defence;
+                target_robot.energy = (target_robot.energy < 0) ? 0 : target_robot.energy;
             }
 
             robot.defence = (robot.defence < 0) ? 0 : robot.defence;
@@ -221,6 +244,7 @@ namespace Interface
                     defence = 45,
                     isAlive = true,
                     kill = 0,
+                    kill_id = new int[robots.Count],
                     name = robots[j].Name, // попросили добавить чтобы кооперироваться
                     colour = robots[j].Colour // попросили добавить чтобы дебажить
                 };
@@ -304,7 +328,7 @@ namespace Interface
                         state.robots.Add(rs);
                     }
                 }
-                else
+                if (n == round_config.steps -1)
                 {
                     for (int k = 0; k < future_robots.Count; k++)
                     {

@@ -12,7 +12,7 @@ namespace RobotContracts
         public string name;
         public int kill;
         public int colour;
-
+        public int []kill_id;
 
         public RobotState ShallowCopy()
         {
