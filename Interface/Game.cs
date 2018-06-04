@@ -176,11 +176,14 @@ namespace Interface
                 if ((target_robot.energy <= 0)&&(target_robot.defence == 0))
                 {
                     bool flag = true;
-                    for (int i = 0; i < robot.kill; i++)
+                    foreach (RobotState rb in state.robots)
                     {
-                        if (target_robot.id == robot.kill_id[i])
+                        for (int i = 0; i < rb.kill; i++)
                         {
-                            flag = false;
+                            if (target_robot.id == rb.kill_id[i])
+                            {
+                                flag = false;
+                            }
                         }
                     }
                     if (flag)
