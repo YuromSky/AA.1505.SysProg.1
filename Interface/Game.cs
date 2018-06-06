@@ -260,6 +260,11 @@ namespace Interface
                 {
                     RobotState rss = rs.ShallowCopy();
                     rss.id = j++;
+                    for (int kkk = 0; kkk < rss.kill; kkk++)
+                    {
+                        rss.kill_id[kkk] = 0;
+                    }
+                    rss.kill = 0;
                     state.robots.Add(rss);
                 }
             }
