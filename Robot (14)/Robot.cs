@@ -48,7 +48,7 @@ namespace Robot
                     }
                 }
 
-                if (self.energy < 0.7 * config.max_energy || (self.attack + self.defence + self.speed) < config.max_health)
+                if (self.energy < 0.7 * config.max_energy || (self.attack + self.defence + self.speed) < 0.7 * config.max_health)
                 {
                     under_attack = false;
                 }
