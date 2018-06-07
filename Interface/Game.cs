@@ -53,12 +53,15 @@ namespace Interface
                             break;
                         case PointType.Health:
                             int health = GetHealth();
-                            if (health <= round_config.max_health)
+                            if (health < round_config.max_health)
                             {
-                                robot.attack += robot.attack / health * round_config.dHealth;
-                                robot.defence += robot.defence / health * round_config.dHealth;
-                                if (robot.speed <= round_config.max_speed)
-                                    robot.speed += robot.speed / health * round_config.dHealth;
+                                int dAt = (int)(((float)robot.attack / (float)health) * round_config.dHealth);
+                                int dDf = (int)(((float)robot.defence / (float)health) * round_config.dHealth);
+                                int dSp = (int)(((float)robot.speed / (float)health) * round_config.dHealth);
+                                robot.attack += dAt;
+                                robot.defence += dDf;
+                                if (robot.speed < round_config.max_speed)
+                                    robot.speed += dSp;
                                 File.AppendAllText(logpath, "Added robot health on point. id robot:" + robot.id + " point:(" + point.X + ", " + point.Y + "), health:" + GetHealth() + Environment.NewLine, Encoding.UTF8);
                             }
                             break;
