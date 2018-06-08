@@ -16,12 +16,39 @@ namespace Interface
         int roundCount = 0;
 
         public static GameConfig game_config = new GameConfig();
+        static string configPath = "../../config.json";
+        static GameConfig config = ConfigLoader.LoadConfig(configPath);
 
         public Form2()
         {
             InitializeComponent();
 
             game_config.rounds = new List<RoundConfig>();
+
+            refreshWindow(0);
+        }
+
+        private void refreshWindow(int i)
+        {
+            textBox1.Text = config.rounds[i].width.ToString();
+            textBox2.Text = config.rounds[i].height.ToString();
+            textBox11.Text = config.rounds[i].steps.ToString();
+            textBox6.Text = config.rounds[i].timeout.ToString();
+            textBox22.Text = config.rounds[i].minRND.ToString();
+            textBox21.Text = config.rounds[i].maxRND.ToString();
+            textBox10.Text = config.rounds[i].max_energy.ToString();
+            textBox9.Text = config.rounds[i].max_health.ToString();
+            textBox8.Text = config.rounds[i].max_speed.ToString();
+            textBox7.Text = config.rounds[i].max_radius.ToString();
+            textBox15.Text = config.rounds[i].dHealth.ToString();
+            textBox14.Text = config.rounds[i].dEv.ToString();
+            textBox13.Text = config.rounds[i].dEs.ToString();
+            textBox12.Text = config.rounds[i].dEd.ToString();
+            textBox16.Text = config.rounds[i].dEa.ToString();
+            textBox17.Text = config.rounds[i].dE.ToString();
+            textBox20.Text = config.rounds[i].nEnergy.ToString();
+            textBox19.Text = config.rounds[i].nHealth.ToString();
+            textBox18.Text = config.rounds[i].K.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,6 +95,12 @@ namespace Interface
                 form1.Show();
                 this.Close();
             }
+
+            if(roundCount < 5)
+            {
+                refreshWindow(roundCount);
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

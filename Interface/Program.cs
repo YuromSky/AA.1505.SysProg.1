@@ -32,7 +32,7 @@ namespace Interface
         public static void drawing(IList<RobotState> robots, IList<RobotContracts.Point>points, int w, int h)
         {
             int width = 750 / w; //Form1.pictureBox1.Width / w; ;
-            int height = 750 / w;//Form1.pictureBox1.Height / h;
+            int height = 750 / h;//Form1.pictureBox1.Height / h;
             List<int> xList = new List<int>();
             List<int> yList = new List<int>();
 
