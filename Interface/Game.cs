@@ -55,13 +55,13 @@ namespace Interface
                             int health = GetHealth();
                             if (health < round_config.max_health)
                             {
-                                int dAt = (robot.attack == 0)? (int)(0.6 + ((float)robot.attack / (float)health) * round_config.dHealth) : (int)(((float)robot.attack / (float)health) * round_config.dHealth);
-                                int dDf = (robot.defence == 0) ? (int)(0.6 + ((float)robot.defence / (float)health) * round_config.dHealth) : (int)(((float)robot.defence / (float)health) * round_config.dHealth);
-                                int dSp = (robot.speed == 0) ? (int)(0.6 + ((float)robot.speed / (float)health) * round_config.dHealth) : (int)(((float)robot.speed / (float)health) * round_config.dHealth);
-                                robot.attack += (dAt + GetHealth() < round_config.max_health) ? dAt: round_config.max_health - (dAt + GetHealth());
-                                robot.defence += (dDf + GetHealth() < round_config.max_health) ? dDf : round_config.max_health - (dDf + GetHealth()); 
+                                int dAt = (robot.attack == 0)? 1 : (int)(((float)robot.attack / (float)health) * round_config.dHealth);
+                                int dDf = (robot.defence == 0) ? 1: (int)(((float)robot.defence / (float)health) * round_config.dHealth);
+                                int dSp = (robot.speed == 0) ? 1 : (int)(((float)robot.speed / (float)health) * round_config.dHealth);
+                                robot.attack += (dAt + GetHealth() < round_config.max_health) ? dAt: round_config.max_health - GetHealth();
+                                robot.defence += (dDf + GetHealth() < round_config.max_health) ? dDf : round_config.max_health - GetHealth(); 
                                 if (robot.speed < round_config.max_speed)
-                                    robot.speed += (dSp + GetHealth() < round_config.max_health) ? dSp : round_config.max_health - (dSp + GetHealth());
+                                    robot.speed += (dSp + GetHealth() < round_config.max_health) ? dSp : round_config.max_health - GetHealth();
                                 File.AppendAllText(logpath, "Added robot health on point. id robot:" + robot.id + " point:(" + point.X + ", " + point.Y + "), health:" + GetHealth() + Environment.NewLine, Encoding.UTF8);
                             }
                             break;
