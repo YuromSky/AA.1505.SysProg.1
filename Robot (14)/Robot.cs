@@ -57,11 +57,11 @@ namespace Robot
                 {
                     HealthRedestribution(self, config, action, 0.4f, 0.4f, 0.2f);
 
-                    int sum = action.dA + action.dD + action.dV;
+                    /*int sum = action.dA + action.dD + action.dV;
                     if (sum != 0)
                     {
                         action.dV += -sum;
-                    }
+                    }*/
 
                     action.targetId = enemy_id;
 
@@ -75,13 +75,13 @@ namespace Robot
 
                     HealthRedestribution(self, config, action, 0.0f, 0.2f, 0.8f);
 
-                    int sum = action.dA + action.dD + action.dV;
+                    /*int sum = action.dA + action.dD + action.dV;
                     if (sum != 0)
                     {
                         action.dD += -sum;
-                    }
+                    }*/
 
-                    if (self.energy < 0.95 * config.max_energy)
+                    if (self.energy < 0.97 * config.max_energy)
                     {
                         Point target = GetNearestStation(robotId, config, state, PointType.Energy);
                         MoveTo(robotId, config, state, action, target.X, target.Y);
@@ -92,15 +92,18 @@ namespace Robot
                         {
                             Point target_station = GetNearestStation(robotId, config, state, PointType.Health);
 
-                            int target_robot_id = GetNearestRobot(robotId, config, state, false, false);
-                            RobotState taregt_robot = state.robots[target_robot_id];
-
                             int X = target_station.X;
                             int Y = target_station.Y;
-                            if (CalcDistance(self.X, self.Y, X, Y) > CalcDistance(self.X, self.Y, taregt_robot.X, taregt_robot.Y))
+
+                            int target_robot_id = GetNearestRobot(robotId, config, state, false, false);
+                            if (target_robot_id >= 0)
                             {
-                                X = taregt_robot.X;
-                                Y = taregt_robot.Y;
+                                RobotState taregt_robot = state.robots[target_robot_id];
+                                if (CalcDistance(self.X, self.Y, X, Y) > CalcDistance(self.X, self.Y, taregt_robot.X, taregt_robot.Y))
+                                {
+                                    X = taregt_robot.X;
+                                    Y = taregt_robot.Y;
+                                }
                             }
 
                             MoveTo(robotId, config, state, action, X, Y);
@@ -191,7 +194,7 @@ namespace Robot
 
                 if (!enemyOnly || rs.name != self.name)
                 {
-                    if (!aliveOnly || rs.isAlive)
+                    if (aliveOnly == rs.isAlive)//(!aliveOnly || rs.isAlive)
                     {
                         int rsDistance = CalcDistance(self.X, self.Y, rs.X, rs.Y);
                         if (rsDistance < targetDistance)
