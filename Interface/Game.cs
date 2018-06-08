@@ -144,13 +144,13 @@ namespace Interface
                 
 
                 int distance_attack = (int)Math.Sqrt(Math.Pow((target_robot.X - robot.X), 2) + Math.Pow((target_robot.Y - robot.Y), 2));
-                int max_distance_attack = 10 * round_config.max_radius * robot.speed / round_config.max_health * robot.energy / round_config.max_energy;
+                int max_distance_attack = (int)Math.Round( 10 * (float)round_config.max_radius * (float)robot.speed / (float)round_config.max_health * (float)robot.energy / (float)round_config.max_energy);
 
                 int real_power = SingleRandom.Instance.Next((int)(round_config.minRND), (int)(round_config.maxRND)) * robot.attack / 10;
                 int max_power = real_power * robot.energy / round_config.max_energy;
 
                 int real_target_defence = ((10 - SingleRandom.Instance.Next((int)(round_config.minRND), (int)(round_config.maxRND))) * target_robot.defence) / 10;
-                int max_target_defence = real_target_defence * robot.energy / round_config.max_energy;
+                int max_target_defence = (int)Math.Round((float)real_target_defence * (float)robot.energy / (float)round_config.max_energy);
 
                 if ((distance_attack <= max_distance_attack) && (target_robot.energy > 0))
                 {
