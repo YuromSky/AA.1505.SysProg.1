@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using RobotContracts;
 
 namespace Robot
@@ -17,7 +17,7 @@ namespace Robot
         {
             get
             {
-                return 2;
+                return 3;
             }
         }
 
@@ -29,39 +29,30 @@ namespace Robot
 
             if (self.energy > 0 && self.isAlive)
             {
-                int max_distance_attack = 10 * config.max_radius * self.speed / config.max_health * self.energy / config.max_energy;
+                int max_distance_attack = (int)Math.Round(10 * (float)config.max_radius * (float)self.speed / (float)config.max_health * (float)self.energy / (float)config.max_energy);
+                int health = self.attack + self.defence + self.speed;
 
                 int enemy_id = -1;
-                bool under_attack = false;
-                for (int id = 0; id < state.robots.Count; id++)
+                if (self.energy > 0.7 * config.max_energy && health > 0.7 * config.max_health)
                 {
-                    RobotState rs = state.robots[id];
-                    if (rs.name != self.name)
+                    for (int id = 0; id < state.robots.Count; id++)
                     {
-                        int enemy_distance_attack = 10 * config.max_radius * rs.speed / config.max_health * rs.energy / config.max_energy;
-                        int distance = CalcDistance(self.X, self.Y, rs.X, rs.Y);
-                        if (distance <= enemy_distance_attack && distance <= max_distance_attack)
+                        RobotState rs = state.robots[id];
+                        if (rs.name != self.name && rs.isAlive)
                         {
-                            under_attack = true;
-                            enemy_id = id;
+                            int enemy_distance_attack = (int)Math.Round(10 * (float)config.max_radius * (float)rs.speed / (float)config.max_health * (float)rs.energy / (float)config.max_energy);
+                            int distance = CalcDistance(self.X, self.Y, rs.X, rs.Y);
+                            if (distance <= enemy_distance_attack && distance <= max_distance_attack)
+                            {
+                                enemy_id = id;
+                            }
                         }
                     }
                 }
 
-                if (self.energy < 0.7 * config.max_energy || (self.attack + self.defence + self.speed) < 0.7 * config.max_health)
-                {
-                    under_attack = false;
-                }
-
-                if (under_attack)
+                if (enemy_id > 0)
                 {
                     HealthRedestribution(self, config, action, 0.4f, 0.4f, 0.2f);
-
-                    /*int sum = action.dA + action.dD + action.dV;
-                    if (sum != 0)
-                    {
-                        action.dV += -sum;
-                    }*/
 
                     action.targetId = enemy_id;
 
@@ -71,17 +62,9 @@ namespace Robot
                 {
                     bool attack_mode = false;
 
-                    int health = self.attack + self.defence + self.speed;
+                    HealthRedestribution(self, config, action, 0.0f, 0.4f, 0.6f);
 
-                    HealthRedestribution(self, config, action, 0.0f, 0.2f, 0.8f);
-
-                    /*int sum = action.dA + action.dD + action.dV;
-                    if (sum != 0)
-                    {
-                        action.dD += -sum;
-                    }*/
-
-                    if (self.energy < 0.97 * config.max_energy)
+                    if (self.energy < 0.95 * config.max_energy)
                     {
                         Point target = GetNearestStation(robotId, config, state, PointType.Energy);
                         MoveTo(robotId, config, state, action, target.X, target.Y);
@@ -95,7 +78,26 @@ namespace Robot
                             int X = target_station.X;
                             int Y = target_station.Y;
 
-                            int target_robot_id = GetNearestRobot(robotId, config, state, false, false);
+                            int target_robot_id = -1;
+
+                            if (health > 0.4 * config.max_health)
+                            {
+                                int target_robot_dist = config.width * config.height;
+                                for (int id = 0; id < state.robots.Count; id++)
+                                {
+                                    RobotState rs = state.robots[id];
+                                    if (rs.isAlive == false && (rs.attack + rs.defence + rs.speed) > 0.4 * config.max_health)
+                                    {
+                                        int distance = CalcDistance(self.X, self.Y, rs.X, rs.Y);
+                                        if (distance < target_robot_dist)
+                                        {
+                                            target_robot_id = id;
+                                            target_robot_dist = distance;
+                                        }
+                                    }
+                                }
+                            }
+
                             if (target_robot_id >= 0)
                             {
                                 RobotState taregt_robot = state.robots[target_robot_id];
@@ -110,11 +112,11 @@ namespace Robot
                         }
                         else
                         {
-                            attack_mode = true;
-
-                            int targetId = GetNearestRobot(robotId, config, state, true, true);
+                            int targetId = GetNearestRobot(robotId, config, state);
                             if (targetId >= 0)
                             {
+                                attack_mode = true;
+
                                 RobotState target = state.robots[targetId];
                                 MoveTo(robotId, config, state, action, target.X, target.Y);
 
@@ -182,7 +184,7 @@ namespace Robot
             return state.points[pointId];
         }
 
-        private int GetNearestRobot(int robotId, RoundConfig config, GameState state, bool enemyOnly, bool aliveOnly)
+        private int GetNearestRobot(int robotId, RoundConfig config, GameState state)
         {
             RobotState self = state.robots[robotId];
 
@@ -192,16 +194,13 @@ namespace Robot
             {
                 RobotState rs = state.robots[id];
 
-                if (!enemyOnly || rs.name != self.name)
+                if (rs.name != self.name && rs.isAlive)
                 {
-                    if (aliveOnly == rs.isAlive)//(!aliveOnly || rs.isAlive)
+                    int rsDistance = CalcDistance(self.X, self.Y, rs.X, rs.Y);
+                    if (rsDistance < targetDistance)
                     {
-                        int rsDistance = CalcDistance(self.X, self.Y, rs.X, rs.Y);
-                        if (rsDistance < targetDistance)
-                        {
-                            targetDistance = rsDistance;
-                            targetId = id;
-                        }
+                        targetDistance = rsDistance;
+                        targetId = id;
                     }
                 }
             }
@@ -215,30 +214,28 @@ namespace Robot
 
             int max_distance = 10 * config.max_speed * self.speed / config.max_health * self.energy / config.max_energy;
             int distance = CalcDistance(self.X, self.Y, X, Y);
-
-            if (distance <= max_distance)
+            if (max_distance > 0)
             {
-                action.dX = X - self.X;
-                action.dY = Y - self.Y;
-            }
-            else
-            {
-                if (max_distance == 0)
+                if (distance <= max_distance)
                 {
-                    max_distance = 1;
+                    action.dX = X - self.X;
+                    action.dY = Y - self.Y;
                 }
-                int num_steps = distance / max_distance + 1;
-                action.dX = (X - self.X) / num_steps;
-                action.dY = (Y - self.Y) / num_steps;
+                else
+                {
+                    int num_steps = distance / max_distance + 1;
+                    action.dX = (X - self.X) / num_steps;
+                    action.dY = (Y - self.Y) / num_steps;
+                }
             }
         }
 
         private void HealthRedestribution(RobotState self, RoundConfig config, RobotAction action, float attack, float defence, float speed)
         {
             int health = self.attack + self.defence + self.speed;
-            action.dA = (int)((attack - self.attack / (float)health) * (config.dHealth - 3));
-            action.dD = (int)((defence - self.defence / (float)health) * (config.dHealth - 3));
-            action.dV = (int)((speed - self.speed / (float)health) * (config.dHealth - 3));
+            action.dA = (int)((attack - self.attack / (float)health) * (2 * config.dHealth - 3));
+            action.dD = (int)((defence - self.defence / (float)health) * (2 * config.dHealth - 3));
+            action.dV = (int)((speed - self.speed / (float)health) * (2 * config.dHealth - 3));
 
             if (self.speed + action.dV > config.max_speed)
             {
@@ -251,7 +248,7 @@ namespace Robot
             int sum = action.dA + action.dD + action.dV;
             if (sum != 0)
             {
-                action.dV -= sum;
+                action.dD -= sum;
             }
         }
     }
