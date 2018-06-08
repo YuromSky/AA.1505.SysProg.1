@@ -224,13 +224,17 @@ namespace Interface
             }
 
             // +
-            if ((Math.Abs(action.dA) + Math.Abs(action.dD) + Math.Abs(action.dV) != 0) && (Math.Abs(action.dA) + Math.Abs(action.dD) + Math.Abs(action.dV) <= 2 * round_config.dHealth) && (robot.speed + action.dV <= round_config.max_speed) && (Math.Abs(action.dA + action.dD + action.dV) <= 0.0000001))
+            if (GetHealth() > 0)
             {
-                robot.speed += action.dV;
-                robot.attack += action.dA;
-                robot.defence += action.dD;
-                File.AppendAllText(logpath, "Resource movement. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), health " + GetHealth() + Environment.NewLine, Encoding.UTF8);
+                if ((Math.Abs(action.dA) + Math.Abs(action.dD) + Math.Abs(action.dV) != 0) && (Math.Abs(action.dA) + Math.Abs(action.dD) + Math.Abs(action.dV) <= 2 * round_config.dHealth) && (robot.speed + action.dV <= round_config.max_speed) && (action.dA + action.dD + action.dV == 0))
+                {
+                    robot.speed += action.dV;
+                    robot.attack += action.dA;
+                    robot.defence += action.dD;
+                    File.AppendAllText(logpath, "Resource movement. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), health " + GetHealth() + Environment.NewLine, Encoding.UTF8);
+                }
             }
+            
 
 
             robot.energy = (robot.energy > round_config.max_energy) ? round_config.max_energy : robot.energy;
