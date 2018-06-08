@@ -9,6 +9,7 @@ namespace RobotContracts
         {
             get;
         }
+
         int Colour
         {
             get;

@@ -12,7 +12,7 @@ namespace RobotContracts
         public string name;
         public int kill;
         public int colour;
-        public int []kill_id;
+        public int[] kill_id;
 
         public RobotState ShallowCopy()
         {
@@ -35,11 +35,6 @@ namespace RobotContracts
 
     public class RoundConfig
     {
-        public RoundConfig ShallowCopy()
-        {
-            return (RoundConfig)this.MemberwiseClone();
-        }
-
         public int width;
         public int height;
         public int steps;
@@ -63,6 +58,11 @@ namespace RobotContracts
         public int nEnergy;
         public int nHealth;
         public int K;
+
+        public RoundConfig ShallowCopy()
+        {
+            return (RoundConfig)this.MemberwiseClone();
+        }
     }
 
     public class GameConfig
@@ -73,6 +73,9 @@ namespace RobotContracts
 
     public class GameState
     {
+        public IList<RobotState> robots = new List<RobotState>();
+        public IList<Point> points = new List<Point>();
+
         public GameState ShallowCopy()
         {
             return (GameState)this.MemberwiseClone();
@@ -80,23 +83,22 @@ namespace RobotContracts
 
         public GameState DeepCopy()
         {
-            GameState other = (GameState)this.MemberwiseClone();
+            GameState other = this.ShallowCopy();
+
             other.robots = new List<RobotState>();
-            other.points = new List<Point>();
             foreach (RobotState rs in this.robots)
             {
                 other.robots.Add(rs.ShallowCopy());
             }
-            foreach (Point ps in this.points)
+
+            other.points = new List<Point>();
+            foreach (Point p in this.points)
             {
-                other.points.Add(ps.ShallowCopy());
+                other.points.Add(p.ShallowCopy());
             }
 
             return other;
         }
-
-        public IList<RobotState> robots = new List<RobotState>();
-        public IList<Point> points = new List<Point>();
     }
 
     public class RobotAction
@@ -114,11 +116,12 @@ namespace RobotContracts
 
     public class Point
     {
+        public int X, Y;
+        public PointType type;
+
         public Point ShallowCopy()
         {
             return (Point)this.MemberwiseClone();
         }
-        public int X, Y;
-        public PointType type;
     }
 }
