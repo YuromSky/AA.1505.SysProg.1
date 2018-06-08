@@ -80,25 +80,33 @@ namespace Interface
                     if (health < round_config.max_health)
                     {
                         int donor_health = donor.attack + donor.defence + donor.speed;
-                        if (donor.attack >= 0)
+                        if (donor_health > 0)
                         {
-                            robot.attack += robot.attack / health * round_config.dHealth;
-                            donor.attack -= donor.attack / donor_health * round_config.dHealth;
-                        }
+                            if (donor.attack > 0)
+                            {
+                                robot.attack += robot.attack / donor_health * round_config.dHealth;
+                                donor.attack -= donor.attack / donor_health * round_config.dHealth;
+                            }
 
-                        if (donor.defence >= 0)
-                        {
-                            robot.defence += robot.defence / health * round_config.dHealth;
-                            donor.defence -= donor.defence / donor_health * round_config.dHealth;
-                        }
+                            if (donor.defence > 0)
+                            {
+                                robot.defence += robot.defence / donor_health * round_config.dHealth;
+                                donor.defence -= donor.defence / donor_health * round_config.dHealth;
+                            }
 
-                        if (donor.speed >= 0 && robot.speed <= round_config.max_speed)
-                        {
-                            robot.speed += robot.speed / health * round_config.dHealth;
-                            donor.speed -= donor.speed / donor_health * round_config.dHealth;
+                            if (donor.speed > 0 && robot.speed <= round_config.max_speed)
+                            {
+                                robot.speed += robot.speed / donor_health * round_config.dHealth;
+                                donor.speed -= donor.speed / donor_health * round_config.dHealth;
+                            }
+                            if (health == GetHealth())
+                            {
+                                continue;
+                            }
+                            File.AppendAllText(logpath, "Drain health from dead robots. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id dead robot: " + donor.id + ", health:" + GetHealth() + Environment.NewLine, Encoding.UTF8);
+                            break;
                         }
-                        File.AppendAllText(logpath, "Drain health from dead robots. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id dead robot: " + donor.id + ", health:" + GetHealth() + Environment.NewLine, Encoding.UTF8);
-                        break;
+                        
                     }
 
                 }
