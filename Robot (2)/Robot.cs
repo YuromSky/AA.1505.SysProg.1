@@ -49,16 +49,19 @@ namespace Robot
                 Point targetPoint = state.points[pointId];
 
                 int maxDistance = 10 * config.max_speed * self.speed / config.max_health * self.energy / config.max_energy;
-                if (pointDist <= maxDistance)
+                if (maxDistance > 0)
                 {
-                    action.dX = targetPoint.X - self.X;
-                    action.dY = targetPoint.Y - self.Y;
-                }
-                else
-                {
-                    int steps = pointDist / maxDistance + 1;
-                    action.dX = (targetPoint.X - self.X) / steps;
-                    action.dY = (targetPoint.Y - self.Y) / steps;
+                    if (pointDist <= maxDistance)
+                    {
+                        action.dX = targetPoint.X - self.X;
+                        action.dY = targetPoint.Y - self.Y;
+                    }
+                    else
+                    {
+                        int steps = pointDist / maxDistance + 1;
+                        action.dX = (targetPoint.X - self.X) / steps;
+                        action.dY = (targetPoint.Y - self.Y) / steps;
+                    }
                 }
 
                 // defense
