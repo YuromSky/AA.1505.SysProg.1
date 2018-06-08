@@ -58,7 +58,7 @@ namespace Robot
             int maxdistance = 10 * config.max_speed * self.speed / config.max_health * self.energy / config.max_energy;
             
             coords NewMoveToPoint = new coords();
-            coords finalcoords = new coords(); // res_cs
+            coords finalcoords = new coords();
             coords testcoords = new coords();
             int dx = coords.x - self.X;
             int dy = coords.y - self.Y;
@@ -104,7 +104,7 @@ namespace Robot
             return finalcoords;
         }
 
-        public RobotAction Tick(int robotId, RoundConfig config, GameState state)  // ЕБАНЫЙ ТИККК
+        public RobotAction Tick(int robotId, RoundConfig config, GameState state)
         {
             int MinDistance = 999999;
             coords PointCoords = new coords();
