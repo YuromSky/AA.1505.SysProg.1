@@ -157,13 +157,7 @@ namespace Interface
             {
                 if (game.future_robots !=null)
                 {
-                    robots = RobotLoader.LoadRobots(config.robots);
-                    int n = config.rounds.Count;
-                    for (int i = 1; i < n; i++)
-                    {
-                        robots.AddRange(RobotLoader.LoadRobots(config.robots));
-                    }
-                    
+                    robots = RobotLoader.LoadRobots(config.robots);                    
                 }
                 else
                 {
