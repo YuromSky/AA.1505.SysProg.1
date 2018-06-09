@@ -1,0 +1,612 @@
+﻿round: 0
+step: 0
+Movement. id: 0; pos: (73, 82); energy: 998
+0: 72x81; health: 100; energy: 1000
+Movement. id: 1; pos: (80, 61); energy: 998
+1: 76x55; health: 100; energy: 1000
+Movement. id: 2; pos: (17, 64); energy: 998
+2: 20x55; health: 100; energy: 1000
+Movement. id: 3; pos: (99, 48); energy: 998
+3: 90x44; health: 100; energy: 1000
+Movement. id: 4; pos: (90, 19); energy: 998
+Health redistribution. id: 4; pos: (90,19); attack: 45, -10; defence: 45, 10; speed: 10, 0
+4: 97x27; health: 100; energy: 1000
+Movement. id: 5; pos: (30, 47); energy: 998
+5: 29x46; health: 100; energy: 1000
+No movement. id: 6; pos: (63, 46); energy: 999
+6: 63x46; health: 100; energy: 1000
+Movement. id: 7; pos: (98, 4); energy: 998
+7: 98x3; health: 100; energy: 1000
+Movement. id: 8; pos: (86, 99); energy: 998
+8: 86x99; health: 100; energy: 1000
+Movement. id: 9; pos: (65, 38); energy: 998
+9: 67x31; health: 100; energy: 1000
+Movement. id: 10; pos: (81, 85); energy: 998
+10: 81x84; health: 100; energy: 1000
+Movement. id: 11; pos: (99, 3); energy: 998
+11: 99x3; health: 100; energy: 1000
+No movement. id: 12; pos: (69, 52); energy: 999
+12: 69x52; health: 100; energy: 1000
+Movement. id: 13; pos: (92, 73); energy: 998
+Health redistribution. id: 13; pos: (92,73); attack: 45, -3; defence: 45, 3; speed: 10, 0
+13: 93x68; health: 100; energy: 1000
+No movement. id: 14; pos: (54, 8); energy: 999
+14: 54x8; health: 100; energy: 1000
+Movement. id: 15; pos: (19, 45); energy: 998
+15: 18x45; health: 100; energy: 1000
+Movement. id: 16; pos: (30, 99); energy: 998
+16: 29x98; health: 100; energy: 1000
+Movement. id: 17; pos: (65, 76); energy: 998
+17: 64x76; health: 100; energy: 1000
+Movement. id: 18; pos: (3, 39); energy: 998
+18: 3x38; health: 100; energy: 1000
+No movement. id: 19; pos: (34, 95); energy: 999
+19: 34x95; health: 100; energy: 1000
+No movement. id: 20; pos: (50, 71); energy: 999
+20: 50x71; health: 100; energy: 1000
+Movement. id: 21; pos: (12, 28); energy: 998
+21: 11x27; health: 100; energy: 1000
+Movement. id: 22; pos: (91, 79); energy: 998
+22: 90x79; health: 100; energy: 1000
+Movement. id: 23; pos: (34, 45); energy: 998
+23: 33x45; health: 100; energy: 1000
+Movement. id: 24; pos: (15, 22); energy: 998
+24: 14x22; health: 100; energy: 1000
+Movement. id: 25; pos: (41, 72); energy: 998
+25: 41x71; health: 100; energy: 1000
+Movement. id: 26; pos: (62, 49); energy: 998
+26: 61x48; health: 100; energy: 1000
+step: 1
+Movement. id: 0; pos: (74, 83); energy: 996
+0: 73x82; health: 100; energy: 998
+Movement. id: 1; pos: (85, 67); energy: 996
+1: 80x61; health: 100; energy: 998
+Added energy on point. id: 2; pos: (17, 64); energy: 1000
+No movement. id: 2; pos: (17, 64); energy: 999
+2: 17x64; health: 100; energy: 998
+Added energy on point. id: 3; pos: (99, 48); energy: 1000
+No movement. id: 3; pos: (99, 48); energy: 999
+3: 99x48; health: 100; energy: 998
+Movement. id: 4; pos: (82, 21); energy: 996
+Health redistribution. id: 4; pos: (82,21); attack: 35, -10; defence: 55, 10; speed: 10, 0
+4: 90x19; health: 100; energy: 998
+Movement. id: 5; pos: (31, 48); energy: 996
+5: 30x47; health: 100; energy: 998
+No movement. id: 6; pos: (63, 46); energy: 998
+6: 63x46; health: 100; energy: 999
+No movement. id: 7; pos: (98, 4); energy: 997
+7: 98x4; health: 100; energy: 998
+Movement. id: 8; pos: (86, 99); energy: 996
+8: 86x99; health: 100; energy: 998
+Movement. id: 9; pos: (63, 46); energy: 996
+Defence. id: 9; pos: (63, 46); target: 6; defence: 10
+9: 65x38; health: 100; energy: 998
+Movement. id: 10; pos: (81, 86); energy: 996
+10: 81x85; health: 100; energy: 998
+Movement. id: 11; pos: (99, 3); energy: 996
+11: 99x3; health: 100; energy: 998
+No movement. id: 12; pos: (69, 52); energy: 998
+12: 69x52; health: 100; energy: 999
+Movement. id: 13; pos: (91, 79); energy: 996
+Attack. id: 13; pos: (91, 79); target: 22; attack: 6
+Health redistribution. id: 13; pos: (91,79); attack: 42, -3; defence: 48, 3; speed: 10, 0
+13: 92x73; health: 100; energy: 998
+No movement. id: 14; pos: (54, 8); energy: 998
+14: 54x8; health: 100; energy: 999
+Movement. id: 15; pos: (20, 46); energy: 996
+15: 19x45; health: 100; energy: 998
+Movement. id: 16; pos: (31, 99); energy: 996
+16: 30x99; health: 100; energy: 998
+Movement. id: 17; pos: (66, 76); energy: 996
+17: 65x76; health: 100; energy: 998
+Movement. id: 18; pos: (4, 40); energy: 996
+18: 3x39; health: 100; energy: 998
+Movement. id: 19; pos: (35, 95); energy: 997
+19: 34x95; health: 100; energy: 999
+Movement. id: 20; pos: (50, 72); energy: 997
+20: 50x71; health: 100; energy: 999
+Movement. id: 21; pos: (12, 29); energy: 996
+21: 12x28; health: 100; energy: 998
+Movement. id: 22; pos: (91, 80); energy: 991
+22: 91x79; health: 94; energy: 993
+No movement. id: 23; pos: (34, 45); energy: 997
+23: 34x45; health: 100; energy: 998
+Movement. id: 24; pos: (16, 23); energy: 996
+24: 15x22; health: 100; energy: 998
+No movement. id: 25; pos: (41, 72); energy: 997
+25: 41x72; health: 100; energy: 998
+Movement. id: 26; pos: (63, 50); energy: 996
+26: 62x49; health: 100; energy: 998
+step: 2
+Movement. id: 0; pos: (74, 84); energy: 994
+0: 74x83; health: 100; energy: 996
+Added energy on point. id: 1; pos: (85, 67); energy: 1000
+No movement. id: 1; pos: (85, 67); energy: 999
+1: 85x67; health: 100; energy: 996
+Added energy on point. id: 2; pos: (17, 64); energy: 1000
+No movement. id: 2; pos: (17, 64); energy: 999
+2: 17x64; health: 100; energy: 999
+Added energy on point. id: 3; pos: (99, 48); energy: 1000
+No movement. id: 3; pos: (99, 48); energy: 999
+3: 99x48; health: 100; energy: 999
+Added energy on point. id: 4; pos: (82, 21); energy: 1000
+No movement. id: 4; pos: (82, 21); energy: 999
+Health redistribution. id: 4; pos: (82,21); attack: 25, -10; defence: 65, 10; speed: 10, 0
+4: 82x21; health: 100; energy: 996
+Movement. id: 5; pos: (31, 49); energy: 994
+5: 31x48; health: 100; energy: 996
+Movement. id: 6; pos: (64, 46); energy: 991
+6: 63x46; health: 100; energy: 993
+Movement. id: 7; pos: (99, 4); energy: 995
+7: 98x4; health: 100; energy: 997
+No movement. id: 8; pos: (86, 99); energy: 995
+8: 86x99; health: 100; energy: 996
+Movement. id: 9; pos: (67, 46); energy: 984
+Health redistribution. id: 9; pos: (67,46); attack: 35, -1; defence: 45, 1; speed: 10, 0
+9: 63x46; health: 90; energy: 986
+Movement. id: 10; pos: (82, 87); energy: 994
+10: 81x86; health: 100; energy: 996
+No movement. id: 11; pos: (99, 3); energy: 995
+11: 99x3; health: 100; energy: 996
+Movement. id: 12; pos: (70, 53); energy: 996
+12: 69x52; health: 100; energy: 998
+Movement. id: 13; pos: (91, 80); energy: 984
+Attack. id: 13; pos: (91, 80); target: 22; attack: 3
+13: 91x79; health: 100; energy: 986
+No movement. id: 14; pos: (54, 8); energy: 997
+14: 54x8; health: 100; energy: 998
+Movement. id: 15; pos: (20, 47); energy: 994
+15: 20x46; health: 100; energy: 996
+Movement. id: 16; pos: (31, 99); energy: 994
+16: 31x99; health: 100; energy: 996
+No movement. id: 17; pos: (66, 76); energy: 995
+17: 66x76; health: 100; energy: 996
+Movement. id: 18; pos: (5, 41); energy: 994
+18: 4x40; health: 100; energy: 996
+Movement. id: 19; pos: (36, 96); energy: 995
+19: 35x95; health: 100; energy: 997
+Movement. id: 20; pos: (51, 73); energy: 995
+20: 50x72; health: 100; energy: 997
+Movement. id: 21; pos: (12, 30); energy: 994
+21: 12x29; health: 100; energy: 996
+Movement. id: 22; pos: (92, 80); energy: 984
+22: 91x80; health: 91; energy: 986
+Movement. id: 23; pos: (34, 46); energy: 995
+23: 34x45; health: 100; energy: 997
+Movement. id: 24; pos: (16, 24); energy: 994
+24: 16x23; health: 100; energy: 996
+Movement. id: 25; pos: (42, 72); energy: 995
+25: 41x72; health: 100; energy: 997
+Movement. id: 26; pos: (64, 51); energy: 994
+26: 63x50; health: 100; energy: 996
+step: 3
+Movement. id: 0; pos: (75, 84); energy: 992
+0: 74x84; health: 100; energy: 994
+Added energy on point. id: 1; pos: (85, 67); energy: 1000
+No movement. id: 1; pos: (85, 67); energy: 999
+1: 85x67; health: 100; energy: 999
+Added energy on point. id: 2; pos: (17, 64); energy: 1000
+No movement. id: 2; pos: (17, 64); energy: 999
+2: 17x64; health: 100; energy: 999
+Added energy on point. id: 3; pos: (99, 48); energy: 1000
+No movement. id: 3; pos: (99, 48); energy: 999
+3: 99x48; health: 100; energy: 999
+Added energy on point. id: 4; pos: (82, 21); energy: 1000
+No movement. id: 4; pos: (82, 21); energy: 999
+Health redistribution. id: 4; pos: (82,21); attack: 15, -10; defence: 75, 10; speed: 10, 0
+4: 82x21; health: 100; energy: 999
+No movement. id: 5; pos: (31, 49); energy: 993
+5: 31x49; health: 100; energy: 994
+Movement. id: 6; pos: (65, 46); energy: 989
+6: 64x46; health: 100; energy: 991
+No movement. id: 7; pos: (99, 4); energy: 994
+7: 99x4; health: 100; energy: 995
+Movement. id: 8; pos: (87, 99); energy: 993
+8: 86x99; health: 100; energy: 995
+Added health on point. id: 9; pos: (67, 46); health: 98
+No movement. id: 9; pos: (67, 46); energy: 983
+Health redistribution. id: 9; pos: (67,46); attack: 37, -1; defence: 51, 1; speed: 10, 0
+9: 67x46; health: 90; energy: 984
+Movement. id: 10; pos: (83, 88); energy: 992
+10: 82x87; health: 100; energy: 994
+Movement. id: 11; pos: (99, 3); energy: 993
+11: 99x3; health: 100; energy: 995
+Movement. id: 12; pos: (71, 53); energy: 994
+12: 70x53; health: 100; energy: 996
+Movement. id: 13; pos: (92, 80); energy: 972
+Attack. id: 13; pos: (92, 80); target: 22; attack: 2
+13: 91x80; health: 100; energy: 974
+No movement. id: 14; pos: (54, 8); energy: 996
+14: 54x8; health: 100; energy: 997
+Movement. id: 15; pos: (20, 48); energy: 992
+15: 20x47; health: 100; energy: 994
+Movement. id: 16; pos: (31, 99); energy: 992
+16: 31x99; health: 100; energy: 994
+Movement. id: 17; pos: (67, 77); energy: 993
+17: 66x76; health: 100; energy: 995
+Movement. id: 18; pos: (6, 42); energy: 992
+18: 5x41; health: 100; energy: 994
+Movement. id: 19; pos: (36, 97); energy: 993
+19: 36x96; health: 100; energy: 995
+Movement. id: 20; pos: (52, 73); energy: 993
+20: 51x73; health: 100; energy: 995
+Movement. id: 21; pos: (12, 31); energy: 992
+21: 12x30; health: 100; energy: 994
+Movement. id: 22; pos: (93, 80); energy: 977
+22: 92x80; health: 89; energy: 979
+Movement. id: 23; pos: (35, 46); energy: 993
+23: 34x46; health: 100; energy: 995
+Movement. id: 24; pos: (16, 25); energy: 992
+24: 16x24; health: 100; energy: 994
+Movement. id: 25; pos: (43, 73); energy: 993
+25: 42x72; health: 100; energy: 995
+No movement. id: 26; pos: (64, 51); energy: 993
+26: 64x51; health: 100; energy: 994
+step: 4
+Movement. id: 0; pos: (76, 85); energy: 990
+0: 75x84; health: 100; energy: 992
+Added energy on point. id: 1; pos: (85, 67); energy: 1000
+No movement. id: 1; pos: (85, 67); energy: 999
+1: 85x67; health: 100; energy: 999
+Added energy on point. id: 2; pos: (17, 64); energy: 1000
+No movement. id: 2; pos: (17, 64); energy: 999
+2: 17x64; health: 100; energy: 999
+Added energy on point. id: 3; pos: (99, 48); energy: 1000
+No movement. id: 3; pos: (99, 48); energy: 999
+3: 99x48; health: 100; energy: 999
+Added energy on point. id: 4; pos: (82, 21); energy: 1000
+No movement. id: 4; pos: (82, 21); energy: 999
+Health redistribution. id: 4; pos: (82,21); attack: 5, -5; defence: 85, 5; speed: 10, 0
+4: 82x21; health: 100; energy: 999
+No movement. id: 5; pos: (31, 49); energy: 992
+5: 31x49; health: 100; energy: 993
+Movement. id: 6; pos: (65, 47); energy: 987
+6: 65x46; health: 100; energy: 989
+No movement. id: 7; pos: (99, 4); energy: 993
+7: 99x4; health: 100; energy: 994
+Movement. id: 8; pos: (88, 99); energy: 991
+8: 87x99; health: 100; energy: 993
+Added health on point. id: 9; pos: (67, 46); health: 100
+Movement. id: 9; pos: (65, 46); energy: 981
+Attack. id: 9; pos: (65, 46); target: 6; attack: 8
+9: 67x46; health: 98; energy: 983
+Movement. id: 10; pos: (84, 88); energy: 990
+10: 83x88; health: 100; energy: 992
+Movement. id: 11; pos: (99, 4); energy: 991
+11: 99x3; health: 100; energy: 993
+No movement. id: 12; pos: (71, 53); energy: 993
+12: 71x53; health: 100; energy: 994
+Movement. id: 13; pos: (93, 80); energy: 960
+Defence. id: 13; pos: (93, 80); target: 22; defence: 1
+13: 92x80; health: 100; energy: 962
+Movement. id: 14; pos: (55, 9); energy: 994
+14: 54x8; health: 100; energy: 996
+Movement. id: 15; pos: (21, 49); energy: 990
+15: 20x48; health: 100; energy: 992
+Movement. id: 16; pos: (32, 99); energy: 990
+16: 31x99; health: 100; energy: 992
+Movement. id: 17; pos: (68, 77); energy: 991
+17: 67x77; health: 100; energy: 993
+Movement. id: 18; pos: (6, 43); energy: 990
+18: 6x42; health: 100; energy: 992
+Movement. id: 19; pos: (37, 97); energy: 991
+19: 36x97; health: 100; energy: 993
+Movement. id: 20; pos: (52, 74); energy: 991
+20: 52x73; health: 100; energy: 993
+Movement. id: 21; pos: (12, 32); energy: 990
+21: 12x31; health: 100; energy: 992
+Movement. id: 22; pos: (94, 81); energy: 970
+22: 93x80; health: 89; energy: 972
+No movement. id: 23; pos: (35, 46); energy: 992
+23: 35x46; health: 100; energy: 993
+Movement. id: 24; pos: (17, 26); energy: 990
+24: 16x25; health: 100; energy: 992
+No movement. id: 25; pos: (43, 73); energy: 992
+25: 43x73; health: 100; energy: 993
+Movement. id: 26; pos: (64, 52); energy: 991
+26: 64x51; health: 100; energy: 993
+step: 5
+No movement. id: 0; pos: (76, 85); energy: 989
+0: 76x85; health: 100; energy: 990
+Added energy on point. id: 1; pos: (85, 67); energy: 1000
+No movement. id: 1; pos: (85, 67); energy: 999
+1: 85x67; health: 100; energy: 999
+Added energy on point. id: 2; pos: (17, 64); energy: 1000
+No movement. id: 2; pos: (17, 64); energy: 999
+2: 17x64; health: 100; energy: 999
+Added energy on point. id: 3; pos: (99, 48); energy: 1000
+No movement. id: 3; pos: (99, 48); energy: 999
+3: 99x48; health: 100; energy: 999
+Added energy on point. id: 4; pos: (82, 21); energy: 1000
+No movement. id: 4; pos: (82, 21); energy: 999
+4: 82x21; health: 100; energy: 999
+No movement. id: 5; pos: (31, 49); energy: 991
+5: 31x49; health: 100; energy: 992
+Movement. id: 6; pos: (66, 47); energy: 980
+6: 65x47; health: 92; energy: 982
+Movement. id: 7; pos: (99, 5); energy: 991
+7: 99x4; health: 100; energy: 993
+Movement. id: 8; pos: (89, 99); energy: 989
+8: 88x99; health: 100; energy: 991
+Movement. id: 9; pos: (65, 47); energy: 969
+Attack. id: 9; pos: (65, 47); target: 6; attack: 0
+9: 65x46; health: 100; energy: 971
+Movement. id: 10; pos: (85, 89); energy: 988
+10: 84x88; health: 100; energy: 990
+Movement. id: 11; pos: (99, 5); energy: 989
+11: 99x4; health: 100; energy: 991
+Movement. id: 12; pos: (72, 53); energy: 991
+12: 71x53; health: 100; energy: 993
+Movement. id: 13; pos: (94, 81); energy: 948
+Defence. id: 13; pos: (94, 81); target: 22; defence: 2
+13: 93x80; health: 99; energy: 950
+Movement. id: 14; pos: (56, 9); energy: 992
+14: 55x9; health: 100; energy: 994
+Movement. id: 15; pos: (21, 50); energy: 988
+15: 21x49; health: 100; energy: 990
+No movement. id: 16; pos: (32, 99); energy: 989
+16: 32x99; health: 100; energy: 990
+Movement. id: 17; pos: (68, 78); energy: 989
+17: 68x77; health: 100; energy: 991
+Movement. id: 18; pos: (7, 43); energy: 988
+18: 6x43; health: 100; energy: 990
+Movement. id: 19; pos: (38, 98); energy: 989
+19: 37x97; health: 100; energy: 991
+No movement. id: 20; pos: (52, 74); energy: 990
+20: 52x74; health: 100; energy: 991
+Movement. id: 21; pos: (12, 33); energy: 988
+21: 12x32; health: 100; energy: 990
+No movement. id: 22; pos: (94, 81); energy: 964
+22: 94x81; health: 89; energy: 965
+No movement. id: 23; pos: (35, 46); energy: 991
+23: 35x46; health: 100; energy: 992
+Movement. id: 24; pos: (18, 26); energy: 988
+24: 17x26; health: 100; energy: 990
+Movement. id: 25; pos: (44, 74); energy: 990
+25: 43x73; health: 100; energy: 992
+Movement. id: 26; pos: (65, 52); energy: 989
+26: 64x52; health: 100; energy: 991
+step: 6
+Movement. id: 0; pos: (76, 86); energy: 987
+0: 76x85; health: 100; energy: 989
+Added energy on point. id: 1; pos: (85, 67); energy: 1000
+No movement. id: 1; pos: (85, 67); energy: 999
+1: 85x67; health: 100; energy: 999
+Added energy on point. id: 2; pos: (17, 64); energy: 1000
+No movement. id: 2; pos: (17, 64); energy: 999
+2: 17x64; health: 100; energy: 999
+Added energy on point. id: 3; pos: (99, 48); energy: 1000
+No movement. id: 3; pos: (99, 48); energy: 999
+3: 99x48; health: 100; energy: 999
+Added energy on point. id: 4; pos: (82, 21); energy: 1000
+No movement. id: 4; pos: (82, 21); energy: 999
+4: 82x21; health: 100; energy: 999
+Movement. id: 5; pos: (32, 49); energy: 989
+5: 31x49; health: 100; energy: 991
+Movement. id: 6; pos: (66, 48); energy: 973
+6: 66x47; health: 92; energy: 975
+Movement. id: 7; pos: (99, 6); energy: 989
+7: 99x5; health: 100; energy: 991
+No movement. id: 8; pos: (89, 99); energy: 988
+8: 89x99; health: 100; energy: 989
+Movement. id: 9; pos: (66, 47); energy: 957
+Attack. id: 9; pos: (66, 47); target: 6; attack: 5
+9: 65x47; health: 100; energy: 959
+Movement. id: 10; pos: (86, 89); energy: 986
+10: 85x89; health: 100; energy: 988
+Movement. id: 11; pos: (99, 5); energy: 987
+11: 99x5; health: 100; energy: 989
+Movement. id: 12; pos: (73, 54); energy: 989
+12: 72x53; health: 100; energy: 991
+No movement. id: 13; pos: (94, 81); energy: 937
+Attack. id: 13; pos: (94, 81); target: 22; attack: 14
+13: 94x81; health: 97; energy: 938
+Movement. id: 14; pos: (56, 10); energy: 990
+14: 56x9; health: 100; energy: 992
+Movement. id: 15; pos: (22, 51); energy: 986
+15: 21x50; health: 100; energy: 988
+Movement. id: 16; pos: (33, 99); energy: 987
+16: 32x99; health: 100; energy: 989
+Movement. id: 17; pos: (69, 79); energy: 987
+17: 68x78; health: 100; energy: 989
+No movement. id: 18; pos: (7, 43); energy: 987
+18: 7x43; health: 100; energy: 988
+No movement. id: 19; pos: (38, 98); energy: 988
+19: 38x98; health: 100; energy: 989
+Movement. id: 20; pos: (53, 75); energy: 988
+20: 52x74; health: 100; energy: 990
+Movement. id: 21; pos: (12, 34); energy: 986
+21: 12x33; health: 100; energy: 988
+Movement. id: 22; pos: (95, 81); energy: 957
+22: 94x81; health: 75; energy: 959
+Movement. id: 23; pos: (35, 47); energy: 989
+23: 35x46; health: 100; energy: 991
+Movement. id: 24; pos: (19, 26); energy: 986
+24: 18x26; health: 100; energy: 988
+Movement. id: 25; pos: (44, 75); energy: 988
+25: 44x74; health: 100; energy: 990
+No movement. id: 26; pos: (65, 52); energy: 988
+26: 65x52; health: 100; energy: 989
+step: 7
+No movement. id: 0; pos: (76, 86); energy: 986
+0: 76x86; health: 100; energy: 987
+Added energy on point. id: 1; pos: (85, 67); energy: 1000
+No movement. id: 1; pos: (85, 67); energy: 999
+1: 85x67; health: 100; energy: 999
+Added energy on point. id: 2; pos: (17, 64); energy: 1000
+No movement. id: 2; pos: (17, 64); energy: 999
+2: 17x64; health: 100; energy: 999
+Added energy on point. id: 3; pos: (99, 48); energy: 1000
+No movement. id: 3; pos: (99, 48); energy: 999
+3: 99x48; health: 100; energy: 999
+Added energy on point. id: 4; pos: (82, 21); energy: 1000
+No movement. id: 4; pos: (82, 21); energy: 999
+4: 82x21; health: 100; energy: 999
+Movement. id: 5; pos: (32, 50); energy: 987
+5: 32x49; health: 100; energy: 989
+No movement. id: 6; pos: (66, 48); energy: 967
+6: 66x48; health: 87; energy: 968
+Movement. id: 7; pos: (99, 7); energy: 987
+7: 99x6; health: 100; energy: 989
+Movement. id: 8; pos: (90, 99); energy: 986
+8: 89x99; health: 100; energy: 988
+Movement. id: 9; pos: (66, 48); energy: 945
+Attack. id: 9; pos: (66, 48); target: 6; attack: 6
+9: 66x47; health: 100; energy: 947
+Movement. id: 10; pos: (86, 90); energy: 984
+10: 86x89; health: 100; energy: 986
+Movement. id: 11; pos: (99, 6); energy: 985
+11: 99x5; health: 100; energy: 987
+Movement. id: 12; pos: (73, 55); energy: 987
+12: 73x54; health: 100; energy: 989
+Movement. id: 13; pos: (95, 81); energy: 925
+Attack. id: 13; pos: (95, 81); target: 22; attack: 8
+13: 94x81; health: 97; energy: 927
+Movement. id: 14; pos: (57, 11); energy: 988
+14: 56x10; health: 100; energy: 990
+Movement. id: 15; pos: (23, 52); energy: 984
+15: 22x51; health: 100; energy: 986
+Movement. id: 16; pos: (34, 99); energy: 985
+16: 33x99; health: 100; energy: 987
+Movement. id: 17; pos: (70, 80); energy: 985
+17: 69x79; health: 100; energy: 987
+Movement. id: 18; pos: (7, 44); energy: 985
+18: 7x43; health: 100; energy: 987
+Movement. id: 19; pos: (39, 98); energy: 986
+19: 38x98; health: 100; energy: 988
+Movement. id: 20; pos: (53, 76); energy: 986
+20: 53x75; health: 100; energy: 988
+Movement. id: 21; pos: (13, 34); energy: 984
+21: 12x34; health: 100; energy: 986
+No movement. id: 22; pos: (95, 81); energy: 951
+22: 95x81; health: 67; energy: 952
+Movement. id: 23; pos: (36, 47); energy: 987
+23: 35x47; health: 100; energy: 989
+Movement. id: 24; pos: (20, 26); energy: 984
+24: 19x26; health: 100; energy: 986
+No movement. id: 25; pos: (44, 75); energy: 987
+25: 44x75; health: 100; energy: 988
+Movement. id: 26; pos: (65, 53); energy: 986
+26: 65x52; health: 100; energy: 988
+step: 8
+Movement. id: 0; pos: (77, 87); energy: 984
+0: 76x86; health: 100; energy: 986
+Added energy on point. id: 1; pos: (85, 67); energy: 1000
+No movement. id: 1; pos: (85, 67); energy: 999
+1: 85x67; health: 100; energy: 999
+Added energy on point. id: 2; pos: (17, 64); energy: 1000
+No movement. id: 2; pos: (17, 64); energy: 999
+2: 17x64; health: 100; energy: 999
+Added energy on point. id: 3; pos: (99, 48); energy: 1000
+No movement. id: 3; pos: (99, 48); energy: 999
+3: 99x48; health: 100; energy: 999
+Added energy on point. id: 4; pos: (82, 21); energy: 1000
+No movement. id: 4; pos: (82, 21); energy: 999
+4: 82x21; health: 100; energy: 999
+Movement. id: 5; pos: (33, 51); energy: 985
+5: 32x50; health: 100; energy: 987
+No movement. id: 6; pos: (66, 48); energy: 961
+6: 66x48; health: 81; energy: 962
+Movement. id: 7; pos: (99, 8); energy: 985
+7: 99x7; health: 100; energy: 987
+Movement. id: 8; pos: (90, 99); energy: 984
+8: 90x99; health: 100; energy: 986
+No movement. id: 9; pos: (66, 48); energy: 934
+Attack. id: 9; pos: (66, 48); target: 6; attack: 15
+9: 66x48; health: 100; energy: 935
+Movement. id: 10; pos: (86, 91); energy: 982
+10: 86x90; health: 100; energy: 984
+Movement. id: 11; pos: (99, 6); energy: 983
+11: 99x6; health: 100; energy: 985
+Movement. id: 12; pos: (74, 55); energy: 985
+12: 73x55; health: 100; energy: 987
+No movement. id: 13; pos: (95, 81); energy: 914
+Attack. id: 13; pos: (95, 81); target: 22; attack: 8
+13: 95x81; health: 97; energy: 915
+Movement. id: 14; pos: (58, 11); energy: 986
+14: 57x11; health: 100; energy: 988
+Movement. id: 15; pos: (24, 53); energy: 982
+15: 23x52; health: 100; energy: 984
+Movement. id: 16; pos: (34, 99); energy: 983
+16: 34x99; health: 100; energy: 985
+No movement. id: 17; pos: (70, 80); energy: 984
+17: 70x80; health: 100; energy: 985
+Movement. id: 18; pos: (7, 45); energy: 983
+18: 7x44; health: 100; energy: 985
+Movement. id: 19; pos: (40, 98); energy: 984
+19: 39x98; health: 100; energy: 986
+No movement. id: 20; pos: (53, 76); energy: 985
+20: 53x76; health: 100; energy: 986
+Movement. id: 21; pos: (14, 34); energy: 982
+21: 13x34; health: 100; energy: 984
+No movement. id: 22; pos: (95, 81); energy: 945
+22: 95x81; health: 59; energy: 946
+No movement. id: 23; pos: (36, 47); energy: 986
+23: 36x47; health: 100; energy: 987
+Movement. id: 24; pos: (20, 27); energy: 982
+24: 20x26; health: 100; energy: 984
+No movement. id: 25; pos: (44, 75); energy: 986
+25: 44x75; health: 100; energy: 987
+No movement. id: 26; pos: (65, 53); energy: 985
+26: 65x53; health: 100; energy: 986
+step: 9
+Movement. id: 0; pos: (78, 87); energy: 982
+0: 77x87; health: 100; energy: 984
+Added energy on point. id: 1; pos: (85, 67); energy: 1000
+No movement. id: 1; pos: (85, 67); energy: 999
+1: 85x67; health: 100; energy: 999
+Added energy on point. id: 2; pos: (17, 64); energy: 1000
+No movement. id: 2; pos: (17, 64); energy: 999
+2: 17x64; health: 100; energy: 999
+Added energy on point. id: 3; pos: (99, 48); energy: 1000
+No movement. id: 3; pos: (99, 48); energy: 999
+3: 99x48; health: 100; energy: 999
+Added energy on point. id: 4; pos: (82, 21); energy: 1000
+No movement. id: 4; pos: (82, 21); energy: 999
+4: 82x21; health: 100; energy: 999
+Movement. id: 5; pos: (34, 52); energy: 983
+5: 33x51; health: 100; energy: 985
+Movement. id: 6; pos: (66, 49); energy: 954
+6: 66x48; health: 66; energy: 956
+Movement. id: 7; pos: (99, 8); energy: 983
+7: 99x8; health: 100; energy: 985
+Movement. id: 8; pos: (90, 99); energy: 982
+8: 90x99; health: 100; energy: 984
+No movement. id: 9; pos: (66, 48); energy: 923
+Attack. id: 9; pos: (66, 48); target: 6; attack: 9
+9: 66x48; health: 100; energy: 924
+Movement. id: 10; pos: (86, 92); energy: 980
+10: 86x91; health: 100; energy: 982
+Movement. id: 11; pos: (99, 7); energy: 981
+11: 99x6; health: 100; energy: 983
+Movement. id: 12; pos: (75, 56); energy: 983
+12: 74x55; health: 100; energy: 985
+No movement. id: 13; pos: (95, 81); energy: 903
+Attack. id: 13; pos: (95, 81); target: 22; attack: 17
+13: 95x81; health: 97; energy: 904
+Movement. id: 14; pos: (58, 12); energy: 984
+14: 58x11; health: 100; energy: 986
+No movement. id: 15; pos: (24, 53); energy: 981
+15: 24x53; health: 100; energy: 982
+Movement. id: 16; pos: (34, 99); energy: 981
+16: 34x99; health: 100; energy: 983
+Movement. id: 17; pos: (71, 80); energy: 982
+17: 70x80; health: 100; energy: 984
+Movement. id: 18; pos: (8, 45); energy: 981
+18: 7x45; health: 100; energy: 983
+Movement. id: 19; pos: (41, 98); energy: 982
+19: 40x98; health: 100; energy: 984
+Movement. id: 20; pos: (54, 76); energy: 983
+20: 53x76; health: 100; energy: 985
+No movement. id: 21; pos: (14, 34); energy: 981
+21: 14x34; health: 100; energy: 982
+Movement. id: 22; pos: (96, 82); energy: 938
+22: 95x81; health: 55; energy: 940
+No movement. id: 23; pos: (36, 47); energy: 985
+23: 36x47; health: 100; energy: 986
+Movement. id: 24; pos: (21, 28); energy: 980
+24: 20x27; health: 100; energy: 982
+Movement. id: 25; pos: (45, 76); energy: 984
+25: 44x75; health: 100; energy: 986
+Movement. id: 26; pos: (66, 53); energy: 983
+26: 65x53; health: 100; energy: 985

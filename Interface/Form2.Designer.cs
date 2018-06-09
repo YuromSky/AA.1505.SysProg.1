@@ -118,7 +118,6 @@
             this.label5.Size = new System.Drawing.Size(49, 13);
             this.label5.TabIndex = 6;
             this.label5.Text = "Эенргии";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -175,7 +174,6 @@
             this.textBox4.Size = new System.Drawing.Size(68, 20);
             this.textBox4.TabIndex = 10;
             this.textBox4.Text = "10";
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // button1
             // 
@@ -372,7 +370,6 @@
             this.label17.Size = new System.Drawing.Size(25, 13);
             this.label17.TabIndex = 33;
             this.label17.Text = "dEs";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // textBox14
             // 

@@ -1,48 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using System.Threading;
 using System.Windows.Forms;
 using RobotContracts;
-using System.Threading;
-using System.IO;
-
-//using Engine;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace Interface
 {
-
-    //public List<RobotState> listRobots = new List<RobotState>(); 
-
     public partial class Form1 : Form
     {
-        int dN = 0;
-        public static List<ProgressBar> pbList;
-        List<Label> lbList;
-        public static int roundId = 0;
+        int roundId = 0;
 
-        static string configPath = "../../config.json";
-        static GameConfig config = ConfigLoader.LoadConfig(configPath);
-        Game game = new Game(config);
-        static string directoryPath = "../../Robots";
-        List<IRobot> robots = new List<IRobot>();
-        IList<IRobot> robots_base = RobotLoader.LoadRobots(directoryPath);
+        string configPath;
 
-        EventWaitHandle evStop = new EventWaitHandle(false, EventResetMode.AutoReset, "EventStart2");
-        EventWaitHandle evConfirm = new EventWaitHandle(false, EventResetMode.AutoReset, "EventStart2");
+        GameConfig config;
+        Game game;
+
+        List<Tuple<string, IRobot>> robots;
+
+        EventWaitHandle evStop;
+
         public Form1()
         {
             InitializeComponent();
-        }
 
-        public void createField()
-        {
+            configPath = "../../config.json";
+            config = ConfigLoader.LoadConfig(configPath);
+            game = new Game(config);
 
-            evConfirm.Set();
+            robots = new List<Tuple<string, IRobot>>();
+            game.future_robots = Load_save_robots();
+            evStop = new EventWaitHandle(false, EventResetMode.AutoReset, "EventStop");
         }
 
         public void gameStats()
@@ -51,27 +41,30 @@ namespace Interface
             using (StreamWriter fs = File.CreateText(path))
             {
                 game.future_robots.Sort();
+
                 Form form3 = new Form3();
                 form3.Text = "Раунд: " + (roundId + 1).ToString();
                 form3.Show();
-                int mesto = 1;
-                int countMesto = 0;
+
+                int place = 1;
+                int countPlace = 0;
                 for (int j = game.future_robots.Count - 1; j >= 0; j--)
                 {
-                    countMesto++;
+                    countPlace++;
+
                     Form3.dataGridView3.Rows.Add();
                     int i = 0;
                     if (j == game.future_robots.Count - 1)
                     {
-                        Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = mesto;
+                        Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = place;
                     }
                     else
                     {
                         if (game.future_robots[j].energy != game.future_robots[j + 1].energy)
                         {
-                            mesto = countMesto;
+                            place = countPlace;
                         }
-                        Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = mesto;
+                        Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = place;
                     }
                     Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = game.future_robots[j].id;
                     Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = game.future_robots[j].name;
@@ -79,59 +72,55 @@ namespace Interface
                     Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = game.future_robots[j].energy;
                     Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = game.future_robots[j].isAlive;
 
-                    if (mesto == 1)
+                    if (place == 1)
                     {
                         Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = 5;
-                        fs.WriteLine(mesto.ToString() + "   " + game.future_robots[j].name + " " + "5");
+                        fs.WriteLine(place.ToString() + "   " + game.future_robots[j].name + " " + "5");
                     }
-                    if (mesto > 1 && mesto < 4)
+                    if (place > 1 && place < 4)
                     {
                         Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = 4;
-                        fs.WriteLine(mesto.ToString() + "   " + game.future_robots[j].name + " " + "4");
+                        fs.WriteLine(place.ToString() + "   " + game.future_robots[j].name + " " + "4");
                     }
 
-                    if (mesto > 3 && mesto < 11)
+                    if (place > 3 && place < 11)
                     {
                         Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = 3;
-                        fs.WriteLine(mesto.ToString() + "   " + game.future_robots[j].name + " " + "3");
+                        fs.WriteLine(place.ToString() + "   " + game.future_robots[j].name + " " + "3");
                     }
 
-                    if (mesto > 10 && mesto < 21)
+                    if (place > 10 && place < 21)
                     {
                         Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = 2;
-                        fs.WriteLine(mesto.ToString() + "   " + game.future_robots[j].name + " " + "2");
+                        fs.WriteLine(place.ToString() + "   " + game.future_robots[j].name + " " + "2");
                     }
 
-                    if (mesto > 20 && mesto < 31)
+                    if (place > 20 && place < 31)
                     {
                         Form3.dataGridView3.Rows[game.future_robots.Count - 1 - j].Cells[i++].Value = 1;
-                        fs.WriteLine(mesto.ToString() + "   " + game.future_robots[j].name + " " + "1");
+                        fs.WriteLine(place.ToString() + "   " + game.future_robots[j].name + " " + "1");
                     }
-
-
-
                 }
             }
-
-           
-
-            
         }
-
-        public void newGame(Object obj)
+        public static List<RobotState> Load_save_robots()
         {
-            //createField
-            Param param = new Param();
-            param = (Param)obj;
-            game.Loop(param.g, param.rId, param.d);
-            evStop.Set();
-        }
+            string logPath = "../../log_interface.txt";
+            try
+            {
+                using (StreamReader sr = new StreamReader("../../round6_data.json"))
+                {
+                    string json = sr.ReadToEnd();
+                    return JsonConvert.DeserializeObject<List<RobotState>>(json);
+                }
+            }
+            catch (Exception e)
+            {
+                File.AppendAllText(logPath, "Round 6 data load failed: " + e.ToString() + Environment.NewLine, Encoding.UTF8);
+            }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-           
+            return null;
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Form form2 = new Form2();
@@ -141,144 +130,128 @@ namespace Interface
 
         public void button2_Click(object sender, EventArgs e)
         {
-            //Proverka.flag = true;
-            //while(true)
-            //{
-            //    if(Proverka.flag)
-            //    {
-            //        Proverka.flag = false;
-            //        start();
-            //    }
-            //}
-
-            start();
-            
-            
+            Start();
         }
 
-        public void start()
+        public void GameThread(Object obj)
+        {
+            ThreadParam param = new ThreadParam();
+            param = (ThreadParam)obj;
+            game.Loop(param.robots, param.round, param.dN);
+
+            evStop.Set();
+        }
+
+        private void Start()
         {
             label2.Text = "Раунд: " + (roundId + 1).ToString();
 
-            Draw.Start();//Draw.bmp, Draw.xList,Draw.yList);
-            //функция старта, внутри нее отрисовка,и создание параметров поля,узнаем количество роботов
+            Draw.Init();
 
             if (config == null)
             {
                 return;
             }
 
-
-
-            if (robots != null)
+            if (roundId == 0)
             {
-
-                dN = 0;
-                pbList = new List<ProgressBar>();
-                lbList = new List<Label>();
-                robots_base = RobotLoader.LoadRobots(directoryPath);
-                foreach (RobotState rs in game.future_robots)
+                if (game.future_robots !=null)
                 {
-                    if (rs.isAlive == true)
+                    robots = RobotLoader.LoadRobots(config.robots);
+                    int n = config.rounds.Count;
+                    for (int i = 1; i < n; i++)
                     {
-                        robots_base.Add(robots[rs.id]);
-                        dN++;
+                        robots.AddRange(RobotLoader.LoadRobots(config.robots));
+                    }
+                    
+                }
+                else
+                {
+                    game.future_robots = new List<RobotState>();
+                }
+            }
+                if (robots != null)
+            {
+                List<Tuple<string, IRobot>> robots_base = RobotLoader.LoadRobots(config.robots);
+                int[] unique_id = new int[game.future_robots.Count+1];
+                if (game.future_robots.Count > 0)
+                {
+                    for (int unic = 0; unic < game.future_robots.Count + 1; unic++)
+                    {
+                        unique_id[unic] = -1;
                     }
                 }
+                int dN = 0;
+                bool isUnic;
+                foreach (RobotState rs in game.future_robots)
+                {
+                    for (int robot_id = 0; robot_id < robots.Count; robot_id++)
+                    {
+                        isUnic = true;
+                        for (int unic = 0; unic <= dN; unic++)
+                        {
+                            if (robot_id == unique_id[unic])
+                            {
+                                isUnic = false;
+                            }
+                        }
+
+                        if ((rs.isAlive == true) && (robots[robot_id].Item2.Name == rs.name)&&(isUnic))
+                        {
+                            robots_base.Add(robots[robot_id]);
+                            unique_id[dN] = robot_id;
+                            dN++;
+                            break;
+                        }
+                        
+                    }
+                        
+                }
+
                 robots.Clear();
                 robots.AddRange(robots_base);
 
-                //createField
-                //int n = /*game.future_robots.Count;*/robots.Count;
-                ////listBox1.Height = 14 * n;
-                ////Draw.param(100,100);
-                //for (int i = 0; i < n; i++)
-                //{
-                //    // listBox1.Items.Add(/*game.future_robots[i].id*/robots[i]);
-                //    Label lb = new Label();
-                //    lb.Size = label1.Size;
-                //    lb.Font = label1.Font;
-                //    lb.Name = "lb" + i.ToString();
-                //    lb.Location = new System.Drawing.Point(764, 68 + 18 * i);
-                //    lb.Text = i.ToString()+". "+robots[i].Name;
-                //    this.Controls.Add(lb);
-                //    lbList.Add(lb);
-                //}
+                ThreadParam param = new ThreadParam();
+                param.robots = robots;
+                param.round = roundId;
+                param.dN = dN;
 
-                //    ProgressBar pb = new ProgressBar();
-                //    pb.Name = "pbH" + i.ToString();
-                //    pb.Location = new System.Drawing.Point(890, 68 + 18 * i);
-                //    pb.Size = progressBar1.Size;
+                Thread game_thread = new Thread(GameThread);
+                game_thread.Start(param);
 
-                //    this.Controls.Add(pb);
-                //    pbList.Add(pb);
-                //    pb = new ProgressBar();
-                //    pb.Name = "pbR" + i.ToString();
-                //    pb.Location = new System.Drawing.Point(980, 68 + 18 * i);//подобрать значения
-                //    pb.Size = progressBar1.Size;
-                //    this.Controls.Add(pb);
-                //    pbList.Add(pb);
-                //}
-
-                Param p = new Param();
-                p.rId = roundId;
-                p.d = dN;
-                p.g = robots;
-
-                var th = new Thread(newGame);
-                th.Start(p);
                 evStop.WaitOne();
-                gameStats();
                 evStop.Reset();
-                //game
-                //game.Loop(robots, roundId, dN);
 
-                //Thread.Sleep(5000);
-                //clearField
-                //listBox1.Items.Clear();
-                //for(int i = 0; i<pbList.Count;i++)
-                //{
-                //    pbList[i].Dispose();
-                //}
-                //pbList.Clear();
-                //statView
-                //Thread.Sleep(3000);
-                //game.future_robots.Sort();
-                //Form form3 = new Form3();
-                //form3.Show();
-                //for (int j = 0; j < game.future_robots.Count; j++)
-                //{
-                //    Form3.dataGridView3.Rows.Add();
-                //    Form3.dataGridView3.Rows[j].Cells[0].Value = game.future_robots[j].id;
-                //    Form3.dataGridView3.Rows[j].Cells[1].Value = game.future_robots[j].name;
-                //    Form3.dataGridView3.Rows[j].Cells[2].Value = game.future_robots[j].defence + game.future_robots[j].attack + game.future_robots[j].speed;
-                //    Form3.dataGridView3.Rows[j].Cells[3].Value = game.future_robots[j].energy;
-                //    Form3.dataGridView3.Rows[j].Cells[4].Value = game.future_robots[j].isAlive;
-                //}
+                gameStats();
 
                 roundId++;
-                if (roundId > 4)
+
+                label2.Text = "Раунд: " + (roundId + 1).ToString();
+
+                if (roundId >= config.rounds.Count)
                 {
+                    string logPath = "../../log_interface.txt";
+
+                    try
+                    {
+                        string json = JsonConvert.SerializeObject(game.future_robots);
+                        File.WriteAllText("../../round6_data.json", json);
+                    }
+                    catch (Exception e)
+                    {
+                        File.AppendAllText(logPath, "Round 6 data dump failed: " + e.ToString() + Environment.NewLine, Encoding.UTF8);
+                    }
+
                     Application.Exit();
                 }
             }
         }
     }
 
-    public class Param
+    public class ThreadParam
     {
-        public List<IRobot> g;
-        public int rId;
-        public int d;
+        public List<Tuple<string, IRobot>> robots;
+        public int round;
+        public int dN;
     }
-
-    //public static class GameStart
-    //{
-    //    static string configPath = "../../config.json";
-    //    static GameConfig config = ConfigLoader.LoadConfig(configPath);
-    //    static Game game = new Game(config);
-    //    static string directoryPath = "../../Robots";
-    //    static List<IRobot> robots = new List<IRobot>();
-    //    static IList<IRobot> robots_base = RobotLoader.LoadRobots(directoryPath);
-    //}
 }

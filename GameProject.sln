@@ -6,8 +6,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot_1", "Robot\Robot_1.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotContracts", "RobotContracts\RobotContracts.csproj", "{F498DFA2-60F4-4931-A05C-9269FA0A82DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{BE4ADCB3-32A3-4BF4-86DE-04A9558449CC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{7C241702-E991-4094-A8E3-1723FDD13CDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot_2", "Robot (2)\Robot_2.csproj", "{23F26B9A-D348-4ADB-9889-002C2C288296}"
@@ -76,9 +74,6 @@ Global
 		{F498DFA2-60F4-4931-A05C-9269FA0A82DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F498DFA2-60F4-4931-A05C-9269FA0A82DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F498DFA2-60F4-4931-A05C-9269FA0A82DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BE4ADCB3-32A3-4BF4-86DE-04A9558449CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE4ADCB3-32A3-4BF4-86DE-04A9558449CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE4ADCB3-32A3-4BF4-86DE-04A9558449CC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7C241702-E991-4094-A8E3-1723FDD13CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7C241702-E991-4094-A8E3-1723FDD13CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C241702-E991-4094-A8E3-1723FDD13CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU

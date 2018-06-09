@@ -2,6 +2,7 @@
 using System.IO;
 using Newtonsoft.Json;
 using RobotContracts;
+using System.Text;
 
 namespace Interface
 {
@@ -9,6 +10,8 @@ namespace Interface
     {
         public static GameConfig LoadConfig(string configPath)
         {
+            string logPath = "../../log_interface.txt";
+
             try
             {
                 using (StreamReader sr = new StreamReader(configPath))
@@ -19,13 +22,16 @@ namespace Interface
             }
             catch (Exception e)
             {
-                Console.WriteLine("ConfigLoader failed: {0}", e.ToString());
+                File.AppendAllText(logPath, "ConfigLoader failed: " + e.ToString() + Environment.NewLine, Encoding.UTF8);
             }
 
             return null;
         }
+
         public static void SaveConfig(string configPath, GameConfig obj)
         {
+            string logPath = "../../log_interface.txt";
+
             try
             {
                 string json = JsonConvert.SerializeObject(obj);
@@ -33,7 +39,7 @@ namespace Interface
             }
             catch (Exception e)
             {
-                Console.WriteLine("ConfigLoader failed: {0}", e.ToString());
+                File.AppendAllText(logPath, "ConfigLoader failed: " + e.ToString() + Environment.NewLine, Encoding.UTF8);
             }
         }
     }

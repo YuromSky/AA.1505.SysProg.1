@@ -15,9 +15,9 @@ namespace Interface
         public List<RobotState> future_robots = new List<RobotState>();
         delegate int del();
 
-        public Game(GameConfig config)
+        public Game(GameConfig game_config)
         {
-            this.config = config;
+            config = game_config;
             state = new GameState();
 
             SingleRandom.Seed(config.seed);
@@ -27,13 +27,14 @@ namespace Interface
         {
             RobotState robot = state.robots[id].ShallowCopy();
             future_robots.Add(robot);
-            if(!robot.isAlive)
+            if (!robot.isAlive)
             {
                 return;
             }
+
             if (action == null)
             {
-                File.AppendAllText(logpath, robot.id + " timed out" + Environment.NewLine, Encoding.UTF8);
+                File.AppendAllText(logpath, "Timeout. id: " + robot.id + Environment.NewLine, Encoding.UTF8);
                 robot.energy -= round_config.dEs;
                 return;
             }
@@ -49,7 +50,7 @@ namespace Interface
                     {
                         case PointType.Energy:
                             robot.energy = (robot.energy + round_config.dE <= round_config.max_energy) ? (robot.energy + round_config.dE) : round_config.max_energy;
-                            File.AppendAllText(logpath, "Added robot energy on point. id robot:" + robot.id + " point:(" + point.X + ", " + point.Y + "), energy:" + robot.energy + Environment.NewLine, Encoding.UTF8);
+                            File.AppendAllText(logpath, "Added energy on point. id: " + robot.id + "; pos: (" + point.X + ", " + point.Y + "); energy: " + robot.energy + Environment.NewLine, Encoding.UTF8);
                             break;
                         case PointType.Health:
                             int health = GetHealth();
@@ -62,7 +63,8 @@ namespace Interface
                                 robot.defence += (dDf + GetHealth() < round_config.max_health) ? dDf : round_config.max_health - GetHealth(); 
                                 if (robot.speed < round_config.max_speed)
                                     robot.speed += (dSp + GetHealth() < round_config.max_health) ? dSp : round_config.max_health - GetHealth();
-                                File.AppendAllText(logpath, "Added robot health on point. id robot:" + robot.id + " point:(" + point.X + ", " + point.Y + "), health:" + GetHealth() + Environment.NewLine, Encoding.UTF8);
+
+                                File.AppendAllText(logpath, "Added health on point. id: " + robot.id + "; pos: (" + point.X + ", " + point.Y + "); health: " + GetHealth() + Environment.NewLine, Encoding.UTF8);
                             }
                             break;
                         default:
@@ -99,16 +101,13 @@ namespace Interface
                                 robot.speed += robot.speed / donor_health * round_config.dHealth;
                                 donor.speed -= donor.speed / donor_health * round_config.dHealth;
                             }
-                            if (health == GetHealth())
-                            {
-                                continue;
-                            }
-                            File.AppendAllText(logpath, "Drain health from dead robots. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id dead robot: " + donor.id + ", health:" + GetHealth() + Environment.NewLine, Encoding.UTF8);
-                            break;
-                        }
-                        
-                    }
 
+                            if (health != GetHealth())
+                            {
+                                File.AppendAllText(logpath, "Health drain. id: " + robot.id + "; pos: (" + robot.X + ", " + robot.Y + "); target: " + donor.id + "; health: " + GetHealth() + Environment.NewLine, Encoding.UTF8);
+                            }
+                        }
+                    }
                 }
             }
 
@@ -121,12 +120,14 @@ namespace Interface
                 robot.X = Math.Max(Math.Min(robot.X + action.dX, round_config.width - 1), 0);
                 robot.Y = Math.Max(Math.Min(robot.Y + action.dY, round_config.height - 1), 0);
                 robot.energy -= round_config.dEv;
-                File.AppendAllText(logpath, "Movement. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + ") , energy:" + robot.energy + Environment.NewLine, Encoding.UTF8);
+
+                File.AppendAllText(logpath, "Movement. id: " + robot.id + "; pos: (" + robot.X + ", " + robot.Y + "); energy: " + robot.energy + Environment.NewLine, Encoding.UTF8);
             }
             else
             {
                 robot.energy -= round_config.dEs;
-                File.AppendAllText(logpath, "Did not movement. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + ") , energy:" + robot.energy + Environment.NewLine, Encoding.UTF8);
+
+                File.AppendAllText(logpath, "No movement. id: " + robot.id + "; pos: (" + robot.X + ", " + robot.Y + "); energy: " + robot.energy + Environment.NewLine, Encoding.UTF8);
             }
 
             // attack and defence
@@ -141,10 +142,9 @@ namespace Interface
                 {
                     target_robot = state.robots[action.targetId];
                 }
-                
 
                 int distance_attack = (int)Math.Sqrt(Math.Pow((target_robot.X - robot.X), 2) + Math.Pow((target_robot.Y - robot.Y), 2));
-                int max_distance_attack = (int)Math.Round( 10 * (float)round_config.max_radius * (float)robot.speed / (float)round_config.max_health * (float)robot.energy / (float)round_config.max_energy);
+                int max_distance_attack = (int)Math.Round(10 * (float)round_config.max_radius * (float)robot.speed / (float)round_config.max_health * (float)robot.energy / (float)round_config.max_energy);
 
                 int real_power = SingleRandom.Instance.Next((int)(round_config.minRND), (int)(round_config.maxRND)) * robot.attack / 10;
                 int max_power = real_power * robot.energy / round_config.max_energy;
@@ -156,35 +156,40 @@ namespace Interface
                 {
                     if (max_power >= max_target_defence)
                     {
+                        int attack = max_power - max_target_defence;
                         if (target_robot.defence <= 0)
                         {
                             target_robot.defence = 0;
-                            target_robot.energy -= (int)(max_power - max_target_defence) * round_config.max_energy / round_config.max_health;
+                            target_robot.energy -= attack * round_config.max_energy / round_config.max_health;
                         }
                         else
                         {
-                            target_robot.defence -= (int)(max_power - max_target_defence);
+                            target_robot.defence -= attack;
                         }
-                        File.AppendAllText(logpath, "Attack robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id target robot: " + target_robot.id + ", attack:" + (int)(max_power - max_target_defence) + Environment.NewLine, Encoding.UTF8);
+
+                        File.AppendAllText(logpath, "Attack. id: " + robot.id + "; pos: (" + robot.X + ", " + robot.Y + "); target: " + target_robot.id + "; attack: " + attack + Environment.NewLine, Encoding.UTF8);
                     }
                     else
                     {
+                        int defence = max_target_defence - max_power;
                         if (robot.attack <= 0)
                         {
                             robot.attack = 0;
-                            robot.energy -= (int)(max_target_defence - max_power) * round_config.max_energy / round_config.max_health;
+                            robot.energy -= defence * round_config.max_energy / round_config.max_health;
                         }
                         else
                         {
-                            robot.attack -= (int)(max_target_defence - max_power);
+                            robot.attack -= defence;
                         }
-                        File.AppendAllText(logpath, "Defence target robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id target robot: " + target_robot.id + ", defence:" + (int)(max_power - max_target_defence) + Environment.NewLine, Encoding.UTF8);
+
+                        File.AppendAllText(logpath, "Defence. id: " + robot.id + "; pos: (" + robot.X + ", " + robot.Y + "); target: " + target_robot.id + "; defence: " + defence + Environment.NewLine, Encoding.UTF8);
                     }
+
                     robot.energy -= round_config.dEa;
                     target_robot.energy -= round_config.dEd;
                 }
 
-                if ((target_robot.energy <= 0)&&(target_robot.defence == 0))
+                if ((target_robot.energy <= 0) && (target_robot.defence == 0))
                 {
                     bool flag = true;
                     foreach (RobotState rb in state.robots)
@@ -197,13 +202,13 @@ namespace Interface
                             }
                         }
                     }
+
                     if (flag)
                     {
                         target_robot.isAlive = false;
                         robot.kill++;
                         robot.kill_id[robot.kill - 1] = target_robot.id;
-                        File.AppendAllText(logpath, "Dead target robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), id target robot: " + target_robot.id + Environment.NewLine, Encoding.UTF8);
-
+                        File.AppendAllText(logpath, "Kill. id: " + robot.id + "; pos: (" + robot.X + ", " + robot.Y + "); target: " + target_robot.id + Environment.NewLine, Encoding.UTF8);
                     }
                 }
 
@@ -219,41 +224,42 @@ namespace Interface
             if (robot.energy <= 0)
             {
                 robot.isAlive = false;
-                File.AppendAllText(logpath, "Dead robot. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + ")" + Environment.NewLine, Encoding.UTF8);
 
+                File.AppendAllText(logpath, "Death. id: " + robot.id + "; pos: (" + robot.X + ", " + robot.Y + ")" + Environment.NewLine, Encoding.UTF8);
             }
 
-            // +
-            if (GetHealth() > 0)
+            // health redistribution
+            if(GetHealth() > 0)
             {
                 if ((Math.Abs(action.dA) + Math.Abs(action.dD) + Math.Abs(action.dV) != 0) && (Math.Abs(action.dA) + Math.Abs(action.dD) + Math.Abs(action.dV) <= 2 * round_config.dHealth) && (robot.speed + action.dV <= round_config.max_speed) && (action.dA + action.dD + action.dV == 0))
                 {
-                    robot.speed += action.dV;
+                    File.AppendAllText(logpath, "Health redistribution. id: " + robot.id + "; pos: (" + robot.X + "," + robot.Y + "); attack: " + robot.attack + ", " + action.dA + "; defence: " + robot.defence + ", " + action.dD + "; speed: " + robot.speed + ", " + action.dV + Environment.NewLine, Encoding.UTF8);
+
                     robot.attack += action.dA;
                     robot.defence += action.dD;
-                    File.AppendAllText(logpath, "Resource movement. id robot:" + robot.id + " point:(" + robot.X + ", " + robot.Y + "), health " + GetHealth() + Environment.NewLine, Encoding.UTF8);
+                    robot.speed += action.dV;
                 }
             }
-            
+           
 
-
-            robot.energy = (robot.energy > round_config.max_energy) ? round_config.max_energy : robot.energy;
+            //robot.energy = (robot.energy > round_config.max_energy) ? round_config.max_energy : robot.energy;
+            robot.energy = Math.Min(robot.energy, round_config.max_energy);
         }
 
-        public void Loop(IList<IRobot> robots, int round, int dN)
+        public void Loop(IList<Tuple<string, IRobot>> robots, int round, int dN)
         {
-            logpath = "../../log{" + round + "}.txt";
+            logpath = "../../log_" + round + ".txt";
             File.WriteAllText(logpath, "round: " + round + Environment.NewLine, Encoding.UTF8);
-            Console.WriteLine("rounds: " + round);
+
             RoundConfig round_config = config.rounds[round];
             state.robots.Clear();
 
-            int j;
-            for (j = 0; j < robots.Count - dN; j++)
+
+            for (int robot_id = 0; robot_id < robots.Count - dN; robot_id++)
             {
                 RobotState robot = new RobotState
                 {
-                    id = j,
+                    id = robot_id,
                     X = SingleRandom.Instance.Next(0, round_config.width),
                     Y = SingleRandom.Instance.Next(0, round_config.height),
                     energy = round_config.max_energy,
@@ -263,24 +269,49 @@ namespace Interface
                     isAlive = true,
                     kill = 0,
                     kill_id = new int[robots.Count],
-                    name = robots[j].Name, // попросили добавить чтобы кооперироваться
-                    colour = robots[j].Colour // попросили добавить чтобы дебажить
+                    name = robots[robot_id].Item2.Name,
+                    colour = robots[robot_id].Item2.Colour,
+                    dll_path = robots[robot_id].Item1
                 };
                 state.robots.Add(robot);
             }
-
+            int robot_id_no_iter = robots.Count - dN;
+            int[] unique_id= new int[dN+1];
+            if (dN > 0)
+            {
+                for (int unic = 0; unic < dN + 1; unic++)
+                {
+                    unique_id[unic] = -1;
+                }
+            }
+            bool isUnic;
             foreach (RobotState rs in future_robots)
             {
-                if (rs.isAlive)
+                for (int robot_id = robots.Count - dN; robot_id < robots.Count; robot_id++)
                 {
-                    RobotState rss = rs.ShallowCopy();
-                    rss.id = j++;
-                    for (int kkk = 0; kkk < rss.kill; kkk++)
+                    isUnic = true;
+                    for (int unic = 0; unic <= robot_id_no_iter - (robots.Count - dN); unic++)
                     {
-                        rss.kill_id[kkk] = 0;
+                        if (robot_id == unique_id[unic])
+                        {
+                            isUnic = false;
+                        }
                     }
-                    rss.kill = 0;
-                    state.robots.Add(rss);
+
+                    if ((rs.isAlive == true) && (robots[robot_id].Item2.Name == rs.name) && (isUnic))
+                    {
+                        RobotState rs_copy = rs.ShallowCopy();
+                        rs_copy.id = robot_id_no_iter++;
+
+                        for (int kc = 0; kc < rs_copy.kill; kc++)
+                        {
+                            rs_copy.kill_id[kc] = 0;
+                        }
+                        rs_copy.kill = 0;
+                        unique_id[robot_id_no_iter - (robots.Count - dN)] = robot_id;
+                        state.robots.Add(rs_copy);
+                        break;
+                    }
                 }
             }
 
@@ -307,7 +338,6 @@ namespace Interface
                 state.points.Add(point);
             }
 
-
             for (int n = 0; n < round_config.steps; n++)
             {
                 future_robots.Clear();
@@ -315,32 +345,28 @@ namespace Interface
 
                 for (int i = 0; i < robots.Count; i++)
                 {
-                    IRobot robot = robots[i];
+                    IRobot robot = robots[i].Item2;
                     Task<RobotAction> task = Task.Run(() => robot.Tick(i, round_config, state.DeepCopy()));
 
                     try
                     {
                         UpdateState(round_config, i, task.Wait(round_config.timeout) ? task.Result : null);
+                        File.AppendAllText(logpath, state.robots[i].id +": " + state.robots[i].X + "x" + state.robots[i].Y + "; health: " + (state.robots[i].attack + state.robots[i].defence + state.robots[i].speed) + "; energy: " + state.robots[i].energy + Environment.NewLine, Encoding.UTF8);
                     }
                     catch (Exception e)
                     {
                         if (task.IsFaulted)
                         {
                             File.AppendAllText(logpath, "robot \"" + robot.Name + "\" failed" + Environment.NewLine, Encoding.UTF8);
-                            Console.WriteLine("robot \"" + robot.Name + "\" failed");
                         }
                         else
                         {
                             File.AppendAllText(logpath, "oh no" + Environment.NewLine, Encoding.UTF8);
-                            Console.WriteLine("oh no");
                         }
                         File.AppendAllText(logpath, e.Message + Environment.NewLine, Encoding.UTF8);
-                        Console.WriteLine(e.Message);
-                        robots.RemoveAt(i);
-                        continue;
-                    }
 
-                    Console.WriteLine("{0}: {1}x{2}; health: {3}; energy: {4}", state.robots[i].id, state.robots[i].X, state.robots[i].Y, state.robots[i].attack + state.robots[i].defence + state.robots[i].speed, state.robots[i].energy);
+                        robots.RemoveAt(i);
+                    }
                 }
 
                 if (n < round_config.steps - 1)
@@ -351,7 +377,7 @@ namespace Interface
                         state.robots.Add(rs);
                     }
                 }
-                if (n == round_config.steps -1)
+                else if (n == round_config.steps - 1)
                 {
                     for (int k = 0; k < future_robots.Count; k++)
                     {
@@ -363,11 +389,10 @@ namespace Interface
                         {
                             future_robots[k].energy += round_config.K * future_robots[k].kill / 2;
                         }
-                      
                     }
                 }
 
-                Draw.drawing(state.robots, state.points, round_config.width, round_config.height);
+                Draw.Update(state.robots, state.points, round_config.width, round_config.height);
 
                 for (int i = 0; i < future_robots.Count; i++)
                 {
@@ -375,31 +400,25 @@ namespace Interface
                     {
                         future_robots[i].energy = 0;
                     }
-                    //if (future_robots[i].energy > 1000)
-                    //{
-                    //    future_robots[i].energy = 1000;
-                    //}
+
                     if (future_robots[i].defence + future_robots[i].attack + future_robots[i].speed < 0)
                     {
                         future_robots[i].defence = 0;
                         future_robots[i].attack = 0;
                         future_robots[i].speed = 0;
                     }
-                    //if (future_robots[i].energy > 1000)
-                    //{
-                    //    future_robots[i].energy = 1000;
-                    //}
+                    /*
                     if (i % 2 == 0)
                     {
                         int energyValue = future_robots[i].energy / 10;
-                        //Form1.pbList[i].Value = energyValue;
+                        Form1.pbList[i].Value = energyValue;
                     }
                     else
                     {
-                        //Form1.pbList[i].Value = future_robots[i].defence + future_robots[i].attack + future_robots[i].speed;
+                        Form1.pbList[i].Value = future_robots[i].defence + future_robots[i].attack + future_robots[i].speed;
                     }
+                    */
                 }
-                
             }
         }
     }

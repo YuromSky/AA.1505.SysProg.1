@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using RobotContracts;
 
@@ -14,20 +8,18 @@ namespace Interface
     public partial class Form2 : Form
     {
         int roundCount = 0;
-
-        public static GameConfig game_config = new GameConfig();
-        static string configPath = "../../config.json";
-        static GameConfig config = ConfigLoader.LoadConfig(configPath);
-
+        public GameConfig game_config;
+        public GameConfig config;
+        public string configPath = "../../config.json";
         public Form2()
         {
             InitializeComponent();
-
+            
+            game_config = new GameConfig();
             game_config.rounds = new List<RoundConfig>();
-
+            config = ConfigLoader.LoadConfig(configPath);
             refreshWindow(0);
         }
-
         private void refreshWindow(int i)
         {
             textBox1.Text = config.rounds[i].width.ToString();
@@ -50,7 +42,6 @@ namespace Interface
             textBox19.Text = config.rounds[i].nHealth.ToString();
             textBox18.Text = config.rounds[i].K.ToString();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             RoundConfig round_config = new RoundConfig
@@ -79,7 +70,7 @@ namespace Interface
 
             button2.Enabled = true;
             roundCount = roundCount + 1;
-            label2.Text = "Раунд " + (roundCount+1).ToString();
+            label2.Text = "Раунд " + (roundCount + 1).ToString();
 
             if (roundCount > 3)
             {
@@ -88,19 +79,17 @@ namespace Interface
             
             if (roundCount > 4)
             {
-                // save отправить лист конфигов
-                string configPath = "../../config.json";
+                game_config.robots = config.robots;
                 ConfigLoader.SaveConfig(configPath, game_config);
+
                 Form form1 = new Form1();
                 form1.Show();
                 this.Close();
             }
-
-            if(roundCount < 5)
+            if (roundCount < 5)
             {
                 refreshWindow(roundCount);
             }
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -109,29 +98,11 @@ namespace Interface
             {
                 button2.Enabled = false;
             }
-            roundCount = roundCount - 1;
-            label2.Text = "Раунд " + (roundCount + 1).ToString();
+
+            label2.Text = "Раунд " + roundCount.ToString();
             button1.Text = "Далее";
-        }
 
-        private void Form2_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
+            roundCount = roundCount - 1;
         }
     }
 }

@@ -1,0 +1,8 @@
+﻿Round 6 data load failed: System.IO.FileNotFoundException: Файл 'C:\Users\Avsh\Source\Repos\AA.1505.SysProg.1\Interface\round6_data.json' не найден.
+Имя файла: 'C:\Users\Avsh\Source\Repos\AA.1505.SysProg.1\Interface\round6_data.json'
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path)
+   в Interface.Form1.Load_save_robots() в C:\Users\Avsh\Source\Repos\AA.1505.SysProg.1\Interface\Form1.cs:строка 111

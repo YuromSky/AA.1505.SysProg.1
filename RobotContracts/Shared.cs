@@ -13,6 +13,7 @@ namespace RobotContracts
         public int kill;
         public int colour;
         public int[] kill_id;
+        public string dll_path;
 
         public RobotState ShallowCopy()
         {
@@ -68,6 +69,7 @@ namespace RobotContracts
     public class GameConfig
     {
         public int seed;
+        public IList<string> robots;
         public IList<RoundConfig> rounds;
     }
 
