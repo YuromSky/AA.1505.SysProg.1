@@ -173,33 +173,14 @@ namespace Interface
                 if (robots != null)
             {
                 List<Tuple<string, IRobot>> robots_base = RobotLoader.LoadRobots(config.robots);
-                int[] unique_id = new int[game.future_robots.Count+1];
-                if (game.future_robots.Count > 0)
-                {
-                    for (int unic = 0; unic < game.future_robots.Count + 1; unic++)
-                    {
-                        unique_id[unic] = -1;
-                    }
-                }
                 int dN = 0;
-                bool isUnic;
                 foreach (RobotState rs in game.future_robots)
                 {
                     for (int robot_id = 0; robot_id < robots.Count; robot_id++)
                     {
-                        isUnic = true;
-                        for (int unic = 0; unic <= dN; unic++)
-                        {
-                            if (robot_id == unique_id[unic])
-                            {
-                                isUnic = false;
-                            }
-                        }
-
-                        if ((rs.isAlive == true) && (robots[robot_id].Item2.Name == rs.name)&&(isUnic))
+                        if ((rs.isAlive == true) && (robots[robot_id].Item2.Name == rs.name))
                         {
                             robots_base.Add(robots[robot_id]);
-                            unique_id[dN] = robot_id;
                             dN++;
                             break;
                         }

@@ -276,29 +276,11 @@ namespace Interface
                 state.robots.Add(robot);
             }
             int robot_id_no_iter = robots.Count - dN;
-            int[] unique_id= new int[dN+1];
-            if (dN > 0)
-            {
-                for (int unic = 0; unic < dN + 1; unic++)
-                {
-                    unique_id[unic] = -1;
-                }
-            }
-            bool isUnic;
             foreach (RobotState rs in future_robots)
             {
                 for (int robot_id = robots.Count - dN; robot_id < robots.Count; robot_id++)
                 {
-                    isUnic = true;
-                    for (int unic = 0; unic <= robot_id_no_iter - (robots.Count - dN); unic++)
-                    {
-                        if (robot_id == unique_id[unic])
-                        {
-                            isUnic = false;
-                        }
-                    }
-
-                    if ((rs.isAlive == true) && (robots[robot_id].Item2.Name == rs.name) && (isUnic))
+                    if ((rs.isAlive == true) && (robots[robot_id].Item2.Name == rs.name))
                     {
                         RobotState rs_copy = rs.ShallowCopy();
                         rs_copy.id = robot_id_no_iter++;
@@ -308,7 +290,6 @@ namespace Interface
                             rs_copy.kill_id[kc] = 0;
                         }
                         rs_copy.kill = 0;
-                        unique_id[robot_id_no_iter - (robots.Count - dN)] = robot_id;
                         state.robots.Add(rs_copy);
                         break;
                     }
