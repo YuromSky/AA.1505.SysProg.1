@@ -332,7 +332,7 @@ namespace Interface
                     try
                     {
                         UpdateState(round_config, i, task.Wait(round_config.timeout) ? task.Result : null);
-                        File.AppendAllText(logpath, state.robots[i].id +": " + state.robots[i].X + "x" + state.robots[i].Y + "; health: " + (state.robots[i].attack + state.robots[i].defence + state.robots[i].speed) + "; energy: " + state.robots[i].energy + Environment.NewLine, Encoding.UTF8);
+                        //File.AppendAllText(logpath, state.robots[i].id +": " + state.robots[i].X + "x" + state.robots[i].Y + "; health: " + (state.robots[i].attack + state.robots[i].defence + state.robots[i].speed) + "; energy: " + state.robots[i].energy + Environment.NewLine, Encoding.UTF8);
                     }
                     catch (Exception e)
                     {
