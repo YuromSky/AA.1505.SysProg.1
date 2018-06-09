@@ -9,7 +9,7 @@ namespace Robot
         {
             get
             {
-                return "Baseline Robot";
+                return "Haritonov";
             }
         }
         public int Colour
